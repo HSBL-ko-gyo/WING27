@@ -1,0 +1,42 @@
+{
+  "source_commit": "40cd4ac7e3c1eb0ab00c71066c6ab77771dc9c16",
+  "rotation_center_pcb_mm": [
+    124,
+    49
+  ],
+  "rotated_existing_component_count": 37,
+  "key_switches_unchanged": 60,
+  "transform_errors": [],
+  "new_parts": [
+    "J2 JST SH BM03B-SRSS-TB replaces bare header",
+    "R22,R23 100ohm SWD series near MCU",
+    "H1,H2,H3,H4 M2 NPTH 2.2mm"
+  ],
+  "mounting_holes_source_mm": [
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      55
+    ],
+    [
+      205,
+      3
+    ],
+    [
+      205,
+      55
+    ]
+  ],
+  "boss_reference_diameter_mm": 5,
+  "boss_reference_layer": "User.2",
+  "panel_to_boss_min_margin_mm": 0.5,
+  "boss_to_printed_key_boundary_min_margin_mm": 0.328,
+  "mechanical_status": "Provisional M2 fastener choice and 5mm boss envelope. Final case fit, keycap and print tolerances, board outline/thickness remain to be checked.",
+  "diode_banks_unchanged": 30,
+  "diode_placement_rationale": "Keep left-key and right-key BAV70 banks on their original sides to avoid unnecessary cross-board routing.",
+  "service_button_adjustment": "After rotation SW61/SW62 moved from PCB y37 to y29 to clear preserved diode banks; both orientations retained at180deg.",
+  "rotated_then_shifted_service_buttons": 2
+}

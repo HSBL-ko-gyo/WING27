@@ -104,7 +104,7 @@ upins={child(p,'num')[1]:child(p,'name')[1] for p in children(child(u,'pins'),'p
 assert upins=={str(i+1):x for i,x in enumerate(pin_names)}
 expected_u={str(p):'+3V3' for p in [1,11,20,30,38,44,45,49,53,54]}
 expected_u.update({str(p):'+1V1' for p in [6,23,39,50]})
-expected_u.update({'46':'VREG_AVDD','47':'GND','48':'VREG_LX','61':'GND','21':'XIN','22':'XOUT','24':'SWCLK','25':'SWDIO','26':'RUN','51':'USB_DM_MCU','52':'USB_DP_MCU','60':'QSPI_SS','28':'EXP_GPIO17_3V3'})
+expected_u.update({'46':'VREG_AVDD','47':'GND','48':'VREG_LX','61':'GND','21':'XIN','22':'XOUT','24':'SWCLK_MCU','25':'SWDIO_MCU','26':'RUN','51':'USB_DM_MCU','52':'USB_DP_MCU','60':'QSPI_SS','28':'EXP_GPIO17_3V3'})
 expected_u.update({str(p):f'COL{i}' for i,p in enumerate([2,3,4,5,7,8,9,10,12,13,14,15])})
 expected_u.update({str(p):f'ROW{i}' for i,p in enumerate([16,17,18,19,27])})
 for p,n in expected_u.items():assert by_pin['U1',p]==n
@@ -121,13 +121,19 @@ expected={
  'R6':{'1':'QSPI_SS','2':'BOOT_SWITCH'},'SW61':{'1':'GND','2':'GND','3':'BOOT_SWITCH','4':'BOOT_SWITCH'},
  'SW62':{'1':'RUN_SWITCH','2':'RUN_SWITCH','3':'RUN','4':'RUN'},'R4':{'1':'RUN_SWITCH','2':'GND'},
  'J1':{'A1':'GND','A12':'GND','B1':'GND','B12':'GND','S1':'GND','A4':'VBUS','A9':'VBUS','B4':'VBUS','B9':'VBUS','A5':'CC1','B5':'CC2','A6':'USB_DP','B6':'USB_DP','A7':'USB_DM','B7':'USB_DM'},
- 'J2':{'1':'+3V3','2':'SWDIO','3':'GND','4':'SWCLK'}}
+ 'J2':{'1':'SWCLK','2':'GND','3':'SWDIO','MP':'GND'},'R22':{'1':'SWCLK_MCU','2':'SWCLK'},'R23':{'1':'SWDIO_MCU','2':'SWDIO'}}
 for ref,pins in expected.items():
     for p,n in pins.items():assert by_pin[ref,p]==n,(ref,p,n)
-for ref,v in {'R20':'5.1k','R21':'5.1k','R7':'27','R8':'27','R3':'33','R4':'1k','R6':'1k','R2':'1k','C9':'4.7u','C7':'4.7u','C10':'4.7u','L1':'3.3uH','X1':'12MHz','C3':'15p','C4':'15p','C20':'100n'}.items():assert child(comps[ref],'value')[1]==v,(ref,v)
+for ref,v in {'R22':'100','R23':'100','R20':'5.1k','R21':'5.1k','R7':'27','R8':'27','R3':'33','R4':'1k','R6':'1k','R2':'1k','C9':'4.7u','C7':'4.7u','C10':'4.7u','L1':'3.3uH','X1':'12MHz','C3':'15p','C4':'15p','C20':'100n'}.items():assert child(comps[ref],'value')[1]==v,(ref,v)
 # Native reference U1 pad geometry is inspected as S-expression because original is KiCad 10.
 def footprint(doc,ref):return next(f for f in children(doc,'footprint') if prop(f,'Reference') and prop(f,'Reference')[2]==ref)
-def pad_geometry(f):return sorted((p[1],tuple(child(p,'at')[1:]),tuple(child(p,'size')[1:]),p[2],p[3]) for p in children(f,'pad'))
+def pad_geometry(f):
+    at=child(f,'at');angle=float(at[3]) if len(at)>3 else 0
+    rows=[]
+    for p in children(f,'pad'):
+        pa=child(p,'at');a=float(pa[3]) if len(pa)>3 else 0
+        rows.append((p[1],(float(pa[1]),float(pa[2]),round((a-angle)%360,6)),tuple(map(float,child(p,'size')[1:])),p[2],p[3]))
+    return sorted(rows)
 now_pcb=parse((ROOT/'WING27.kicad_pcb').read_text());ref_pcb=parse((ROOT/'reference/RaspberryPi/RPI-RP2350A-MINIMAL_R4-S1.kicad_pcb').read_text())
 assert pad_geometry(footprint(now_pcb,'U1'))==pad_geometry(footprint(ref_pcb,'U1'))
 after={name:digest(ROOT/name) for name in inputs};assert before==after,'Source changed during audit; rerun once parent finishes editing'

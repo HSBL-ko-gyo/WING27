@@ -63,7 +63,9 @@ def official_mod(ref):
   if p[1]=='Value':p[2]=name
  (ROOT/'WING27.pretty'/f'{name}.kicad_mod').write_text(dump(f));MODS[name]=f;return name
 for ref,name in [('U1','RP2354A'),('L1','AOTA-B201610S3R3-101-T'),('X1','ABM8-272-T3'),('SW1','BOOT_RUN_SW')]:official_lib(ref,name)
-for f,n in [('Device','R'),('Device','C'),('Diode','BAV70'),('Power_Protection','USBLC6-2SC6'),('Regulator_Linear','AP2112K-3.3'),('Connector','USB_C_Receptacle_USB2.0_16P'),('Connector_Generic','Conn_01x04'),('Connector','TestPoint'),('power','PWR_FLAG')]:std_lib(f,n)
+for f,n in [('Device','R'),('Device','C'),('Diode','BAV70'),('Power_Protection','USBLC6-2SC6'),('Regulator_Linear','AP2112K-3.3'),('Connector','USB_C_Receptacle_USB2.0_16P'),('Connector_Generic','Conn_01x03'),('Connector','TestPoint'),('power','PWR_FLAG'),('Mechanical','MountingHole')]:std_lib(f,n)
+# Connector's two solder hold-down tabs share pad MP, bonded to ground.
+child(LIB['Conn_01x03'],'symbol').append(node('(pin passive line (at 0 -10.16 90)(length 3.81)(name "MP"(effects(font(size 1.27 1.27))))(number "MP"(effects(font(size 1.27 1.27)))))'))
 def std_mod(lib,name):
  p=Path('/usr/share/kicad/footprints')/(lib+'.pretty')/(name+'.kicad_mod');s=p.read_text();a=parse(s)
  a=[x for x in a if not(isinstance(x,list) and x[0]=='model')]
@@ -72,7 +74,8 @@ mods={
  'R':official_mod('R7'),'C':official_mod('C12'),'Cwide':official_mod('C7'),'MCU':official_mod('U1'),'L':official_mod('L1'),'X':official_mod('X1'),'SW':official_mod('SW1'),
  'D':std_mod('Package_TO_SOT_SMD','SOT-23'),'U2':std_mod('Package_TO_SOT_SMD','SOT-23-5'),'U3':std_mod('Package_TO_SOT_SMD','SOT-23-6'),
  'J1':std_mod('Connector_USB','USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal'),
- 'J2':std_mod('Connector_PinHeader_1.27mm','PinHeader_1x04_P1.27mm_Vertical'),
+ 'J2':std_mod('Connector_JST','JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical'),
+ 'H':std_mod('MountingHole','MountingHole_2.2mm_M2'),
  'TP':std_mod('TestPoint','TestPoint_Pad_D1.5mm'),'C0603':std_mod('Capacitor_SMD','C_0603_1608Metric')}
 # JLC-compatible variant: preserve manufacturer pad envelopes and all holes;
 # increase outer ground-pad corner radius from 0.15 to 0.24 mm for NPTH clearance.
@@ -97,7 +100,7 @@ def pins(lib):
  return [p for s in children(LIB[lib],'symbol') for p in children(s,'pin')]
 # GPIO0..11 columns, GPIO12..16 rows. GPIO17 is an unpopulated 3.3V extension signal.
 mcu={str(n):'+3V3' for n in [1,11,20,30,38,44,45,49,53,54]}
-mcu.update({str(n):'+1V1' for n in [6,23,39,50]});mcu.update({'46':'VREG_AVDD','47':'GND','48':'VREG_LX','61':'GND','21':'XIN','22':'XOUT','24':'SWCLK','25':'SWDIO','26':'RUN','51':'USB_DM_MCU','52':'USB_DP_MCU','60':'QSPI_SS'})
+mcu.update({str(n):'+1V1' for n in [6,23,39,50]});mcu.update({'46':'VREG_AVDD','47':'GND','48':'VREG_LX','61':'GND','21':'XIN','22':'XOUT','24':'SWCLK_MCU','25':'SWDIO_MCU','26':'RUN','51':'USB_DM_MCU','52':'USB_DP_MCU','60':'QSPI_SS'})
 for p in pins('RP2354A'):
  n=child(p,'name')[1];pn=child(p,'number')[1]
  if n.startswith('GPIO'):
@@ -127,7 +130,7 @@ add('U3','USBLC6-2SC6','USBLC6-2SC6',mods['U3'],{'1':'USB_DP','6':'USB_DP','3':'
 add('U2','AP2112K-3.3','AP2112K-3.3TRG1',mods['U2'],{'1':'VBUS','2':'GND','3':'VBUS','4':None,'5':'+3V3'},(340,50),(141,33,0),{'manufacturer':'Diodes Incorporated','manufacturer_pn':'AP2112K-3.3TRG1','LCSC':'C51118','Datasheet':'https://www.diodes.com/datasheet/download/AP2112.pdf'})
 for r,v,n,pos,pcb in [('C1','1u','VBUS',(315,75),(138,33,90)),('C5','1u','+3V3',(365,75),(144,33,90)),('C21','100n','VBUS',(160,215),(127,32,90))]:
  add(r,'C',v,mods['C0603'] if r in ['C1','C5'] else mods['C'],{'1':n,'2':'GND'},pos,pcb,({'manufacturer':'Samsung Electro-Mechanics','manufacturer_pn':'CL10A105KB8NNNC','LCSC':'C15849','Description':'1uF 50V X5R 0603, AP2112 input/output ceramic','Datasheet':'https://jlcpcb.com/partdetail/C15849'} if r in ['C1','C5'] else offmeta('C12')))
-add('J2','Conn_01x04','SWD',mods['J2'],{'1':'+3V3','2':'SWDIO','3':'GND','4':'SWCLK'},(380,140),(139,65,90),{'Description':'Bare plated SWD debug holes; no header populated. 3.3V reference only; do not power board simultaneously'})
+add('J2','Conn_01x03','BM03B-SRSS-TB',mods['J2'],{'1':'SWCLK','2':'GND','3':'SWDIO','MP':'GND'},(380,140),(139,65,90),{'manufacturer':'JST','manufacturer_pn':'BM03B-SRSS-TB(LF)(SN)','LCSC':'C5306067','Datasheet':'https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf','Description':'Pico H-compatible JST SH top-entry SWD: 1=SWCLK, 2=GND, 3=SWDIO; no power pin; straight-through cable'})
 for r,n,pos,pcb in [('TP1','VBUS',(310,242),(109,67,0)),('TP2','EXP_GPIO17_3V3',(340,242),(113,67,0)),('TP3','GND',(370,242),(117,67,0))]:add(r,'TestPoint',n,mods['TP'],{'1':n},pos,pcb,{'Description':'Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver.'})
 # Matrix: logical rows use six keys from each half. Physical stagger need not equal logical rows.
 rows=list(csv.DictReader((ROOT/'reference/P2/Wing27_P2_60_key_center_coordinates_mm.csv').open(encoding='utf-8-sig')))
@@ -149,6 +152,20 @@ for r in range(5):
   # Two diode banks outside the official MCU/core footprint, behind the phone.
   bank=p//3;dx=90+bank*55+(p%3)*4.5;dy=38+r*4.8
   add(f'D{did}','BAV70','BAV70',mods['D'],nets,(61.5+p*88,65+r*59),(dx,dy,0),{'manufacturer':'Jiangsu Changjing Electronics','manufacturer_pn':'BAV70','LCSC':'C68978','Description':'Dual common cathode; both anodes belong to same ROW','Datasheet':'https://jlcpcb.com/partdetail/BAV70/C68978'},'matrix')
+# Raspberry Pi 3-pin debug specification recommends 100-ohm series resistors near the MCU.
+for ref,signal,pcb in [('R22','SWCLK',(124.1,53.9,270)),('R23','SWDIO',(125.4,53.9,270))]:
+ add(ref,'R','100',mods['R'],{'1':signal+'_MCU','2':signal},(355,120 if ref=='R22' else 130),pcb,{'manufacturer':'Yageo','manufacturer_pn':'RC0402FR-07100RL','Description':'100ohm 1% SWD series termination near MCU; Raspberry Pi debug connector specification recommendation'})
+# User-requested 180-degree rotation of central electronics around panel center.
+# The 60 fixed switches and the two diode banks stay put, preserving short matrix fan-out.
+for c in COMPS:
+ if not (c['ref'].startswith('D') or (c['ref'].startswith('SW') and int(c['ref'][2:])<=60)):
+  x,y,angle=c['pcb'];c['pcb']=[248-x,98-y,(angle+180)%360]
+# Move the rotated service buttons above the preserved diode banks to avoid overlap.
+for c in COMPS:
+ if c['ref'] in ['SW61','SW62']:c['pcb'][1]=29
+# Provisional M2 clearance holes: source-panel coordinates, 5mm boss envelope.
+for i,(x,y) in enumerate([(3,3),(3,55),(205,3),(205,55)],1):
+ add(f'H{i}','MountingHole','M2 clearance 2.2mm',mods['H'],{},(200+i*30,280),(20+x,78-y,0),{'Description':'Provisional M2 NPTH; 5mm boss envelope. Confirm final case, PCB outline and fasteners.'})
 # All required pin entries must match the actual symbols exactly.
 for c in COMPS:
  ps={child(p,'number')[1] for p in pins(c['lib'])}
@@ -159,11 +176,11 @@ def q(s):return json.dumps(str(s),ensure_ascii=False)
 def txt(s,x,y,size=1.27):return node(f'(text {q(s)} (at {x} {y} 0) (effects(font(size {size} {size}))(justify left)) (uuid "{uid(str((s,x,y)))}"))')
 def make_sheet(which):
  ident=MAIN_ID if which=='matrix' else CTRL_ID
- a=node(f'(kicad_sch (version 20250114)(generator "eeschema")(uuid "{ident}")(paper "{"A2" if which=="matrix" else "A3"}")(title_block(title "WING27 / {"60-key matrix" if which=="matrix" else "RP2354A / USB-C controller"}")(rev "electrical-1")))')
+ a=node(f'(kicad_sch (version 20250114)(generator "eeschema")(uuid "{ident}")(paper "{"A2" if which=="matrix" else "A3"}")(title_block(title "WING27 / {"60-key matrix" if which=="matrix" else "RP2354A / USB-C controller"}")(rev "electrical-2")(company "ハシビロ工業")))')
  used={c['lib'] for c in COMPS if c['sheet']==which};used.add('PWR_FLAG') if which=='controller' else None
  a.append([S('lib_symbols')]+[copy.deepcopy(LIB[n]) for n in sorted(used)])
  for c in [c for c in COMPS if c['sheet']==which]:
-  x,y=[round(round(v/1.27)*1.27,5) for v in c['pos']];ref=c['ref'];sn=node(f'(symbol(lib_id "WING27:{c["lib"]}")(at {x} {y} 0)(unit 1)(exclude_from_sim no)(in_bom {"no" if ref.startswith("TP") or ref=="J2" else "yes"})(on_board yes)(dnp no)(uuid "{c["uuid"]}"))')
+  x,y=[round(round(v/1.27)*1.27,5) for v in c['pos']];ref=c['ref'];sn=node(f'(symbol(lib_id "WING27:{c["lib"]}")(at {x} {y} 0)(unit 1)(exclude_from_sim no)(in_bom {"no" if (ref.startswith("TP") or ref.startswith("H")) else "yes"})(on_board yes)(dnp no)(uuid "{c["uuid"]}"))')
   vals={'Reference':ref,'Value':c['value'],'Footprint':'WING27:'+c['fp'],**c['metadata']}
   for k,v in vals.items():
    yy=y-6 if k=='Reference' else y-3 if k=='Value' else y
@@ -208,3 +225,8 @@ def make_sheet(which):
 (ROOT/'sym-lib-table').write_text('(sym_lib_table (lib (name "WING27")(type "KiCad")(uri "${KIPRJMOD}/WING27.kicad_sym")(options "")(descr "Project-local symbols")))\n')
 (ROOT/'fp-lib-table').write_text('(fp_lib_table (lib (name "WING27")(type "KiCad")(uri "${KIPRJMOD}/WING27.pretty")(options "")(descr "Project-local footprints")))\n')
 print('Generated',len(COMPS),'components and',len(mapping),'key mappings')
+
+# Readable drawings are part of the generated deliverable, not optional label-only views.
+import subprocess
+for helper in ['redraw_matrix.py','redraw_controller.py']:
+ subprocess.run([sys.executable,str(ROOT/'scripts'/helper)],check=True)

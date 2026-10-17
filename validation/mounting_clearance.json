@@ -1,0 +1,198 @@
+[
+  {
+    "hole": "H1",
+    "source_svg_center": [
+      3.0,
+      55.0
+    ],
+    "kicad_center": [
+      23.0,
+      75.0
+    ],
+    "hole_diameter": 2.2,
+    "boss_diameter": 5,
+    "key_nearest": [
+      {
+        "key": "L5_1",
+        "label": "Ctrl",
+        "x": 8.0,
+        "y": 49.0,
+        "key_outline_clearance": 0.3284271247461903,
+        "switch_body_clearance": 0.9669871646719423,
+        "switch_courtyard_clearance": 0.4740544715926087
+      },
+      {
+        "key": "L5_2",
+        "label": "Fn",
+        "x": 16.0,
+        "y": 49.0,
+        "key_outline_clearance": 7.698039027185569,
+        "switch_body_clearance": 7.816006979447037,
+        "switch_courtyard_clearance": 7.2182817411309905
+      }
+    ],
+    "pad_nearest": [
+      {
+        "ref": "SW25",
+        "pad": "1",
+        "net": "COL0",
+        "pad_bbox_min_hole_edge": 4.245091205957102,
+        "pad_bbox_min_boss_edge": 2.845091205957102
+      },
+      {
+        "ref": "SW25",
+        "pad": "2",
+        "net": "/KEY_L5_1",
+        "pad_bbox_min_hole_edge": 7.240863264674704,
+        "pad_bbox_min_boss_edge": 5.840863264674704
+      }
+    ]
+  },
+  {
+    "hole": "H2",
+    "source_svg_center": [
+      3.0,
+      3.0
+    ],
+    "kicad_center": [
+      23.0,
+      23.0
+    ],
+    "hole_diameter": 2.2,
+    "boss_diameter": 5,
+    "key_nearest": [
+      {
+        "key": "L1_1",
+        "label": "Esc",
+        "x": 8.0,
+        "y": 9.0,
+        "key_outline_clearance": 0.3284271247461903,
+        "switch_body_clearance": 0.9669871646719437,
+        "switch_courtyard_clearance": 0.4740544715926105
+      },
+      {
+        "key": "L1_2",
+        "label": "1",
+        "x": 16.0,
+        "y": 9.0,
+        "key_outline_clearance": 7.698039027185569,
+        "switch_body_clearance": 7.816006979447039,
+        "switch_courtyard_clearance": 7.2182817411309905
+      }
+    ],
+    "pad_nearest": [
+      {
+        "ref": "SW1",
+        "pad": "1",
+        "net": "COL0",
+        "pad_bbox_min_hole_edge": 4.2450912059571095,
+        "pad_bbox_min_boss_edge": 2.845091205957109
+      },
+      {
+        "ref": "SW1",
+        "pad": "2",
+        "net": "/KEY_L1_1",
+        "pad_bbox_min_hole_edge": 7.240863264674708,
+        "pad_bbox_min_boss_edge": 5.840863264674708
+      }
+    ]
+  },
+  {
+    "hole": "H3",
+    "source_svg_center": [
+      205.0,
+      55.0
+    ],
+    "kicad_center": [
+      225.0,
+      75.0
+    ],
+    "hole_diameter": 2.2,
+    "boss_diameter": 5,
+    "key_nearest": [
+      {
+        "key": "R5_6",
+        "label": "→",
+        "x": 198.0,
+        "y": 49.0,
+        "key_outline_clearance": 1.9721359549995796,
+        "switch_body_clearance": 2.36004115208915,
+        "switch_courtyard_clearance": 1.7714166268347036
+      },
+      {
+        "key": "R4_6",
+        "label": "Sh",
+        "x": 199.0,
+        "y": 39.0,
+        "key_outline_clearance": 9.665525060596439,
+        "switch_body_clearance": 10.721951444472937,
+        "switch_courtyard_clearance": 10.366429186064016
+      }
+    ],
+    "pad_nearest": [
+      {
+        "ref": "SW60",
+        "pad": "2",
+        "net": "/KEY_R5_6",
+        "pad_bbox_min_hole_edge": 5.142595614005435,
+        "pad_bbox_min_boss_edge": 3.7425956140054355
+      },
+      {
+        "ref": "SW60",
+        "pad": "1",
+        "net": "COL11",
+        "pad_bbox_min_hole_edge": 8.898499887483114,
+        "pad_bbox_min_boss_edge": 7.4984998874831135
+      }
+    ]
+  },
+  {
+    "hole": "H4",
+    "source_svg_center": [
+      205.0,
+      3.0
+    ],
+    "kicad_center": [
+      225.0,
+      23.0
+    ],
+    "hole_diameter": 2.2,
+    "boss_diameter": 5,
+    "key_nearest": [
+      {
+        "key": "R1_7",
+        "label": "BS",
+        "x": 200.0,
+        "y": 9.0,
+        "key_outline_clearance": 0.3284271247461903,
+        "switch_body_clearance": 0.9669871646719468,
+        "switch_courtyard_clearance": 0.47405447159260783
+      },
+      {
+        "key": "R1_6",
+        "label": "-",
+        "x": 192.0,
+        "y": 9.0,
+        "key_outline_clearance": 7.698039027185569,
+        "switch_body_clearance": 7.816006979447044,
+        "switch_courtyard_clearance": 7.218281741130985
+      }
+    ],
+    "pad_nearest": [
+      {
+        "ref": "SW37",
+        "pad": "2",
+        "net": "/KEY_R1_7",
+        "pad_bbox_min_hole_edge": 4.245091205957106,
+        "pad_bbox_min_boss_edge": 2.8450912059571065
+      },
+      {
+        "ref": "SW37",
+        "pad": "1",
+        "net": "COL10",
+        "pad_bbox_min_hole_edge": 7.240863264674703,
+        "pad_bbox_min_boss_edge": 5.840863264674702
+      }
+    ]
+  }
+]

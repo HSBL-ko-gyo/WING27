@@ -1,0 +1,131 @@
+{
+  "status": "PASS: source geometry and independent 60-key alignment verified; reference only",
+  "source_sha256": {
+    "01_APPEARANCE_REFERENCE.svg": "3cde64d5c471c53e4fab6fe21b9fbb5ffa628523050197aa2a746dec471cd457",
+    "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg": "66b50183908558fdc5c01a4c8f405614b75cad2cb944d936614f7abb7115c78f",
+    "06_OUTER_CUT_PROVISIONAL.svg": "287a728848e0cc96c7281218c74744b2509a04dfbd5e0fd2f09ad75f98eb5647",
+    "Wing27_P2_60_key_center_coordinates_mm.csv": "d8a1f8395ebb4b889980ef9d1fc43ec42b2d30e67f0308ed7d5754ad9815f54d",
+    "key_layout_P2.json": "0e4891afc7cb96a46e8c2278c8a55369a99168a0577440d2d84705e82d4b30da"
+  },
+  "source_roles": {
+    "01_APPEARANCE_REFERENCE.svg": "Original appearance: panel boundary, print cross, translucent legend boundaries",
+    "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg": "60 emboss boundaries, explicitly NOT_PRINT_NOT_CUT",
+    "06_OUTER_CUT_PROVISIONAL.svg": "Provisional panel contour, audited but not redundantly imported"
+  },
+  "fabrication_authority": "Source graphics retain their original provisional manufacturing annotations. Asset identity is verified separately; these annotations do not establish order status. This audit does not establish supplier final-proof approval.",
+  "physical_size_mm": [
+    208,
+    58
+  ],
+  "csv_to_pcb": "(20+x,78-y) mm",
+  "svg_to_pcb": "SVG physical top-left coordinates (u,v) -> (20+u,20+v) mm",
+  "source_viewbox_to_mm": {
+    "01_APPEARANCE_REFERENCE.svg": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "06_OUTER_CUT_PROVISIONAL.svg": [
+      1.0,
+      0,
+      0,
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  "key_count": 60,
+  "svg_vs_csv_top_origin_max_error_mm": 0.0,
+  "svg_vs_csv_bottom_origin_max_error_mm": 0.0,
+  "layout_json_vs_csv_max_error_mm": 0.0,
+  "layout_json_vs_svg_max_error_mm": 0.0,
+  "svg_vs_actual_switch_max_error_mm": 0.0,
+  "csv_vs_actual_switch_max_error_mm": 0.0,
+  "key_size_max_error_mm": 0.0,
+  "print_cross_center_source_mm": [
+    103.0,
+    29.0
+  ],
+  "print_cross_center_pcb_mm": [
+    123.0,
+    49.0
+  ],
+  "panel_center_source_mm": [
+    104.0,
+    29.0
+  ],
+  "panel_center_pcb_mm": [
+    124.0,
+    49.0
+  ],
+  "source_panel_boundary_bounds_mm": [
+    [
+      0.0,
+      208.0
+    ],
+    [
+      0.0,
+      58.0
+    ]
+  ],
+  "source_sampled_R2_vs_provisional_exact_R2_max_error_mm": 0.0006049751862464703,
+  "source_sampled_R2_preserved": true,
+  "cross_minus_panel_center_mm": [
+    -1.0,
+    0.0
+  ],
+  "layer": "User.1",
+  "appearance": "Unfilled source boundaries; printing colors/fill semantics remain in original SVG",
+  "edge_cuts_created": 0,
+  "provisional_outer_contour": "208 x 58 mm, R2; reference only, not a PCB outline",
+  "verified_handoff_archive": {
+    "filename": "Wing27_LCSC_WORK_HANDOFF(1).zip",
+    "size_bytes": 781347,
+    "sha256": "05d6b18197bd9a09a8a20cb3b5f671a546a4c3c6069643953c98a3d5411b31cf"
+  },
+  "handoff_archive_byte_identical_assets": [
+    "01_APPEARANCE_REFERENCE.svg",
+    "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg",
+    "06_OUTER_CUT_PROVISIONAL.svg",
+    "key_layout_P2.json"
+  ],
+  "csv_archive_relationship": {
+    "filename": "Wing27_P2_60_key_center_coordinates_mm.csv",
+    "sha256": "d8a1f8395ebb4b889980ef9d1fc43ec42b2d30e67f0308ed7d5754ad9815f54d",
+    "present_in_archive": false,
+    "independent_source": "key_layout_P2.json from archive, plus original 05_EMBOSS SVG",
+    "key_count": 60,
+    "max_center_error_mm": 0.0,
+    "max_size_error_mm": 0.0
+  },
+  "imported_group": "P2_SOURCE_SVG_1_TO_1_REFERENCE_ONLY",
+  "imported_shapes": 634,
+  "shape_counts": {
+    "poly": 154,
+    "line": 240,
+    "arc": 240
+  },
+  "original_linear_path_contours": 154,
+  "original_path_vertices": 18591,
+  "zero_length_duplicate_vertices_removed": 2,
+  "original_path_vertex_resampling": false,
+  "native_rounded_rectangle_arcs": true,
+  "coordinate_quantization_max_error_mm": 2.4293336709362975e-07,
+  "source_points_verified": 19791,
+  "native_geometry_max_point_error_mm": 2.4293336709362975e-07,
+  "native_arc_radius_max_error_mm": 2.220446049250313e-16,
+  "native_geometry_tolerance_mm": 3e-06,
+  "verification": "Every native polygon vertex, line endpoint and arc start/mid/end compared against original SVG; native arc radius checked",
+  "saved_board_round_trip_verified": true
+}

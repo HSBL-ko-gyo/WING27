@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "source_archive": {
+    "filename": "Wing27_LCSC_WORK_HANDOFF(1).zip",
+    "size_bytes": 781347,
+    "sha256": "05d6b18197bd9a09a8a20cb3b5f671a546a4c3c6069643953c98a3d5411b31cf"
+  },
+  "repo_assets": {
+    "01_APPEARANCE_REFERENCE.svg": {
+      "archive_member": "01_APPEARANCE_REFERENCE.svg",
+      "sha256": "3cde64d5c471c53e4fab6fe21b9fbb5ffa628523050197aa2a746dec471cd457",
+      "size_bytes": 368184,
+      "byte_identical": true
+    },
+    "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg": {
+      "archive_member": "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg",
+      "sha256": "66b50183908558fdc5c01a4c8f405614b75cad2cb944d936614f7abb7115c78f",
+      "size_bytes": 8881,
+      "byte_identical": true
+    },
+    "06_OUTER_CUT_PROVISIONAL.svg": {
+      "archive_member": "06_OUTER_CUT_PROVISIONAL.svg",
+      "sha256": "287a728848e0cc96c7281218c74744b2509a04dfbd5e0fd2f09ad75f98eb5647",
+      "size_bytes": 1151,
+      "byte_identical": true
+    },
+    "key_layout_P2.json": {
+      "archive_member": "key_layout_P2.json",
+      "sha256": "0e4891afc7cb96a46e8c2278c8a55369a99168a0577440d2d84705e82d4b30da",
+      "size_bytes": 11199,
+      "byte_identical": true
+    }
+  },
+  "csv_derivation_audit": {
+    "filename": "Wing27_P2_60_key_center_coordinates_mm.csv",
+    "sha256": "d8a1f8395ebb4b889980ef9d1fc43ec42b2d30e67f0308ed7d5754ad9815f54d",
+    "present_in_archive": false,
+    "independent_source": "key_layout_P2.json from archive, plus original 05_EMBOSS SVG",
+    "key_count": 60,
+    "max_center_error_mm": 0.0,
+    "max_size_error_mm": 0.0
+  },
+  "scope": "Verifies the supplied handoff archive and current reference asset identity. Supplier final-proof approval, final emboss tooling, order status and the PCB manufacturing outline are outside this file-identification audit."
+}

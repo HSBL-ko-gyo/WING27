@@ -64,7 +64,7 @@
     "is_pcb_outline": false
   },
   "pending_decisions": [
-    "User artwork/routing, final PCB outline/mounting/stackup/thickness and connector mechanical location",
+    "User artwork/routing, final PCB outline/stackup/thickness, M2 screw and boss tolerances, JST top-access clearance",
     "Firmware matrix mapping, USB HID/power configuration, hardware bring-up and inrush/USB compliance measurements",
     "No LEDs fitted; extension signal is 3.3V only and needs appropriate level shifting for 5V LEDs"
   ],
@@ -80,7 +80,7 @@
   },
   "reference_step_centers_agree": true,
   "reference_step_valid_single_solid": true,
-  "footprint_count": 129,
+  "footprint_count": 135,
   "usb_footprint_adjustment": {
     "part": "USB4105-GF-A-060",
     "source": "https://gct.co/files/drawings/usb4105.pdf",
@@ -93,7 +93,20 @@
     "source": "https://pip.raspberrypi.com/categories/1214-rp2350",
     "design": "RP2350A Minimal R4-S1 official KiCad",
     "adaptation": "RP2354A internal flash; remove external flash; retain official MCU/SMPS/crystal footprints and relative placement. C10 updated to4.7uF per Release8 datasheet. Dedicated C20 on QSPI_IOVDD54. AP2112 3.3V and protected USB-C front end.",
-    "placement_transform": "x+24, y-51 mm from official core board; inductor orientation unchanged",
+    "placement_transform": "Official core translated x+24,y-51mm, then all central electronics rotated180deg around PCB(124,49). Relative core geometry and marked inductor orientation retained.",
     "license": "reference/RaspberryPi/LICENSE.txt"
+  },
+  "swd_connector": {
+    "part": "JST BM03B-SRSS-TB(LF)(SN)",
+    "interface": "Raspberry Pi 3-pin SH debug",
+    "pins": {
+      "1": "SWCLK",
+      "2": "GND",
+      "3": "SWDIO",
+      "MP": "GND"
+    },
+    "series_resistors": "R22/R23=100ohm near MCU, per official debug specification recommendation",
+    "source": "https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf",
+    "mechanical": "Top-entry mating access required; no target power supplied through connector"
   }
 }
