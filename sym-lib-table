@@ -1,1 +1,1 @@
-(sym_lib_table (lib (name "WING27")(type "KiCad")(uri "${KIPRJMOD}/WING27.kicad_sym")(options "")(descr "WING27 project symbols")))
+(sym_lib_table (lib (name "WING27")(type "KiCad")(uri "${KIPRJMOD}/WING27.kicad_sym")(options "")(descr "Project-local symbols")))

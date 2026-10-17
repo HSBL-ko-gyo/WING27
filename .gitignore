@@ -3,3 +3,6 @@
 ~*
 _autosave-*
 *-backups/
+
+__pycache__/
+*.pyc

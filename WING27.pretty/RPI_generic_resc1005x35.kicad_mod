@@ -1,0 +1,351 @@
+(footprint
+"RPI_generic_resc1005x35"
+	(version 20241229)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(property
+"Reference"
+"REF**"
+		(at -1.5 0 180.0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "111bb05b-8c97-4ace-b7f1-9c930785a107")
+		(effects
+			(font
+				(size 0.8 0.5)
+				(thickness 0.125)
+				(bold yes))))
+	(property
+"Value"
+"RPI_generic_resc1005x35"
+		(at 0 1 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e53979b-362f-4526-bd47-c7ec542b6517")
+		(effects
+			(font
+				(size 0.8 0.5)
+				(thickness 0.01)
+				(bold yes))))
+	(property
+"Datasheet"
+"file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6b320e19-df90-421f-b838-b05d7eac2ad7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"Description"
+"Resistor, Chip, 27R, M1005, 63mW, 1%"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "61358b9e-0006-40f3-a4f2-f9fe4fb088d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"power"
+"63mW"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2827c628-e7a4-4c8a-9461-fcdc700bfe89")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"tolerance"
+"1%"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9a9b3ba-32f3-43a9-bce4-56e3f8c2d7a3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"package"
+"M1005"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8e5a0a4-b2c5-4364-990c-2e2f59492879")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"part_uid"
+"RP-01C89V-LTEYC4"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "071a381a-7f36-494b-a561-8b173b507e42")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"status"
+"OK"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b4b5d2ab-2b9d-444c-8cf2-63451f2c3b66")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"manufacturer"
+"Yageo"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b376943a-f6a0-4c73-bcf9-430529bdef53")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"manufacturer_pn"
+"RC0402FR-0727RL"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "475b6e6d-489d-477f-80f9-cf809582dc5b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"packaging"
+"7 inch dia. paper taping reel"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "28a9f66f-a653-452b-9432-efa5c2b8d879")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"packaging_qty"
+"10000"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a674b9e8-17f0-4eaf-be14-0d77d66e0f6b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"lcsc_pn"
+"C138021"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "51d4073d-95c7-4c95-8be1-cb8f48383dd0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"temp_coefficient"
+"100ppm/degC"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "087cd8c6-2823-4493-977e-741ab5dea479")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"voltage"
+"50V"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aba1f780-5571-46fc-9496-2cd0e9f1f3fa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"size"
+"1x0.5x0.35mm"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2b1a4f83-c93f-4407-8ac7-f1e31d174ed3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"resistance"
+"27"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ccac5d13-316f-43e3-96c8-087004ab6873")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"z_height_max"
+"0.4mm"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "afbcc878-399c-42d9-af65-d85076be29ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"operating_temp_min"
+"-55C"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2bb5e373-81d0-491b-a2b4-dd4ba0f89f53")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"operating_temp_max"
+"+155C"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ded07ea-65f7-418c-b5ef-278a076753ab")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"material"
+"Thick Film"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c986ef26-0a30-4540-b122-c47a6d28cca3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"current"
+""
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5911188f-8ca8-42e5-a4ca-eaa97ecab863")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"z_height_nom"
+"0.35mm"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2b767784-1c2c-40ed-bfdc-1719e0f6000e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property ki_fp_filters "RPI_COMPILED:generic_resc1005x35")
+	(attr smd)
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.01)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "3cee0e38-298b-49bc-9467-e49e3c87b2aa"))
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.01)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e8b82c45-b7d4-4dc6-a09d-65d9279436de"))
+	(fp_rect
+		(start -0.25 -0.25)
+		(end 0.25 0.25)
+		(stroke
+			(width 0.01)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9f47e0f9-3b1b-49f8-9e41-46ec35ad2a75"))
+	(fp_text
+user
+"${REFERENCE}"
+		(at 0 0 360.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "cf6e1037-93e5-41fa-80e3-c139918c3728")
+		(effects
+			(font
+				(size 0.8 0.5)
+				(thickness 0.01))))
+	(pad
+"1"
+smd
+rect
+		(at -0.475 0 360.0)
+		(size 0.55 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "34e19622-ec84-4227-8c70-2fd7e5d3f72e"))
+	(pad
+"2"
+smd
+rect
+		(at 0.475 0 360.0)
+		(size 0.55 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8738bf19-8ccf-46a5-b9f2-732d2db9afc3"))
+	(embedded_fonts no))

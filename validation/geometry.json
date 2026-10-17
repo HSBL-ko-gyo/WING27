@@ -1,6 +1,6 @@
 {
-  "status": "VERIFIED KEY PLACEMENT ONLY; NOT ARTWORK-READY / NOT FOR FABRICATION",
-  "kicad_version": "10.0.5",
+  "status": "ELECTRICAL SCHEMATIC AND FOOTPRINT NETS VERIFIED; UNROUTED; NOT FOR FABRICATION",
+  "kicad_version": "9.0.2",
   "switch_count": 60,
   "blank_keys": [
     "L3_1",
@@ -17,7 +17,7 @@
   "minimum_key_center_distance_mm": 8.0,
   "switch": {
     "MPN": "CMI627301D60",
-    "reuse": "Original user footprint and completed 159654-byte STEP retained; only model path changed",
+    "reuse": "Original user switch geometry and completed STEP retained; syntax normalized to KiCad9 and portable model path retained",
     "body_mm": [
       6.2,
       6.2
@@ -64,13 +64,11 @@
     "is_pcb_outline": false
   },
   "pending_decisions": [
-    "Final MCU: RP2354A single MCU candidate",
-    "Electrical matrix: 5 x 12 and BAV70 C68978 x30 candidate",
-    "USB-C MPN, location and orientation",
-    "PCB outline, mounting and actual thickness",
-    "NeoPixel model, quantity, placement and current budget, or omission"
+    "User artwork/routing, final PCB outline/mounting/stackup/thickness and connector mechanical location",
+    "Firmware matrix mapping, USB HID/power configuration, hardware bring-up and inrush/USB compliance measurements",
+    "No LEDs fitted; extension signal is 3.3V only and needs appropriate level shifting for 5V LEDs"
   ],
-  "electrical_status": "Only 60 switches are in the native schematic and board. No intended matrix/controller nets are defined. Each open switch pin has a singleton net. No copper tracks or zones. ERC open-pin errors remain; no final electrical validation is claimed.",
+  "electrical_status": "RP2354A / 60-key 5x12 / BAV70x30 / USB-C / 3.3V supply fully netlisted. ERC and schematic parity: zero. No copper tracks or zones.",
   "source_files": {
     "01_APPEARANCE_REFERENCE.svg": "3cde64d5c471c53e4fab6fe21b9fbb5ffa628523050197aa2a746dec471cd457",
     "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg": "66b50183908558fdc5c01a4c8f405614b75cad2cb944d936614f7abb7115c78f",
@@ -81,5 +79,21 @@
     "Wing27_P2_reference_plate_T1_D1_60_centers.step": "95a0c455deff102517b1ffd0c38a812f907545113a549b8add2166ab50c369d5"
   },
   "reference_step_centers_agree": true,
-  "reference_step_valid_single_solid": true
+  "reference_step_valid_single_solid": true,
+  "footprint_count": 129,
+  "usb_footprint_adjustment": {
+    "part": "USB4105-GF-A-060",
+    "source": "https://gct.co/files/drawings/usb4105.pdf",
+    "preserved": "All pad centers, 0.60 x 1.15mm outer GND pad envelopes, all NPTH/PTH centers and diameters",
+    "change": "Only A1/A12/B1/B12 outer pad corner radius: 0.15 to 0.24mm (roundrect ratio 0.25 to 0.40)",
+    "purpose": ">=0.20mm copper-to-NPTH clearance without moving pads or holes",
+    "drc_hole_clearance_errors": 0
+  },
+  "reference_core_reuse": {
+    "source": "https://pip.raspberrypi.com/categories/1214-rp2350",
+    "design": "RP2350A Minimal R4-S1 official KiCad",
+    "adaptation": "RP2354A internal flash; remove external flash; retain official MCU/SMPS/crystal footprints and relative placement. C10 updated to4.7uF per Release8 datasheet. Dedicated C20 on QSPI_IOVDD54. AP2112 3.3V and protected USB-C front end.",
+    "placement_transform": "x+24, y-51 mm from official core board; inductor orientation unchanged",
+    "license": "reference/RaspberryPi/LICENSE.txt"
+  }
 }

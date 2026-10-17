@@ -1,0 +1,625 @@
+{
+  "audit_utc": "2026-10-17T16:46:41.739582+00:00",
+  "status": "PASS: net topology and pin mapping only; not fabrication approval",
+  "input_sha256": {
+    "WING27.kicad_sch": "7e4bdff1621385e2567a659527d39f3a7d75aa6adc2771c4d3ad8094c260dd36",
+    "Controller.kicad_sch": "24b806b2625bb4f3dee4b79db9e8f1c4b812e6aa4beb4de4a7046a2cf27f3eb1",
+    "WING27.kicad_pcb": "91936fbf61fb00423730e3ca5925e45740e4cdc4a0c4085560ebfe233830b98b",
+    "scripts/electrical_model.json": "6b6a0ec5188819e4612c79449233c5de405a8c1fbeebd30aa6c9109c54041ab8"
+  },
+  "component_count": 129,
+  "physical_copper_pads_checked": 386,
+  "pcb_pad_net_mismatches": [],
+  "model_net_mismatches": [],
+  "rp2354a_symbol_pins_checked": 61,
+  "rp2354a_official_package_pad_geometry_match": true,
+  "matrix_unique_positions": 60,
+  "bav70_packages": 30,
+  "ideal_ghosting_patterns_passed": 37052,
+  "key_mapping": {
+    "SW1": {
+      "key": "L1_1",
+      "row": 0,
+      "col": 0,
+      "diode": "D1",
+      "anode": "1"
+    },
+    "SW2": {
+      "key": "L1_2",
+      "row": 0,
+      "col": 1,
+      "diode": "D1",
+      "anode": "2"
+    },
+    "SW3": {
+      "key": "L1_3",
+      "row": 0,
+      "col": 2,
+      "diode": "D2",
+      "anode": "1"
+    },
+    "SW4": {
+      "key": "L1_4",
+      "row": 0,
+      "col": 3,
+      "diode": "D2",
+      "anode": "2"
+    },
+    "SW5": {
+      "key": "L1_5",
+      "row": 0,
+      "col": 4,
+      "diode": "D3",
+      "anode": "1"
+    },
+    "SW6": {
+      "key": "L1_6",
+      "row": 0,
+      "col": 5,
+      "diode": "D3",
+      "anode": "2"
+    },
+    "SW7": {
+      "key": "L2_1",
+      "row": 1,
+      "col": 0,
+      "diode": "D7",
+      "anode": "1"
+    },
+    "SW8": {
+      "key": "L2_2",
+      "row": 1,
+      "col": 1,
+      "diode": "D7",
+      "anode": "2"
+    },
+    "SW9": {
+      "key": "L2_3",
+      "row": 1,
+      "col": 2,
+      "diode": "D8",
+      "anode": "1"
+    },
+    "SW10": {
+      "key": "L2_4",
+      "row": 1,
+      "col": 3,
+      "diode": "D8",
+      "anode": "2"
+    },
+    "SW11": {
+      "key": "L2_5",
+      "row": 1,
+      "col": 4,
+      "diode": "D9",
+      "anode": "1"
+    },
+    "SW12": {
+      "key": "L2_6",
+      "row": 1,
+      "col": 5,
+      "diode": "D9",
+      "anode": "2"
+    },
+    "SW13": {
+      "key": "L3_1",
+      "row": 2,
+      "col": 0,
+      "diode": "D13",
+      "anode": "1"
+    },
+    "SW14": {
+      "key": "L3_2",
+      "row": 2,
+      "col": 1,
+      "diode": "D13",
+      "anode": "2"
+    },
+    "SW15": {
+      "key": "L3_3",
+      "row": 2,
+      "col": 2,
+      "diode": "D14",
+      "anode": "1"
+    },
+    "SW16": {
+      "key": "L3_4",
+      "row": 2,
+      "col": 3,
+      "diode": "D14",
+      "anode": "2"
+    },
+    "SW17": {
+      "key": "L3_5",
+      "row": 2,
+      "col": 4,
+      "diode": "D15",
+      "anode": "1"
+    },
+    "SW18": {
+      "key": "L3_6",
+      "row": 2,
+      "col": 5,
+      "diode": "D15",
+      "anode": "2"
+    },
+    "SW19": {
+      "key": "L4_1",
+      "row": 3,
+      "col": 0,
+      "diode": "D19",
+      "anode": "1"
+    },
+    "SW20": {
+      "key": "L4_2",
+      "row": 3,
+      "col": 1,
+      "diode": "D19",
+      "anode": "2"
+    },
+    "SW21": {
+      "key": "L4_3",
+      "row": 3,
+      "col": 2,
+      "diode": "D20",
+      "anode": "1"
+    },
+    "SW22": {
+      "key": "L4_4",
+      "row": 3,
+      "col": 3,
+      "diode": "D20",
+      "anode": "2"
+    },
+    "SW23": {
+      "key": "L4_5",
+      "row": 3,
+      "col": 4,
+      "diode": "D21",
+      "anode": "1"
+    },
+    "SW24": {
+      "key": "L4_6",
+      "row": 3,
+      "col": 5,
+      "diode": "D21",
+      "anode": "2"
+    },
+    "SW25": {
+      "key": "L5_1",
+      "row": 4,
+      "col": 0,
+      "diode": "D25",
+      "anode": "1"
+    },
+    "SW26": {
+      "key": "L5_2",
+      "row": 4,
+      "col": 1,
+      "diode": "D25",
+      "anode": "2"
+    },
+    "SW27": {
+      "key": "L5_3",
+      "row": 4,
+      "col": 2,
+      "diode": "D26",
+      "anode": "1"
+    },
+    "SW28": {
+      "key": "L5_4",
+      "row": 4,
+      "col": 3,
+      "diode": "D26",
+      "anode": "2"
+    },
+    "SW29": {
+      "key": "L5_5",
+      "row": 4,
+      "col": 4,
+      "diode": "D27",
+      "anode": "1"
+    },
+    "SW30": {
+      "key": "L5_6",
+      "row": 4,
+      "col": 5,
+      "diode": "D27",
+      "anode": "2"
+    },
+    "SW31": {
+      "key": "R1_1",
+      "row": 0,
+      "col": 6,
+      "diode": "D4",
+      "anode": "1"
+    },
+    "SW32": {
+      "key": "R1_2",
+      "row": 0,
+      "col": 7,
+      "diode": "D4",
+      "anode": "2"
+    },
+    "SW33": {
+      "key": "R1_3",
+      "row": 0,
+      "col": 8,
+      "diode": "D5",
+      "anode": "1"
+    },
+    "SW34": {
+      "key": "R1_4",
+      "row": 0,
+      "col": 9,
+      "diode": "D5",
+      "anode": "2"
+    },
+    "SW35": {
+      "key": "R1_5",
+      "row": 0,
+      "col": 10,
+      "diode": "D6",
+      "anode": "1"
+    },
+    "SW36": {
+      "key": "R1_6",
+      "row": 0,
+      "col": 11,
+      "diode": "D6",
+      "anode": "2"
+    },
+    "SW37": {
+      "key": "R1_7",
+      "row": 1,
+      "col": 10,
+      "diode": "D12",
+      "anode": "1"
+    },
+    "SW38": {
+      "key": "R2_1",
+      "row": 1,
+      "col": 6,
+      "diode": "D10",
+      "anode": "1"
+    },
+    "SW39": {
+      "key": "R2_2",
+      "row": 1,
+      "col": 7,
+      "diode": "D10",
+      "anode": "2"
+    },
+    "SW40": {
+      "key": "R2_3",
+      "row": 1,
+      "col": 8,
+      "diode": "D11",
+      "anode": "1"
+    },
+    "SW41": {
+      "key": "R2_4",
+      "row": 1,
+      "col": 9,
+      "diode": "D11",
+      "anode": "2"
+    },
+    "SW42": {
+      "key": "R2_5",
+      "row": 2,
+      "col": 10,
+      "diode": "D18",
+      "anode": "1"
+    },
+    "SW43": {
+      "key": "R2_6",
+      "row": 1,
+      "col": 11,
+      "diode": "D12",
+      "anode": "2"
+    },
+    "SW44": {
+      "key": "R3_1",
+      "row": 2,
+      "col": 6,
+      "diode": "D16",
+      "anode": "1"
+    },
+    "SW45": {
+      "key": "R3_2",
+      "row": 2,
+      "col": 7,
+      "diode": "D16",
+      "anode": "2"
+    },
+    "SW46": {
+      "key": "R3_3",
+      "row": 2,
+      "col": 8,
+      "diode": "D17",
+      "anode": "1"
+    },
+    "SW47": {
+      "key": "R3_4",
+      "row": 2,
+      "col": 9,
+      "diode": "D17",
+      "anode": "2"
+    },
+    "SW48": {
+      "key": "R3_5",
+      "row": 2,
+      "col": 11,
+      "diode": "D18",
+      "anode": "2"
+    },
+    "SW49": {
+      "key": "R4_1",
+      "row": 3,
+      "col": 6,
+      "diode": "D22",
+      "anode": "1"
+    },
+    "SW50": {
+      "key": "R4_2",
+      "row": 3,
+      "col": 7,
+      "diode": "D22",
+      "anode": "2"
+    },
+    "SW51": {
+      "key": "R4_3",
+      "row": 3,
+      "col": 8,
+      "diode": "D23",
+      "anode": "1"
+    },
+    "SW52": {
+      "key": "R4_4",
+      "row": 3,
+      "col": 9,
+      "diode": "D23",
+      "anode": "2"
+    },
+    "SW53": {
+      "key": "R4_5",
+      "row": 3,
+      "col": 10,
+      "diode": "D24",
+      "anode": "1"
+    },
+    "SW54": {
+      "key": "R4_6",
+      "row": 3,
+      "col": 11,
+      "diode": "D24",
+      "anode": "2"
+    },
+    "SW55": {
+      "key": "R5_1",
+      "row": 4,
+      "col": 6,
+      "diode": "D28",
+      "anode": "1"
+    },
+    "SW56": {
+      "key": "R5_2",
+      "row": 4,
+      "col": 7,
+      "diode": "D28",
+      "anode": "2"
+    },
+    "SW57": {
+      "key": "R5_3",
+      "row": 4,
+      "col": 8,
+      "diode": "D29",
+      "anode": "1"
+    },
+    "SW58": {
+      "key": "R5_4",
+      "row": 4,
+      "col": 9,
+      "diode": "D29",
+      "anode": "2"
+    },
+    "SW59": {
+      "key": "R5_5",
+      "row": 4,
+      "col": 10,
+      "diode": "D30",
+      "anode": "1"
+    },
+    "SW60": {
+      "key": "R5_6",
+      "row": 4,
+      "col": 11,
+      "diode": "D30",
+      "anode": "2"
+    }
+  },
+  "special_pairs": {
+    "D12": [
+      {
+        "key": "R1_7",
+        "row": 1,
+        "col": 10,
+        "diode": "D12",
+        "anode": "1"
+      },
+      {
+        "key": "R2_6",
+        "row": 1,
+        "col": 11,
+        "diode": "D12",
+        "anode": "2"
+      }
+    ],
+    "D18": [
+      {
+        "key": "R2_5",
+        "row": 2,
+        "col": 10,
+        "diode": "D18",
+        "anode": "1"
+      },
+      {
+        "key": "R3_5",
+        "row": 2,
+        "col": 11,
+        "diode": "D18",
+        "anode": "2"
+      }
+    ]
+  },
+  "track_count": 0,
+  "zone_count": 0,
+  "power_usb_boot_expected_pin_checks": "PASS",
+  "assembly_values": {
+    "D1": "BAV70",
+    "D2": "BAV70",
+    "D3": "BAV70",
+    "D4": "BAV70",
+    "D5": "BAV70",
+    "D6": "BAV70",
+    "D7": "BAV70",
+    "D8": "BAV70",
+    "D9": "BAV70",
+    "D10": "BAV70",
+    "D11": "BAV70",
+    "D12": "BAV70",
+    "D13": "BAV70",
+    "D14": "BAV70",
+    "D15": "BAV70",
+    "D16": "BAV70",
+    "D17": "BAV70",
+    "D18": "BAV70",
+    "D19": "BAV70",
+    "D20": "BAV70",
+    "D21": "BAV70",
+    "D22": "BAV70",
+    "D23": "BAV70",
+    "D24": "BAV70",
+    "D25": "BAV70",
+    "D26": "BAV70",
+    "D27": "BAV70",
+    "D28": "BAV70",
+    "D29": "BAV70",
+    "D30": "BAV70",
+    "SW1": "CMI627301D60",
+    "SW2": "CMI627301D60",
+    "SW3": "CMI627301D60",
+    "SW4": "CMI627301D60",
+    "SW5": "CMI627301D60",
+    "SW6": "CMI627301D60",
+    "SW7": "CMI627301D60",
+    "SW8": "CMI627301D60",
+    "SW9": "CMI627301D60",
+    "SW10": "CMI627301D60",
+    "SW11": "CMI627301D60",
+    "SW12": "CMI627301D60",
+    "SW13": "CMI627301D60",
+    "SW14": "CMI627301D60",
+    "SW15": "CMI627301D60",
+    "SW16": "CMI627301D60",
+    "SW17": "CMI627301D60",
+    "SW18": "CMI627301D60",
+    "SW19": "CMI627301D60",
+    "SW20": "CMI627301D60",
+    "SW21": "CMI627301D60",
+    "SW22": "CMI627301D60",
+    "SW23": "CMI627301D60",
+    "SW24": "CMI627301D60",
+    "SW25": "CMI627301D60",
+    "SW26": "CMI627301D60",
+    "SW27": "CMI627301D60",
+    "SW28": "CMI627301D60",
+    "SW29": "CMI627301D60",
+    "SW30": "CMI627301D60",
+    "SW31": "CMI627301D60",
+    "SW32": "CMI627301D60",
+    "SW33": "CMI627301D60",
+    "SW34": "CMI627301D60",
+    "SW35": "CMI627301D60",
+    "SW36": "CMI627301D60",
+    "SW37": "CMI627301D60",
+    "SW38": "CMI627301D60",
+    "SW39": "CMI627301D60",
+    "SW40": "CMI627301D60",
+    "SW41": "CMI627301D60",
+    "SW42": "CMI627301D60",
+    "SW43": "CMI627301D60",
+    "SW44": "CMI627301D60",
+    "SW45": "CMI627301D60",
+    "SW46": "CMI627301D60",
+    "SW47": "CMI627301D60",
+    "SW48": "CMI627301D60",
+    "SW49": "CMI627301D60",
+    "SW50": "CMI627301D60",
+    "SW51": "CMI627301D60",
+    "SW52": "CMI627301D60",
+    "SW53": "CMI627301D60",
+    "SW54": "CMI627301D60",
+    "SW55": "CMI627301D60",
+    "SW56": "CMI627301D60",
+    "SW57": "CMI627301D60",
+    "SW58": "CMI627301D60",
+    "SW59": "CMI627301D60",
+    "SW60": "CMI627301D60",
+    "C1": "1u",
+    "C3": "15p",
+    "C4": "15p",
+    "C5": "1u",
+    "C6": "4.7u",
+    "C7": "4.7u",
+    "C8": "100n",
+    "C9": "4.7u",
+    "C10": "4.7u",
+    "C11": "100n",
+    "C12": "100n",
+    "C13": "100n",
+    "C14": "100n",
+    "C15": "100n",
+    "C16": "100n",
+    "C17": "100n",
+    "C18": "100n",
+    "C20": "100n",
+    "C21": "100n",
+    "J1": "USB4105-GF-A-060",
+    "J2": "SWD",
+    "L1": "3.3uH",
+    "R2": "1k",
+    "R3": "33",
+    "R4": "1k",
+    "R6": "1k",
+    "R7": "27",
+    "R8": "27",
+    "R20": "5.1k",
+    "R21": "5.1k",
+    "SW61": "BOOTSEL",
+    "SW62": "RESET",
+    "TP1": "VBUS",
+    "TP2": "EXP_GPIO17_3V3",
+    "TP3": "GND",
+    "U1": "RP2354A",
+    "U2": "AP2112K-3.3TRG1",
+    "U3": "USBLC6-2SC6",
+    "X1": "12MHz"
+  },
+  "residual_risks": [
+    "Board is intentionally unrouted: USB signal integrity, power impedance, SMPS/XTAL stability, ESD return paths and current capability are unverified.",
+    "Firmware must pull up columns, drive only selected ROW LOW, disable pulls and output drive on other rows, and allow settling/debounce. Physical row labels do not equal logical row for the two staggered pairs.",
+    "Ideal diode graph tests do not verify analogue low-level margins over temperature, leakage, scan timing, or hardware NKRO.",
+    "Confirm final capacitor voltage/DC-bias derating, actual supply load, regulator thermal margin and inrush before manufacturing.",
+    "USB current descriptors/suspend and phone-host operation require firmware and two-orientation C-C cable testing.",
+    "Do not power SWD VTREF externally while USB is attached; expansion GPIO is 3.3V only."
+  ],
+  "primary_sources": [
+    "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf",
+    "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008280-DS-2-hardware-design-with-rp2350.pdf",
+    "https://www.jscj-elec.com/gallery/file/BAW56%20BAV70%20BAV99%20SOT-23%20V1.pdf",
+    "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+    "https://www.diodes.com/datasheet/download/AP2112.pdf",
+    "https://gct.co/files/drawings/usb4105.pdf"
+  ]
+}

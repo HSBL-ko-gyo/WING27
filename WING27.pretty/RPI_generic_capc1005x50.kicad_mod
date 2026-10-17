@@ -1,0 +1,327 @@
+(footprint
+"RPI_generic_capc1005x50"
+	(version 20241229)
+	(generator "pcbnew")
+	(layer "F.Cu")
+	(property
+"Reference"
+"REF**"
+		(at 0 -1 0.0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a82164c5-7554-4020-842b-64475625f8a4")
+		(effects
+			(font
+				(size 0.8 0.5)
+				(thickness 0.125)
+				(bold yes))))
+	(property
+"Value"
+"RPI_generic_capc1005x50"
+		(at 0 1 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24e65f73-2663-4fc6-97a3-0263f83ebb17")
+		(effects
+			(font
+				(size 0.8 0.5)
+				(thickness 0.01)
+				(bold yes))))
+	(property
+"Datasheet"
+"file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc575cca-fc25-4226-938a-8f9614e2c6d4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"Description"
+"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "400a4588-0db3-45cf-92e1-e786abb60454")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"package"
+"M1005"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae77bf02-8dc1-44fc-ad1d-2913290a7754")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"voltage"
+"25V"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18d3fe20-b449-439b-9701-bfd412c2fb00")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"dielectric"
+"X7R"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "28cf5786-6d7c-409f-9d3c-ccda20469937")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"tolerance"
+"10%"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "10e03f71-f3ee-4deb-94ad-865bb51b03e3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"part_uid"
+"RP-01BJ9Y-KRGF41"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c5d20c07-68a5-4732-9e72-b8ab283e3831")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"status"
+"OK"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a50546b5-67d1-4364-a6aa-e5daf0ed7eb9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"manufacturer"
+"Murata"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a87c2210-9963-4669-94f9-0565b8b6cf0e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"manufacturer_pn"
+"GRM155R71E104KE14D"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e15b4924-bd2e-42f0-b20c-b36e252a1ab7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"packaging"
+"180mm paper taping"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1912b02b-640f-4729-8fe2-45c1f61ac965")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"packaging_qty"
+"10000"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9669e453-5709-44c8-ba4f-2a32508aba13")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"lcsc_pn"
+"C77014"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a1cf038c-de12-4a12-88fe-8b17af44bb8a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"temp_coefficient"
+"X7R"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2fe24714-8892-4b67-b95e-990ea2b69a40")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"operating_temp_max"
+"+125C"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8e24cfc7-5928-4c63-b039-3f5bf4a3e10d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"operating_temp_min"
+"-55C"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3ebe0b6-6d25-453c-99a7-24b237a4e733")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"material"
+"Ceramic"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "07886e04-5a70-4f26-a96b-1d01dd77c7c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"size"
+"1.0x0.5x0.5mm"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f7b628eb-561e-4ebe-9513-eba2275d1a3f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"capacitance"
+"100n"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1ba61e22-787c-4a9b-9a00-34137f05c88c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property
+"z_height_nom"
+"0.5mm"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e421248d-4c81-4bab-b36b-df1bceb1f033")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15))))
+	(property ki_fp_filters "RPI_COMPILED:generic_capc1005x50 RPI_COMPILED:generic_capc1005x50_wide")
+	(attr smd)
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.01)
+			(type solid))
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "350f89e1-489e-436d-a798-021447bd9a04"))
+	(fp_rect
+		(start -0.25 -0.25)
+		(end 0.25 0.25)
+		(stroke
+			(width 0.01)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "54d6208f-c4d6-41d2-a5a8-2306df11772f"))
+	(fp_rect
+		(start -0.5 -0.25)
+		(end 0.5 0.25)
+		(stroke
+			(width 0.01)
+			(type solid))
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c8fbe0c2-fe8b-40ab-8e8f-d259fac39f56"))
+	(fp_text
+user
+"${REFERENCE}"
+		(at 0 0 0.0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d6401fc8-cf3e-44aa-a6ec-30d64dedba80")
+		(effects
+			(font
+				(size 0.8 0.5)
+				(thickness 0.01))))
+	(pad
+"1"
+smd
+rect
+		(at -0.475 0 0.0)
+		(size 0.55 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "44864672-4ed5-402a-a044-f9c2edf031dc"))
+	(pad
+"2"
+smd
+rect
+		(at 0.475 0 0.0)
+		(size 0.55 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "07dc4895-02f2-426b-b78e-7f825e9878b3"))
+	(embedded_fonts no))

@@ -1,0 +1,4505 @@
+{
+  "components": [
+    {
+      "ref": "U1",
+      "lib": "RP2354A",
+      "value": "RP2354A",
+      "fp": "RPI_rpi_rp2350a_vias",
+      "nets": {
+        "1": "+3V3",
+        "11": "+3V3",
+        "20": "+3V3",
+        "30": "+3V3",
+        "38": "+3V3",
+        "44": "+3V3",
+        "45": "+3V3",
+        "49": "+3V3",
+        "53": "+3V3",
+        "54": "+3V3",
+        "6": "+1V1",
+        "23": "+1V1",
+        "39": "+1V1",
+        "50": "+1V1",
+        "46": "VREG_AVDD",
+        "47": "GND",
+        "48": "VREG_LX",
+        "61": "GND",
+        "21": "XIN",
+        "22": "XOUT",
+        "24": "SWCLK",
+        "25": "SWDIO",
+        "26": "RUN",
+        "51": "USB_DM_MCU",
+        "52": "USB_DP_MCU",
+        "60": "QSPI_SS",
+        "2": "COL0",
+        "3": "COL1",
+        "4": "COL2",
+        "5": "COL3",
+        "7": "COL4",
+        "8": "COL5",
+        "9": "COL6",
+        "10": "COL7",
+        "12": "COL8",
+        "13": "COL9",
+        "14": "COL10",
+        "15": "COL11",
+        "16": "ROW0",
+        "17": "ROW1",
+        "18": "ROW2",
+        "19": "ROW3",
+        "27": "ROW4",
+        "28": "EXP_GPIO17_3V3",
+        "29": null,
+        "31": null,
+        "32": null,
+        "33": null,
+        "34": null,
+        "35": null,
+        "36": null,
+        "37": null,
+        "40": null,
+        "41": null,
+        "42": null,
+        "43": null,
+        "55": null,
+        "56": null,
+        "57": null,
+        "58": null,
+        "59": null
+      },
+      "pos": [
+        108,
+        102
+      ],
+      "pcb": [
+        124.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Raspberry Pi",
+        "manufacturer_pn": "RP2354A",
+        "Description": "2MB internal flash, QFN60 + exposed ground; 30 GPIO",
+        "Datasheet": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
+      },
+      "sheet": "controller",
+      "uuid": "aae4b6e4-1099-5e9e-ba0f-2f76ea2f68ab"
+    },
+    {
+      "ref": "L1",
+      "lib": "AOTA-B201610S3R3-101-T",
+      "value": "3.3uH",
+      "fp": "RPI_abracon_aota-b201610s3r3-101-t",
+      "nets": {
+        "1": "+1V1",
+        "2": "VREG_LX"
+      },
+      "pos": [
+        240,
+        50
+      ],
+      "pcb": [
+        126.0,
+        41.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Inductor, SMT, 3.3uH, 20%, Irms=2.1A, Isat=2.4A, DCR=115mR typ 140mR max, Polarity Marked, M2016",
+        "manufacturer": "Abracon",
+        "manufacturer_pn": "AOTA-B201610S3R3-101-T",
+        "tolerance": "20%"
+      },
+      "sheet": "controller",
+      "uuid": "8109c99e-f771-5381-a8f8-8245f83c1d50"
+    },
+    {
+      "ref": "X1",
+      "lib": "ABM8-272-T3",
+      "value": "12MHz",
+      "fp": "RPI_generic_xtalcc320x250x80-4",
+      "nets": {
+        "1": "XIN",
+        "2": "GND",
+        "3": "XTAL_OUT",
+        "4": "GND"
+      },
+      "pos": [
+        235,
+        132
+      ],
+      "pcb": [
+        124.0,
+        61.400000000000006,
+        0
+      ],
+      "metadata": {
+        "Description": "XTAL, SMT, 12 MHz, Fundamental, Ftol=30ppm, Fstab=30ppm, 10pF, 3.2x2.5mm",
+        "manufacturer": "Abracon",
+        "manufacturer_pn": "ABM8-272-T3",
+        "tolerance": "30ppm"
+      },
+      "sheet": "controller",
+      "uuid": "3942240d-edbd-5660-bdde-18de5ca7e225"
+    },
+    {
+      "ref": "R2",
+      "lib": "R",
+      "value": "1k",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "XOUT",
+        "2": "XTAL_OUT"
+      },
+      "pos": [
+        208,
+        132
+      ],
+      "pcb": [
+        123.6,
+        55.900000000000006,
+        -90.0
+      ],
+      "metadata": {
+        "Description": "Resistor, Chip, 1kR, M1005, 63mW, 1%",
+        "tolerance": "1%",
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-071KL",
+        "voltage": "50V"
+      },
+      "sheet": "controller",
+      "uuid": "2d693517-3ca1-5ae3-a677-c9445867bf09"
+    },
+    {
+      "ref": "R3",
+      "lib": "R",
+      "value": "33",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "+3V3",
+        "2": "VREG_AVDD"
+      },
+      "pos": [
+        280,
+        50
+      ],
+      "pcb": [
+        128.2,
+        42.099999999999994,
+        -90.0
+      ],
+      "metadata": {
+        "Description": "Resistor, Chip, 33R, M1005, 63mW, 1%",
+        "tolerance": "1%",
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-0733RL",
+        "voltage": "50V"
+      },
+      "sheet": "controller",
+      "uuid": "c4ee98d8-1a4a-5d59-b5ee-eeb6d7b5f3db"
+    },
+    {
+      "ref": "R4",
+      "lib": "R",
+      "value": "1k",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "RUN_SWITCH",
+        "2": "GND"
+      },
+      "pos": [
+        328,
+        150
+      ],
+      "pcb": [
+        139.4,
+        58.099999999999994,
+        -90.0
+      ],
+      "metadata": {
+        "Description": "Resistor, Chip, 1kR, M1005, 63mW, 1%",
+        "tolerance": "1%",
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-071KL",
+        "voltage": "50V"
+      },
+      "sheet": "controller",
+      "uuid": "681eb5ba-c442-53f9-b724-5edcc4b63036"
+    },
+    {
+      "ref": "R6",
+      "lib": "R",
+      "value": "1k",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "QSPI_SS",
+        "2": "BOOT_SWITCH"
+      },
+      "pos": [
+        280,
+        150
+      ],
+      "pcb": [
+        112.9,
+        30.299999999999997,
+        0
+      ],
+      "metadata": {
+        "Description": "Resistor, Chip, 1kR, M1005, 63mW, 1%",
+        "tolerance": "1%",
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-071KL",
+        "voltage": "50V"
+      },
+      "sheet": "controller",
+      "uuid": "9fdf3cac-2303-5b31-8e70-b4369ea68654"
+    },
+    {
+      "ref": "R7",
+      "lib": "R",
+      "value": "27",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "USB_DP",
+        "2": "USB_DP_MCU"
+      },
+      "pos": [
+        66,
+        210
+      ],
+      "pcb": [
+        122.9,
+        41.599999999999994,
+        -90.0
+      ],
+      "metadata": {
+        "Description": "Resistor, Chip, 27R, M1005, 63mW, 1%",
+        "tolerance": "1%",
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-0727RL",
+        "voltage": "50V"
+      },
+      "sheet": "controller",
+      "uuid": "277fbb31-ad7f-5c94-8853-440841e2131e"
+    },
+    {
+      "ref": "R8",
+      "lib": "R",
+      "value": "27",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "USB_DM",
+        "2": "USB_DM_MCU"
+      },
+      "pos": [
+        90,
+        210
+      ],
+      "pcb": [
+        123.9,
+        41.599999999999994,
+        -90.0
+      ],
+      "metadata": {
+        "Description": "Resistor, Chip, 27R, M1005, 63mW, 1%",
+        "tolerance": "1%",
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-0727RL",
+        "voltage": "50V"
+      },
+      "sheet": "controller",
+      "uuid": "338af21b-3d6b-586e-bc34-cb557d11ce0e"
+    },
+    {
+      "ref": "C3",
+      "lib": "C",
+      "value": "15p",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "XIN",
+        "2": "GND"
+      },
+      "pos": [
+        218,
+        155
+      ],
+      "pcb": [
+        122.6,
+        58.0,
+        180.0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 15pF, 5%, M1005, 50V, C0G",
+        "voltage": "50V",
+        "dielectric": "C0G",
+        "tolerance": "5%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM1555C1H150JA01D"
+      },
+      "sheet": "controller",
+      "uuid": "caeeef5e-cce7-5dbb-aa54-e20d6ce2a714"
+    },
+    {
+      "ref": "C4",
+      "lib": "C",
+      "value": "15p",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "XTAL_OUT",
+        "2": "GND"
+      },
+      "pos": [
+        248,
+        155
+      ],
+      "pcb": [
+        125.58,
+        58.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 15pF, 5%, M1005, 50V, C0G",
+        "voltage": "50V",
+        "dielectric": "C0G",
+        "tolerance": "5%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM1555C1H150JA01D"
+      },
+      "sheet": "controller",
+      "uuid": "b13df5a9-d596-5cdc-8cb0-dc77ab9e44de"
+    },
+    {
+      "ref": "C6",
+      "lib": "C",
+      "value": "4.7u",
+      "fp": "RPI_generic_capc1005x50_wide",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        218,
+        75
+      ],
+      "pcb": [
+        126.0,
+        44.39,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 4.7uF, 20%, M1005, 6.3V, X5R",
+        "voltage": "6.3V",
+        "dielectric": "X5R",
+        "tolerance": "20%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R60J475ME47D"
+      },
+      "sheet": "controller",
+      "uuid": "8caed084-52b3-5e8c-b7e8-deabcda9d18b"
+    },
+    {
+      "ref": "C7",
+      "lib": "C",
+      "value": "4.7u",
+      "fp": "RPI_generic_capc1005x50_wide",
+      "nets": {
+        "1": "+1V1",
+        "2": "GND"
+      },
+      "pos": [
+        240,
+        75
+      ],
+      "pcb": [
+        126.0,
+        43.45,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 4.7uF, 20%, M1005, 6.3V, X5R",
+        "voltage": "6.3V",
+        "dielectric": "X5R",
+        "tolerance": "20%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R60J475ME47D"
+      },
+      "sheet": "controller",
+      "uuid": "79ea90ad-932c-50bc-b6f4-728d9a702a51"
+    },
+    {
+      "ref": "C8",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+1V1",
+        "2": "GND"
+      },
+      "pos": [
+        210,
+        105
+      ],
+      "pcb": [
+        117.52,
+        48.0,
+        180.0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "63f7ac86-e571-5709-9017-b3666b54f49a"
+    },
+    {
+      "ref": "C9",
+      "lib": "C",
+      "value": "4.7u",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VREG_AVDD",
+        "2": "GND"
+      },
+      "pos": [
+        280,
+        75
+      ],
+      "pcb": [
+        128.2,
+        43.95,
+        -90.0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 4.7uF, 20%, M1005, 6.3V, X5R",
+        "voltage": "6.3V",
+        "dielectric": "X5R",
+        "tolerance": "20%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R60J475ME47D"
+      },
+      "sheet": "controller",
+      "uuid": "4236fe18-442c-5119-b2b5-7467a2d33dca"
+    },
+    {
+      "ref": "C10",
+      "lib": "C",
+      "value": "4.7u",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+1V1",
+        "2": "GND"
+      },
+      "pos": [
+        234,
+        105
+      ],
+      "pcb": [
+        124.8,
+        55.879999999999995,
+        -90.0
+      ],
+      "metadata": {
+        "Description": "4.7uF at farthest DVDD pin23 (RP2350 datasheet R8 6.3.8.1)",
+        "voltage": "6.3V",
+        "dielectric": "X5R",
+        "tolerance": "20%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R60J475ME47D"
+      },
+      "sheet": "controller",
+      "uuid": "b3cd0705-8da1-555f-9a84-cddcab163070"
+    },
+    {
+      "ref": "C11",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+1V1",
+        "2": "GND"
+      },
+      "pos": [
+        258,
+        105
+      ],
+      "pcb": [
+        131.07999999999998,
+        48.400000000000006,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "9876944d-dde1-5a9f-8436-cc238caaae47"
+    },
+    {
+      "ref": "C12",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        215,
+        205
+      ],
+      "pcb": [
+        121.9,
+        41.599999999999994,
+        90.0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "6a0fefec-d419-5f7b-8ec3-889e87bc3238"
+    },
+    {
+      "ref": "C13",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        240,
+        205
+      ],
+      "pcb": [
+        117.515,
+        45.599999999999994,
+        180.0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "a3b1d7a1-c0a6-5877-9ed3-fc265e64177f"
+    },
+    {
+      "ref": "C14",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        265,
+        205
+      ],
+      "pcb": [
+        131.08499999999998,
+        49.400000000000006,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "89460b47-d787-5117-9cc3-8fbb39d6aaa8"
+    },
+    {
+      "ref": "C15",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        290,
+        205
+      ],
+      "pcb": [
+        117.515,
+        50.400000000000006,
+        180.0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "48458894-9ad7-5654-a8d0-acf9a062080b"
+    },
+    {
+      "ref": "C16",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        315,
+        205
+      ],
+      "pcb": [
+        129.685,
+        53.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "9d7b4954-dd75-5305-b3d4-5fb517b6ef0c"
+    },
+    {
+      "ref": "C17",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        340,
+        205
+      ],
+      "pcb": [
+        130.485,
+        46.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "407c48de-2aba-5a77-a3b1-63ea1166e1c4"
+    },
+    {
+      "ref": "C18",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        365,
+        205
+      ],
+      "pcb": [
+        122.2,
+        55.08,
+        -90.0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "e9d32fae-2372-5839-8d5d-9e7cea8d570c"
+    },
+    {
+      "ref": "C20",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        365,
+        235
+      ],
+      "pcb": [
+        120.7,
+        41.6,
+        90
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "0e84561c-9d3d-5076-b6c7-77ef1e55be85"
+    },
+    {
+      "ref": "SW61",
+      "lib": "BOOT_RUN_SW",
+      "value": "BOOTSEL",
+      "fp": "RPI_wurthelek_434133025816",
+      "nets": {
+        "1": "GND",
+        "2": "GND",
+        "3": "BOOT_SWITCH",
+        "4": "BOOT_SWITCH"
+      },
+      "pos": [
+        280,
+        175
+      ],
+      "pcb": [
+        99,
+        61,
+        0
+      ],
+      "metadata": {
+        "Description": "Tactile Pushbutton, SPST, N.O., 4.2x3.2x2.5mm",
+        "manufacturer": "Wurth Elektronik",
+        "manufacturer_pn": "434133025816"
+      },
+      "sheet": "controller",
+      "uuid": "6c044c31-c3f4-5dd0-9d45-abf99985435a"
+    },
+    {
+      "ref": "SW62",
+      "lib": "BOOT_RUN_SW",
+      "value": "RESET",
+      "fp": "RPI_wurthelek_434133025816",
+      "nets": {
+        "1": "RUN_SWITCH",
+        "2": "RUN_SWITCH",
+        "3": "RUN",
+        "4": "RUN"
+      },
+      "pos": [
+        328,
+        175
+      ],
+      "pcb": [
+        148,
+        61,
+        0
+      ],
+      "metadata": {
+        "Description": "Tactile Pushbutton, SPST, N.O., 4.2x3.2x2.5mm",
+        "manufacturer": "Wurth Elektronik",
+        "manufacturer_pn": "434133025816"
+      },
+      "sheet": "controller",
+      "uuid": "50ac382a-5c48-5db3-817e-bfe96f552aa2"
+    },
+    {
+      "ref": "J1",
+      "lib": "USB_C_Receptacle_USB2.0_16P",
+      "value": "USB4105-GF-A-060",
+      "fp": "USB_C_GCT_USB4105_GF_A060_JLC",
+      "nets": {
+        "S1": "GND",
+        "A1": "GND",
+        "A12": "GND",
+        "B1": "GND",
+        "B12": "GND",
+        "A4": "VBUS",
+        "A9": "VBUS",
+        "B4": "VBUS",
+        "B9": "VBUS",
+        "A5": "CC1",
+        "B5": "CC2",
+        "A7": "USB_DM",
+        "B7": "USB_DM",
+        "A6": "USB_DP",
+        "B6": "USB_DP",
+        "A8": null,
+        "B8": null
+      },
+      "pos": [
+        35,
+        208
+      ],
+      "pcb": [
+        124,
+        25,
+        180
+      ],
+      "metadata": {
+        "manufacturer": "GCT",
+        "manufacturer_pn": "USB4105-GF-A-060",
+        "LCSC": "C3025063",
+        "Datasheet": "https://gct.co/files/drawings/usb4105.pdf",
+        "Description": "USB2 16-pin top-mount USB-C receptacle; 0.60mm shell legs"
+      },
+      "sheet": "controller",
+      "uuid": "2cf0bc24-96d7-56ed-ae9b-a2f1afcdbd31"
+    },
+    {
+      "ref": "R20",
+      "lib": "R",
+      "value": "5.1k",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "CC1",
+        "2": "GND"
+      },
+      "pos": [
+        66,
+        240
+      ],
+      "pcb": [
+        117,
+        29,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-075K1L",
+        "Description": "USB-C independent Rd 5.1k 1%"
+      },
+      "sheet": "controller",
+      "uuid": "8ac73005-4d0e-527f-9173-2c034e583adb"
+    },
+    {
+      "ref": "R21",
+      "lib": "R",
+      "value": "5.1k",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "CC2",
+        "2": "GND"
+      },
+      "pos": [
+        90,
+        240
+      ],
+      "pcb": [
+        131,
+        29,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-075K1L",
+        "Description": "USB-C independent Rd 5.1k 1%"
+      },
+      "sheet": "controller",
+      "uuid": "e5b42ef8-500c-558f-9178-cba26439010e"
+    },
+    {
+      "ref": "U3",
+      "lib": "USBLC6-2SC6",
+      "value": "USBLC6-2SC6",
+      "fp": "SOT-23-6",
+      "nets": {
+        "1": "USB_DP",
+        "6": "USB_DP",
+        "3": "USB_DM",
+        "4": "USB_DM",
+        "2": "GND",
+        "5": "VBUS"
+      },
+      "pos": [
+        130,
+        215
+      ],
+      "pcb": [
+        124,
+        32,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "STMicroelectronics",
+        "manufacturer_pn": "USBLC6-2SC6",
+        "LCSC": "C7519",
+        "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+      },
+      "sheet": "controller",
+      "uuid": "b3b4ca2e-a189-5e91-996b-98155944c695"
+    },
+    {
+      "ref": "U2",
+      "lib": "AP2112K-3.3",
+      "value": "AP2112K-3.3TRG1",
+      "fp": "SOT-23-5",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND",
+        "3": "VBUS",
+        "4": null,
+        "5": "+3V3"
+      },
+      "pos": [
+        340,
+        50
+      ],
+      "pcb": [
+        141,
+        33,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Diodes Incorporated",
+        "manufacturer_pn": "AP2112K-3.3TRG1",
+        "LCSC": "C51118",
+        "Datasheet": "https://www.diodes.com/datasheet/download/AP2112.pdf"
+      },
+      "sheet": "controller",
+      "uuid": "3b03603b-d865-53f5-978f-93749b5e7194"
+    },
+    {
+      "ref": "C1",
+      "lib": "C",
+      "value": "1u",
+      "fp": "C_0603_1608Metric",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        315,
+        75
+      ],
+      "pcb": [
+        138,
+        33,
+        90
+      ],
+      "metadata": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL10A105KB8NNNC",
+        "LCSC": "C15849",
+        "Description": "1uF 50V X5R 0603, AP2112 input/output ceramic",
+        "Datasheet": "https://jlcpcb.com/partdetail/C15849"
+      },
+      "sheet": "controller",
+      "uuid": "7fd5659e-017c-55d3-ae46-86881a835765"
+    },
+    {
+      "ref": "C5",
+      "lib": "C",
+      "value": "1u",
+      "fp": "C_0603_1608Metric",
+      "nets": {
+        "1": "+3V3",
+        "2": "GND"
+      },
+      "pos": [
+        365,
+        75
+      ],
+      "pcb": [
+        144,
+        33,
+        90
+      ],
+      "metadata": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL10A105KB8NNNC",
+        "LCSC": "C15849",
+        "Description": "1uF 50V X5R 0603, AP2112 input/output ceramic",
+        "Datasheet": "https://jlcpcb.com/partdetail/C15849"
+      },
+      "sheet": "controller",
+      "uuid": "608799dd-9879-5b68-851d-1769dc7ab8b6"
+    },
+    {
+      "ref": "C21",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        160,
+        215
+      ],
+      "pcb": [
+        127,
+        32,
+        90
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "controller",
+      "uuid": "a207e551-7936-5735-b9e3-0faf7047fea4"
+    },
+    {
+      "ref": "J2",
+      "lib": "Conn_01x04",
+      "value": "SWD",
+      "fp": "PinHeader_1x04_P1.27mm_Vertical",
+      "nets": {
+        "1": "+3V3",
+        "2": "SWDIO",
+        "3": "GND",
+        "4": "SWCLK"
+      },
+      "pos": [
+        380,
+        140
+      ],
+      "pcb": [
+        139,
+        65,
+        90
+      ],
+      "metadata": {
+        "Description": "Bare plated SWD debug holes; no header populated. 3.3V reference only; do not power board simultaneously"
+      },
+      "sheet": "controller",
+      "uuid": "b4432fb9-d0ec-5c48-a111-deb9740be8bb"
+    },
+    {
+      "ref": "TP1",
+      "lib": "TestPoint",
+      "value": "VBUS",
+      "fp": "TestPoint_Pad_D1.5mm",
+      "nets": {
+        "1": "VBUS"
+      },
+      "pos": [
+        310,
+        242
+      ],
+      "pcb": [
+        109,
+        67,
+        0
+      ],
+      "metadata": {
+        "Description": "Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+      },
+      "sheet": "controller",
+      "uuid": "2c93d44d-ce13-593d-9406-5d002903431f"
+    },
+    {
+      "ref": "TP2",
+      "lib": "TestPoint",
+      "value": "EXP_GPIO17_3V3",
+      "fp": "TestPoint_Pad_D1.5mm",
+      "nets": {
+        "1": "EXP_GPIO17_3V3"
+      },
+      "pos": [
+        340,
+        242
+      ],
+      "pcb": [
+        113,
+        67,
+        0
+      ],
+      "metadata": {
+        "Description": "Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+      },
+      "sheet": "controller",
+      "uuid": "0ddab8d5-6300-523d-bea4-844fbbbf8b6f"
+    },
+    {
+      "ref": "TP3",
+      "lib": "TestPoint",
+      "value": "GND",
+      "fp": "TestPoint_Pad_D1.5mm",
+      "nets": {
+        "1": "GND"
+      },
+      "pos": [
+        370,
+        242
+      ],
+      "pcb": [
+        117,
+        67,
+        0
+      ],
+      "metadata": {
+        "Description": "Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+      },
+      "sheet": "controller",
+      "uuid": "87b0f0fb-5507-551b-8365-6a139860768b"
+    },
+    {
+      "ref": "SW1",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL0",
+        "2": "KEY_L1_1"
+      },
+      "pos": [
+        43,
+        45
+      ],
+      "pcb": [
+        28.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L1_1",
+        "Legend": "Esc",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "8.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "29cb4de9-9c97-596e-aa9c-239158fbb677"
+    },
+    {
+      "ref": "SW2",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL1",
+        "2": "KEY_L1_2"
+      },
+      "pos": [
+        80,
+        45
+      ],
+      "pcb": [
+        36.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L1_2",
+        "Legend": "1",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "16.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "4e225c52-982e-5eeb-b990-72f5831dc1a6"
+    },
+    {
+      "ref": "SW3",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL2",
+        "2": "KEY_L1_3"
+      },
+      "pos": [
+        131,
+        45
+      ],
+      "pcb": [
+        44.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L1_3",
+        "Legend": "2",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "24.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "206e4256-8e61-5591-a237-b99b2014c25e"
+    },
+    {
+      "ref": "SW4",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL3",
+        "2": "KEY_L1_4"
+      },
+      "pos": [
+        168,
+        45
+      ],
+      "pcb": [
+        52.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L1_4",
+        "Legend": "3",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "32.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "01599937-ae9c-5f06-b6c1-adfe8f427e21"
+    },
+    {
+      "ref": "SW5",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL4",
+        "2": "KEY_L1_5"
+      },
+      "pos": [
+        219,
+        45
+      ],
+      "pcb": [
+        60.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L1_5",
+        "Legend": "4",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "40.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "8185602f-eb67-5a4d-a08f-579f7d408e73"
+    },
+    {
+      "ref": "SW6",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL5",
+        "2": "KEY_L1_6"
+      },
+      "pos": [
+        256,
+        45
+      ],
+      "pcb": [
+        68.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L1_6",
+        "Legend": "5",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "48.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "5d3b3df3-ee42-50fb-a5c4-3b260e102b42"
+    },
+    {
+      "ref": "SW7",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL0",
+        "2": "KEY_L2_1"
+      },
+      "pos": [
+        43,
+        104
+      ],
+      "pcb": [
+        29.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L2_1",
+        "Legend": "Tab",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "9.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "b22b4b87-93ad-500c-a3f9-c0c5032c8687"
+    },
+    {
+      "ref": "SW8",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL1",
+        "2": "KEY_L2_2"
+      },
+      "pos": [
+        80,
+        104
+      ],
+      "pcb": [
+        38.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L2_2",
+        "Legend": "Q",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "18.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "217fa00e-96ca-51e6-97f9-dd44092a74eb"
+    },
+    {
+      "ref": "SW9",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL2",
+        "2": "KEY_L2_3"
+      },
+      "pos": [
+        131,
+        104
+      ],
+      "pcb": [
+        46.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L2_3",
+        "Legend": "W",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "26.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "66526a0b-6071-558e-9713-65cb1962583b"
+    },
+    {
+      "ref": "SW10",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL3",
+        "2": "KEY_L2_4"
+      },
+      "pos": [
+        168,
+        104
+      ],
+      "pcb": [
+        54.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L2_4",
+        "Legend": "E",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "34.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "d476cce5-2772-5e30-99fb-c22712d21db7"
+    },
+    {
+      "ref": "SW11",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL4",
+        "2": "KEY_L2_5"
+      },
+      "pos": [
+        219,
+        104
+      ],
+      "pcb": [
+        62.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L2_5",
+        "Legend": "R",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "42.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "eaca90c3-1284-5796-a85a-4aa04ebc326a"
+    },
+    {
+      "ref": "SW12",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL5",
+        "2": "KEY_L2_6"
+      },
+      "pos": [
+        256,
+        104
+      ],
+      "pcb": [
+        70.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L2_6",
+        "Legend": "T",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "50.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "44a0a7a2-1f23-5c32-a796-5b0d6e634f3a"
+    },
+    {
+      "ref": "SW13",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL0",
+        "2": "KEY_L3_1"
+      },
+      "pos": [
+        43,
+        163
+      ],
+      "pcb": [
+        30.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L3_1",
+        "Legend": "",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "10.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "e6d13d81-5957-5925-b70e-e03accef1d9c"
+    },
+    {
+      "ref": "SW14",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL1",
+        "2": "KEY_L3_2"
+      },
+      "pos": [
+        80,
+        163
+      ],
+      "pcb": [
+        40.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L3_2",
+        "Legend": "A",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "20.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "c61b8e3c-20b6-5bec-a837-2bca310b3256"
+    },
+    {
+      "ref": "SW15",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL2",
+        "2": "KEY_L3_3"
+      },
+      "pos": [
+        131,
+        163
+      ],
+      "pcb": [
+        48.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L3_3",
+        "Legend": "S",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "28.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "5f1ef12e-dcce-57d2-b1cc-ae1bd1c972f1"
+    },
+    {
+      "ref": "SW16",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL3",
+        "2": "KEY_L3_4"
+      },
+      "pos": [
+        168,
+        163
+      ],
+      "pcb": [
+        56.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L3_4",
+        "Legend": "D",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "36.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "2b2d79c1-bf65-5d19-960c-cdcee44e393a"
+    },
+    {
+      "ref": "SW17",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL4",
+        "2": "KEY_L3_5"
+      },
+      "pos": [
+        219,
+        163
+      ],
+      "pcb": [
+        64.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L3_5",
+        "Legend": "F",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "44.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "94c5884d-270e-51e5-905e-ce98e2945c6d"
+    },
+    {
+      "ref": "SW18",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL5",
+        "2": "KEY_L3_6"
+      },
+      "pos": [
+        256,
+        163
+      ],
+      "pcb": [
+        72.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L3_6",
+        "Legend": "G",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "52.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "50e613df-4384-52c2-86c7-fdafd6597a1f"
+    },
+    {
+      "ref": "SW19",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL0",
+        "2": "KEY_L4_1"
+      },
+      "pos": [
+        43,
+        222
+      ],
+      "pcb": [
+        31.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L4_1",
+        "Legend": "Sh",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "11.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "0cc8f0fb-a334-5e3b-9208-9f0d17031471"
+    },
+    {
+      "ref": "SW20",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL1",
+        "2": "KEY_L4_2"
+      },
+      "pos": [
+        80,
+        222
+      ],
+      "pcb": [
+        42.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L4_2",
+        "Legend": "Z",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "22.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "de71b577-9494-5745-9993-576d74834f99"
+    },
+    {
+      "ref": "SW21",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL2",
+        "2": "KEY_L4_3"
+      },
+      "pos": [
+        131,
+        222
+      ],
+      "pcb": [
+        50.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L4_3",
+        "Legend": "X",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "30.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "fc4f786d-4680-5202-acde-482c85a032e1"
+    },
+    {
+      "ref": "SW22",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL3",
+        "2": "KEY_L4_4"
+      },
+      "pos": [
+        168,
+        222
+      ],
+      "pcb": [
+        58.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L4_4",
+        "Legend": "C",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "38.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "c0cf5eff-3eed-54ee-aa55-1d3c3fecfa54"
+    },
+    {
+      "ref": "SW23",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL4",
+        "2": "KEY_L4_5"
+      },
+      "pos": [
+        219,
+        222
+      ],
+      "pcb": [
+        66.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L4_5",
+        "Legend": "V",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "46.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "264476b5-a5b2-59d9-842e-8404d4fa837d"
+    },
+    {
+      "ref": "SW24",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL5",
+        "2": "KEY_L4_6"
+      },
+      "pos": [
+        256,
+        222
+      ],
+      "pcb": [
+        74.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L4_6",
+        "Legend": "B",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "54.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "628f6e09-1bdc-5793-bb44-b64ae679c256"
+    },
+    {
+      "ref": "SW25",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL0",
+        "2": "KEY_L5_1"
+      },
+      "pos": [
+        43,
+        281
+      ],
+      "pcb": [
+        28.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L5_1",
+        "Legend": "Ctrl",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "8.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "bafceaaf-374c-5fe9-990e-16ef63324856"
+    },
+    {
+      "ref": "SW26",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL1",
+        "2": "KEY_L5_2"
+      },
+      "pos": [
+        80,
+        281
+      ],
+      "pcb": [
+        36.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L5_2",
+        "Legend": "Fn",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "16.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "3ec3cd72-bfd3-5fca-863b-0640854c5f97"
+    },
+    {
+      "ref": "SW27",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL2",
+        "2": "KEY_L5_3"
+      },
+      "pos": [
+        131,
+        281
+      ],
+      "pcb": [
+        44.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L5_3",
+        "Legend": "Alt",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "24.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "af3d1e75-e15f-5ce4-9753-71691c0b873d"
+    },
+    {
+      "ref": "SW28",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL3",
+        "2": "KEY_L5_4"
+      },
+      "pos": [
+        168,
+        281
+      ],
+      "pcb": [
+        52.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L5_4",
+        "Legend": "LED",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "32.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "53c0c8b4-fd89-56b1-b73e-3fb88222fea6"
+    },
+    {
+      "ref": "SW29",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL4",
+        "2": "KEY_L5_5"
+      },
+      "pos": [
+        219,
+        281
+      ],
+      "pcb": [
+        60.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L5_5",
+        "Legend": "",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "40.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "74a38933-7493-5577-aa03-8c3460c5e9f8"
+    },
+    {
+      "ref": "SW30",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL5",
+        "2": "KEY_L5_6"
+      },
+      "pos": [
+        256,
+        281
+      ],
+      "pcb": [
+        71.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "L5_6",
+        "Legend": "Space",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "51.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "96fa8e90-0935-5dac-b735-d9d14a4f163e"
+    },
+    {
+      "ref": "SW31",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL6",
+        "2": "KEY_R1_1"
+      },
+      "pos": [
+        307,
+        45
+      ],
+      "pcb": [
+        172.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R1_1",
+        "Legend": "6",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "152.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "d01b000b-85b9-556e-af3b-d2670f18137e"
+    },
+    {
+      "ref": "SW32",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL7",
+        "2": "KEY_R1_2"
+      },
+      "pos": [
+        344,
+        45
+      ],
+      "pcb": [
+        180.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R1_2",
+        "Legend": "7",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "160.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "3ceb29c4-cc7b-528f-8cb5-6131bbe2ae19"
+    },
+    {
+      "ref": "SW33",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL8",
+        "2": "KEY_R1_3"
+      },
+      "pos": [
+        395,
+        45
+      ],
+      "pcb": [
+        188.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R1_3",
+        "Legend": "8",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "168.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "59f3f2b2-db0f-5af4-a57a-fc3359963e4b"
+    },
+    {
+      "ref": "SW34",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL9",
+        "2": "KEY_R1_4"
+      },
+      "pos": [
+        432,
+        45
+      ],
+      "pcb": [
+        196.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R1_4",
+        "Legend": "9",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "176.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "3f1de02f-196c-53df-a6b6-669f4a461ef3"
+    },
+    {
+      "ref": "SW35",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL10",
+        "2": "KEY_R1_5"
+      },
+      "pos": [
+        483,
+        45
+      ],
+      "pcb": [
+        204.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R1_5",
+        "Legend": "0",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "184.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "7afbb253-db80-5c5b-be94-dc9b27b32c25"
+    },
+    {
+      "ref": "SW36",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL11",
+        "2": "KEY_R1_6"
+      },
+      "pos": [
+        520,
+        45
+      ],
+      "pcb": [
+        212.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R1_6",
+        "Legend": "-",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "192.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "f810b13c-da52-51b9-abfe-d8069a9715aa"
+    },
+    {
+      "ref": "SW37",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL10",
+        "2": "KEY_R1_7"
+      },
+      "pos": [
+        483,
+        104
+      ],
+      "pcb": [
+        220.0,
+        29.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R1_7",
+        "Legend": "BS",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "200.0",
+        "Source_Y_mm": "49.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "e1942d39-c6f9-5b23-a0ee-b94ea5be8e0c"
+    },
+    {
+      "ref": "SW38",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL6",
+        "2": "KEY_R2_1"
+      },
+      "pos": [
+        307,
+        104
+      ],
+      "pcb": [
+        174.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R2_1",
+        "Legend": "Y",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "154.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "db1d691a-cd21-5e8c-8278-f44612d6f9cd"
+    },
+    {
+      "ref": "SW39",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL7",
+        "2": "KEY_R2_2"
+      },
+      "pos": [
+        344,
+        104
+      ],
+      "pcb": [
+        182.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R2_2",
+        "Legend": "U",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "162.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "98813b1c-be32-5876-9639-0121c447de80"
+    },
+    {
+      "ref": "SW40",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL8",
+        "2": "KEY_R2_3"
+      },
+      "pos": [
+        395,
+        104
+      ],
+      "pcb": [
+        190.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R2_3",
+        "Legend": "I",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "170.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "d6a59731-da0b-5ecb-8fbc-c85542e44db3"
+    },
+    {
+      "ref": "SW41",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL9",
+        "2": "KEY_R2_4"
+      },
+      "pos": [
+        432,
+        104
+      ],
+      "pcb": [
+        198.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R2_4",
+        "Legend": "O",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "178.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "b4626b6b-3001-5f32-8140-109240e7ad0b"
+    },
+    {
+      "ref": "SW42",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL10",
+        "2": "KEY_R2_5"
+      },
+      "pos": [
+        483,
+        163
+      ],
+      "pcb": [
+        206.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R2_5",
+        "Legend": "P",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "186.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "707d914f-3842-5a67-8170-e0170a8a52b7"
+    },
+    {
+      "ref": "SW43",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL11",
+        "2": "KEY_R2_6"
+      },
+      "pos": [
+        520,
+        104
+      ],
+      "pcb": [
+        217.0,
+        39.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R2_6",
+        "Legend": "Ent",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "197.0",
+        "Source_Y_mm": "39.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "b4eeccfd-a19d-5ed7-a4aa-3b1fc845fe9f"
+    },
+    {
+      "ref": "SW44",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL6",
+        "2": "KEY_R3_1"
+      },
+      "pos": [
+        307,
+        163
+      ],
+      "pcb": [
+        176.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R3_1",
+        "Legend": "H",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "156.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "db0ca5fa-7c2d-510d-839a-7c92acc934be"
+    },
+    {
+      "ref": "SW45",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL7",
+        "2": "KEY_R3_2"
+      },
+      "pos": [
+        344,
+        163
+      ],
+      "pcb": [
+        184.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R3_2",
+        "Legend": "J",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "164.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "8a38aceb-f588-5646-83b3-ab01a1ba2d90"
+    },
+    {
+      "ref": "SW46",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL8",
+        "2": "KEY_R3_3"
+      },
+      "pos": [
+        395,
+        163
+      ],
+      "pcb": [
+        192.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R3_3",
+        "Legend": "K",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "172.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "fcf35994-1adf-537b-a485-7b50dd4ae4e0"
+    },
+    {
+      "ref": "SW47",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL9",
+        "2": "KEY_R3_4"
+      },
+      "pos": [
+        432,
+        163
+      ],
+      "pcb": [
+        200.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R3_4",
+        "Legend": "L",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "180.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "e3d63489-587d-5800-9743-be3501bdd63f"
+    },
+    {
+      "ref": "SW48",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL11",
+        "2": "KEY_R3_5"
+      },
+      "pos": [
+        520,
+        163
+      ],
+      "pcb": [
+        208.0,
+        49.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R3_5",
+        "Legend": "\\",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "188.0",
+        "Source_Y_mm": "29.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "1762166e-b9e0-56e6-b4dd-eb2dd6b52b26"
+    },
+    {
+      "ref": "SW49",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL6",
+        "2": "KEY_R4_1"
+      },
+      "pos": [
+        307,
+        222
+      ],
+      "pcb": [
+        178.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R4_1",
+        "Legend": "N",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "158.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "adb204ef-90dc-52a5-bdb3-01597f0a6302"
+    },
+    {
+      "ref": "SW50",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL7",
+        "2": "KEY_R4_2"
+      },
+      "pos": [
+        344,
+        222
+      ],
+      "pcb": [
+        186.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R4_2",
+        "Legend": "M",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "166.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "732a2445-e86a-56e2-978d-de186bf090b9"
+    },
+    {
+      "ref": "SW51",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL8",
+        "2": "KEY_R4_3"
+      },
+      "pos": [
+        395,
+        222
+      ],
+      "pcb": [
+        194.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R4_3",
+        "Legend": ",",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "174.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "10d7f609-7908-590b-9bd4-3b8d542f8265"
+    },
+    {
+      "ref": "SW52",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL9",
+        "2": "KEY_R4_4"
+      },
+      "pos": [
+        432,
+        222
+      ],
+      "pcb": [
+        202.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R4_4",
+        "Legend": "/",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "182.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "66d86cff-cd54-5a42-9971-b6dff0982236"
+    },
+    {
+      "ref": "SW53",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL10",
+        "2": "KEY_R4_5"
+      },
+      "pos": [
+        483,
+        222
+      ],
+      "pcb": [
+        210.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R4_5",
+        "Legend": "↑",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "190.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "ac562dd2-6f76-5c7f-b362-b9676119d7f6"
+    },
+    {
+      "ref": "SW54",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL11",
+        "2": "KEY_R4_6"
+      },
+      "pos": [
+        520,
+        222
+      ],
+      "pcb": [
+        219.0,
+        59.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R4_6",
+        "Legend": "Sh",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "199.0",
+        "Source_Y_mm": "19.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "87591859-d69c-513f-93ff-8bcd8abe03eb"
+    },
+    {
+      "ref": "SW55",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL6",
+        "2": "KEY_R5_1"
+      },
+      "pos": [
+        307,
+        281
+      ],
+      "pcb": [
+        175.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R5_1",
+        "Legend": "Space",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "155.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "16c49251-5cbc-5f1a-93ea-4719024a12d7"
+    },
+    {
+      "ref": "SW56",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL7",
+        "2": "KEY_R5_2"
+      },
+      "pos": [
+        344,
+        281
+      ],
+      "pcb": [
+        186.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R5_2",
+        "Legend": "IME",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "166.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "3cb2f474-f5f1-54d1-86db-2a390d0284fe"
+    },
+    {
+      "ref": "SW57",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL8",
+        "2": "KEY_R5_3"
+      },
+      "pos": [
+        395,
+        281
+      ],
+      "pcb": [
+        194.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R5_3",
+        "Legend": ".",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "174.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "0367aa8a-eee0-52a1-b363-0305fac0aaf6"
+    },
+    {
+      "ref": "SW58",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL9",
+        "2": "KEY_R5_4"
+      },
+      "pos": [
+        432,
+        281
+      ],
+      "pcb": [
+        202.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R5_4",
+        "Legend": "←",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "182.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "0351c3b6-62c5-544a-9999-6e160e6532b2"
+    },
+    {
+      "ref": "SW59",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL10",
+        "2": "KEY_R5_5"
+      },
+      "pos": [
+        483,
+        281
+      ],
+      "pcb": [
+        210.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R5_5",
+        "Legend": "↓",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "190.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "846e0f93-e23f-5b47-9bd8-947464cbb1af"
+    },
+    {
+      "ref": "SW60",
+      "lib": "Kailh_CMI627301D60",
+      "value": "CMI627301D60",
+      "fp": "Kailh_CMI627301D60",
+      "nets": {
+        "1": "COL11",
+        "2": "KEY_R5_6"
+      },
+      "pos": [
+        520,
+        281
+      ],
+      "pcb": [
+        218.0,
+        69.0,
+        0
+      ],
+      "metadata": {
+        "Key_ID": "R5_6",
+        "Legend": "→",
+        "Assembly": "Hand solder",
+        "Source_X_mm": "198.0",
+        "Source_Y_mm": "9.0",
+        "manufacturer": "Kailh",
+        "manufacturer_pn": "CMI627301D60"
+      },
+      "sheet": "matrix",
+      "uuid": "317b002d-3103-518e-b130-a80dd03633cd"
+    },
+    {
+      "ref": "D1",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW0",
+        "1": "KEY_L1_1",
+        "2": "KEY_L1_2"
+      },
+      "pos": [
+        61.5,
+        65
+      ],
+      "pcb": [
+        90.0,
+        38.0,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "3ebbbe4f-72ba-5380-afb6-4c21702ed27d"
+    },
+    {
+      "ref": "D2",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW0",
+        "1": "KEY_L1_3",
+        "2": "KEY_L1_4"
+      },
+      "pos": [
+        149.5,
+        65
+      ],
+      "pcb": [
+        94.5,
+        38.0,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "1defe54f-2070-5a12-bc34-386e04be7877"
+    },
+    {
+      "ref": "D3",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW0",
+        "1": "KEY_L1_5",
+        "2": "KEY_L1_6"
+      },
+      "pos": [
+        237.5,
+        65
+      ],
+      "pcb": [
+        99.0,
+        38.0,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "953fbf8e-a4c3-5d6c-93c9-6c88dbb03af1"
+    },
+    {
+      "ref": "D4",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW0",
+        "1": "KEY_R1_1",
+        "2": "KEY_R1_2"
+      },
+      "pos": [
+        325.5,
+        65
+      ],
+      "pcb": [
+        145.0,
+        38.0,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "0115cfcd-5e9c-59c4-a36c-289f44b332c9"
+    },
+    {
+      "ref": "D5",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW0",
+        "1": "KEY_R1_3",
+        "2": "KEY_R1_4"
+      },
+      "pos": [
+        413.5,
+        65
+      ],
+      "pcb": [
+        149.5,
+        38.0,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "627f49e7-612a-51a6-9930-9a700d8d4896"
+    },
+    {
+      "ref": "D6",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW0",
+        "1": "KEY_R1_5",
+        "2": "KEY_R1_6"
+      },
+      "pos": [
+        501.5,
+        65
+      ],
+      "pcb": [
+        154.0,
+        38.0,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "ddda899b-1db1-5e82-9a3c-982014b96618"
+    },
+    {
+      "ref": "D7",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW1",
+        "1": "KEY_L2_1",
+        "2": "KEY_L2_2"
+      },
+      "pos": [
+        61.5,
+        124
+      ],
+      "pcb": [
+        90.0,
+        42.8,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "c6a5890f-1a28-594e-85b7-b8ac430c9c28"
+    },
+    {
+      "ref": "D8",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW1",
+        "1": "KEY_L2_3",
+        "2": "KEY_L2_4"
+      },
+      "pos": [
+        149.5,
+        124
+      ],
+      "pcb": [
+        94.5,
+        42.8,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "1165484c-2d35-5018-8106-852b308d65da"
+    },
+    {
+      "ref": "D9",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW1",
+        "1": "KEY_L2_5",
+        "2": "KEY_L2_6"
+      },
+      "pos": [
+        237.5,
+        124
+      ],
+      "pcb": [
+        99.0,
+        42.8,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "2ee18dc4-cfb9-523d-b95c-4f24ba12d5e4"
+    },
+    {
+      "ref": "D10",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW1",
+        "1": "KEY_R2_1",
+        "2": "KEY_R2_2"
+      },
+      "pos": [
+        325.5,
+        124
+      ],
+      "pcb": [
+        145.0,
+        42.8,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "c1c02198-0eb9-56ff-8242-8488549d319d"
+    },
+    {
+      "ref": "D11",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW1",
+        "1": "KEY_R2_3",
+        "2": "KEY_R2_4"
+      },
+      "pos": [
+        413.5,
+        124
+      ],
+      "pcb": [
+        149.5,
+        42.8,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "8aa8c73f-fac8-554e-b389-8ab396b85745"
+    },
+    {
+      "ref": "D12",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW1",
+        "1": "KEY_R1_7",
+        "2": "KEY_R2_6"
+      },
+      "pos": [
+        501.5,
+        124
+      ],
+      "pcb": [
+        154.0,
+        42.8,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "7d53b988-9770-50c9-814f-301088322326"
+    },
+    {
+      "ref": "D13",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW2",
+        "1": "KEY_L3_1",
+        "2": "KEY_L3_2"
+      },
+      "pos": [
+        61.5,
+        183
+      ],
+      "pcb": [
+        90.0,
+        47.6,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "b59c5dc3-157c-5872-b55e-280ccd4e8f98"
+    },
+    {
+      "ref": "D14",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW2",
+        "1": "KEY_L3_3",
+        "2": "KEY_L3_4"
+      },
+      "pos": [
+        149.5,
+        183
+      ],
+      "pcb": [
+        94.5,
+        47.6,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "801d4ac5-135a-541e-8bdc-d6e7c20271bd"
+    },
+    {
+      "ref": "D15",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW2",
+        "1": "KEY_L3_5",
+        "2": "KEY_L3_6"
+      },
+      "pos": [
+        237.5,
+        183
+      ],
+      "pcb": [
+        99.0,
+        47.6,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "18d04c04-3577-57ff-88b3-016dfc0a075b"
+    },
+    {
+      "ref": "D16",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW2",
+        "1": "KEY_R3_1",
+        "2": "KEY_R3_2"
+      },
+      "pos": [
+        325.5,
+        183
+      ],
+      "pcb": [
+        145.0,
+        47.6,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "d3dbf7bd-be96-54c1-a40d-833f444960fa"
+    },
+    {
+      "ref": "D17",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW2",
+        "1": "KEY_R3_3",
+        "2": "KEY_R3_4"
+      },
+      "pos": [
+        413.5,
+        183
+      ],
+      "pcb": [
+        149.5,
+        47.6,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "25599420-ba3f-5a1c-845b-e06821eb3748"
+    },
+    {
+      "ref": "D18",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW2",
+        "1": "KEY_R2_5",
+        "2": "KEY_R3_5"
+      },
+      "pos": [
+        501.5,
+        183
+      ],
+      "pcb": [
+        154.0,
+        47.6,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "7d30f855-2c4b-513d-b745-788a1347f258"
+    },
+    {
+      "ref": "D19",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW3",
+        "1": "KEY_L4_1",
+        "2": "KEY_L4_2"
+      },
+      "pos": [
+        61.5,
+        242
+      ],
+      "pcb": [
+        90.0,
+        52.4,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "df79a693-e3ce-5337-996f-374c4289a8f4"
+    },
+    {
+      "ref": "D20",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW3",
+        "1": "KEY_L4_3",
+        "2": "KEY_L4_4"
+      },
+      "pos": [
+        149.5,
+        242
+      ],
+      "pcb": [
+        94.5,
+        52.4,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "63792123-2791-5c9e-80c9-a289566a2be5"
+    },
+    {
+      "ref": "D21",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW3",
+        "1": "KEY_L4_5",
+        "2": "KEY_L4_6"
+      },
+      "pos": [
+        237.5,
+        242
+      ],
+      "pcb": [
+        99.0,
+        52.4,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "dfb941f5-4aef-56a4-a17c-a1ea30bf64da"
+    },
+    {
+      "ref": "D22",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW3",
+        "1": "KEY_R4_1",
+        "2": "KEY_R4_2"
+      },
+      "pos": [
+        325.5,
+        242
+      ],
+      "pcb": [
+        145.0,
+        52.4,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "bd15fa6a-9598-5b66-8da3-71a39198dd79"
+    },
+    {
+      "ref": "D23",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW3",
+        "1": "KEY_R4_3",
+        "2": "KEY_R4_4"
+      },
+      "pos": [
+        413.5,
+        242
+      ],
+      "pcb": [
+        149.5,
+        52.4,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "1627c4cf-79ad-560b-be4a-256662e70c34"
+    },
+    {
+      "ref": "D24",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW3",
+        "1": "KEY_R4_5",
+        "2": "KEY_R4_6"
+      },
+      "pos": [
+        501.5,
+        242
+      ],
+      "pcb": [
+        154.0,
+        52.4,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "5bb33ff4-35ef-51bd-a8f7-e2d5b386636e"
+    },
+    {
+      "ref": "D25",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW4",
+        "1": "KEY_L5_1",
+        "2": "KEY_L5_2"
+      },
+      "pos": [
+        61.5,
+        301
+      ],
+      "pcb": [
+        90.0,
+        57.2,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "34638f40-011e-5195-b2bc-11c06fa882b2"
+    },
+    {
+      "ref": "D26",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW4",
+        "1": "KEY_L5_3",
+        "2": "KEY_L5_4"
+      },
+      "pos": [
+        149.5,
+        301
+      ],
+      "pcb": [
+        94.5,
+        57.2,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "c2d7a285-481b-55a3-a540-f112abd35746"
+    },
+    {
+      "ref": "D27",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW4",
+        "1": "KEY_L5_5",
+        "2": "KEY_L5_6"
+      },
+      "pos": [
+        237.5,
+        301
+      ],
+      "pcb": [
+        99.0,
+        57.2,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "032b0495-ee1d-5257-8a47-cd43a790fb5d"
+    },
+    {
+      "ref": "D28",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW4",
+        "1": "KEY_R5_1",
+        "2": "KEY_R5_2"
+      },
+      "pos": [
+        325.5,
+        301
+      ],
+      "pcb": [
+        145.0,
+        57.2,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "0440c275-155d-591c-9dfe-91806edaadcc"
+    },
+    {
+      "ref": "D29",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW4",
+        "1": "KEY_R5_3",
+        "2": "KEY_R5_4"
+      },
+      "pos": [
+        413.5,
+        301
+      ],
+      "pcb": [
+        149.5,
+        57.2,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "fb79eb20-fc4e-534b-8f46-c365881bfc95"
+    },
+    {
+      "ref": "D30",
+      "lib": "BAV70",
+      "value": "BAV70",
+      "fp": "SOT-23",
+      "nets": {
+        "3": "ROW4",
+        "1": "KEY_R5_5",
+        "2": "KEY_R5_6"
+      },
+      "pos": [
+        501.5,
+        301
+      ],
+      "pcb": [
+        154.0,
+        57.2,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
+      },
+      "sheet": "matrix",
+      "uuid": "d2e9c3cd-38fd-54e3-a909-c752f68deade"
+    }
+  ],
+  "key_mapping": [
+    {
+      "key_id": "L1_1",
+      "reference": "SW1",
+      "row": 0,
+      "column": 0,
+      "diode": "D1",
+      "anode_pin": "1",
+      "net": "KEY_L1_1",
+      "x": 8.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "L1_2",
+      "reference": "SW2",
+      "row": 0,
+      "column": 1,
+      "diode": "D1",
+      "anode_pin": "2",
+      "net": "KEY_L1_2",
+      "x": 16.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "L1_3",
+      "reference": "SW3",
+      "row": 0,
+      "column": 2,
+      "diode": "D2",
+      "anode_pin": "1",
+      "net": "KEY_L1_3",
+      "x": 24.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "L1_4",
+      "reference": "SW4",
+      "row": 0,
+      "column": 3,
+      "diode": "D2",
+      "anode_pin": "2",
+      "net": "KEY_L1_4",
+      "x": 32.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "L1_5",
+      "reference": "SW5",
+      "row": 0,
+      "column": 4,
+      "diode": "D3",
+      "anode_pin": "1",
+      "net": "KEY_L1_5",
+      "x": 40.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "L1_6",
+      "reference": "SW6",
+      "row": 0,
+      "column": 5,
+      "diode": "D3",
+      "anode_pin": "2",
+      "net": "KEY_L1_6",
+      "x": 48.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "L2_1",
+      "reference": "SW7",
+      "row": 1,
+      "column": 0,
+      "diode": "D7",
+      "anode_pin": "1",
+      "net": "KEY_L2_1",
+      "x": 9.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "L2_2",
+      "reference": "SW8",
+      "row": 1,
+      "column": 1,
+      "diode": "D7",
+      "anode_pin": "2",
+      "net": "KEY_L2_2",
+      "x": 18.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "L2_3",
+      "reference": "SW9",
+      "row": 1,
+      "column": 2,
+      "diode": "D8",
+      "anode_pin": "1",
+      "net": "KEY_L2_3",
+      "x": 26.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "L2_4",
+      "reference": "SW10",
+      "row": 1,
+      "column": 3,
+      "diode": "D8",
+      "anode_pin": "2",
+      "net": "KEY_L2_4",
+      "x": 34.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "L2_5",
+      "reference": "SW11",
+      "row": 1,
+      "column": 4,
+      "diode": "D9",
+      "anode_pin": "1",
+      "net": "KEY_L2_5",
+      "x": 42.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "L2_6",
+      "reference": "SW12",
+      "row": 1,
+      "column": 5,
+      "diode": "D9",
+      "anode_pin": "2",
+      "net": "KEY_L2_6",
+      "x": 50.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "L3_1",
+      "reference": "SW13",
+      "row": 2,
+      "column": 0,
+      "diode": "D13",
+      "anode_pin": "1",
+      "net": "KEY_L3_1",
+      "x": 10.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "L3_2",
+      "reference": "SW14",
+      "row": 2,
+      "column": 1,
+      "diode": "D13",
+      "anode_pin": "2",
+      "net": "KEY_L3_2",
+      "x": 20.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "L3_3",
+      "reference": "SW15",
+      "row": 2,
+      "column": 2,
+      "diode": "D14",
+      "anode_pin": "1",
+      "net": "KEY_L3_3",
+      "x": 28.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "L3_4",
+      "reference": "SW16",
+      "row": 2,
+      "column": 3,
+      "diode": "D14",
+      "anode_pin": "2",
+      "net": "KEY_L3_4",
+      "x": 36.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "L3_5",
+      "reference": "SW17",
+      "row": 2,
+      "column": 4,
+      "diode": "D15",
+      "anode_pin": "1",
+      "net": "KEY_L3_5",
+      "x": 44.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "L3_6",
+      "reference": "SW18",
+      "row": 2,
+      "column": 5,
+      "diode": "D15",
+      "anode_pin": "2",
+      "net": "KEY_L3_6",
+      "x": 52.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "L4_1",
+      "reference": "SW19",
+      "row": 3,
+      "column": 0,
+      "diode": "D19",
+      "anode_pin": "1",
+      "net": "KEY_L4_1",
+      "x": 11.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "L4_2",
+      "reference": "SW20",
+      "row": 3,
+      "column": 1,
+      "diode": "D19",
+      "anode_pin": "2",
+      "net": "KEY_L4_2",
+      "x": 22.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "L4_3",
+      "reference": "SW21",
+      "row": 3,
+      "column": 2,
+      "diode": "D20",
+      "anode_pin": "1",
+      "net": "KEY_L4_3",
+      "x": 30.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "L4_4",
+      "reference": "SW22",
+      "row": 3,
+      "column": 3,
+      "diode": "D20",
+      "anode_pin": "2",
+      "net": "KEY_L4_4",
+      "x": 38.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "L4_5",
+      "reference": "SW23",
+      "row": 3,
+      "column": 4,
+      "diode": "D21",
+      "anode_pin": "1",
+      "net": "KEY_L4_5",
+      "x": 46.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "L4_6",
+      "reference": "SW24",
+      "row": 3,
+      "column": 5,
+      "diode": "D21",
+      "anode_pin": "2",
+      "net": "KEY_L4_6",
+      "x": 54.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "L5_1",
+      "reference": "SW25",
+      "row": 4,
+      "column": 0,
+      "diode": "D25",
+      "anode_pin": "1",
+      "net": "KEY_L5_1",
+      "x": 8.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "L5_2",
+      "reference": "SW26",
+      "row": 4,
+      "column": 1,
+      "diode": "D25",
+      "anode_pin": "2",
+      "net": "KEY_L5_2",
+      "x": 16.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "L5_3",
+      "reference": "SW27",
+      "row": 4,
+      "column": 2,
+      "diode": "D26",
+      "anode_pin": "1",
+      "net": "KEY_L5_3",
+      "x": 24.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "L5_4",
+      "reference": "SW28",
+      "row": 4,
+      "column": 3,
+      "diode": "D26",
+      "anode_pin": "2",
+      "net": "KEY_L5_4",
+      "x": 32.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "L5_5",
+      "reference": "SW29",
+      "row": 4,
+      "column": 4,
+      "diode": "D27",
+      "anode_pin": "1",
+      "net": "KEY_L5_5",
+      "x": 40.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "L5_6",
+      "reference": "SW30",
+      "row": 4,
+      "column": 5,
+      "diode": "D27",
+      "anode_pin": "2",
+      "net": "KEY_L5_6",
+      "x": 51.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "R1_1",
+      "reference": "SW31",
+      "row": 0,
+      "column": 6,
+      "diode": "D4",
+      "anode_pin": "1",
+      "net": "KEY_R1_1",
+      "x": 152.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "R1_2",
+      "reference": "SW32",
+      "row": 0,
+      "column": 7,
+      "diode": "D4",
+      "anode_pin": "2",
+      "net": "KEY_R1_2",
+      "x": 160.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "R1_3",
+      "reference": "SW33",
+      "row": 0,
+      "column": 8,
+      "diode": "D5",
+      "anode_pin": "1",
+      "net": "KEY_R1_3",
+      "x": 168.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "R1_4",
+      "reference": "SW34",
+      "row": 0,
+      "column": 9,
+      "diode": "D5",
+      "anode_pin": "2",
+      "net": "KEY_R1_4",
+      "x": 176.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "R1_5",
+      "reference": "SW35",
+      "row": 0,
+      "column": 10,
+      "diode": "D6",
+      "anode_pin": "1",
+      "net": "KEY_R1_5",
+      "x": 184.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "R1_6",
+      "reference": "SW36",
+      "row": 0,
+      "column": 11,
+      "diode": "D6",
+      "anode_pin": "2",
+      "net": "KEY_R1_6",
+      "x": 192.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "R1_7",
+      "reference": "SW37",
+      "row": 1,
+      "column": 10,
+      "diode": "D12",
+      "anode_pin": "1",
+      "net": "KEY_R1_7",
+      "x": 200.0,
+      "y": 49.0
+    },
+    {
+      "key_id": "R2_1",
+      "reference": "SW38",
+      "row": 1,
+      "column": 6,
+      "diode": "D10",
+      "anode_pin": "1",
+      "net": "KEY_R2_1",
+      "x": 154.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "R2_2",
+      "reference": "SW39",
+      "row": 1,
+      "column": 7,
+      "diode": "D10",
+      "anode_pin": "2",
+      "net": "KEY_R2_2",
+      "x": 162.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "R2_3",
+      "reference": "SW40",
+      "row": 1,
+      "column": 8,
+      "diode": "D11",
+      "anode_pin": "1",
+      "net": "KEY_R2_3",
+      "x": 170.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "R2_4",
+      "reference": "SW41",
+      "row": 1,
+      "column": 9,
+      "diode": "D11",
+      "anode_pin": "2",
+      "net": "KEY_R2_4",
+      "x": 178.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "R2_5",
+      "reference": "SW42",
+      "row": 2,
+      "column": 10,
+      "diode": "D18",
+      "anode_pin": "1",
+      "net": "KEY_R2_5",
+      "x": 186.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "R2_6",
+      "reference": "SW43",
+      "row": 1,
+      "column": 11,
+      "diode": "D12",
+      "anode_pin": "2",
+      "net": "KEY_R2_6",
+      "x": 197.0,
+      "y": 39.0
+    },
+    {
+      "key_id": "R3_1",
+      "reference": "SW44",
+      "row": 2,
+      "column": 6,
+      "diode": "D16",
+      "anode_pin": "1",
+      "net": "KEY_R3_1",
+      "x": 156.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "R3_2",
+      "reference": "SW45",
+      "row": 2,
+      "column": 7,
+      "diode": "D16",
+      "anode_pin": "2",
+      "net": "KEY_R3_2",
+      "x": 164.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "R3_3",
+      "reference": "SW46",
+      "row": 2,
+      "column": 8,
+      "diode": "D17",
+      "anode_pin": "1",
+      "net": "KEY_R3_3",
+      "x": 172.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "R3_4",
+      "reference": "SW47",
+      "row": 2,
+      "column": 9,
+      "diode": "D17",
+      "anode_pin": "2",
+      "net": "KEY_R3_4",
+      "x": 180.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "R3_5",
+      "reference": "SW48",
+      "row": 2,
+      "column": 11,
+      "diode": "D18",
+      "anode_pin": "2",
+      "net": "KEY_R3_5",
+      "x": 188.0,
+      "y": 29.0
+    },
+    {
+      "key_id": "R4_1",
+      "reference": "SW49",
+      "row": 3,
+      "column": 6,
+      "diode": "D22",
+      "anode_pin": "1",
+      "net": "KEY_R4_1",
+      "x": 158.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "R4_2",
+      "reference": "SW50",
+      "row": 3,
+      "column": 7,
+      "diode": "D22",
+      "anode_pin": "2",
+      "net": "KEY_R4_2",
+      "x": 166.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "R4_3",
+      "reference": "SW51",
+      "row": 3,
+      "column": 8,
+      "diode": "D23",
+      "anode_pin": "1",
+      "net": "KEY_R4_3",
+      "x": 174.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "R4_4",
+      "reference": "SW52",
+      "row": 3,
+      "column": 9,
+      "diode": "D23",
+      "anode_pin": "2",
+      "net": "KEY_R4_4",
+      "x": 182.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "R4_5",
+      "reference": "SW53",
+      "row": 3,
+      "column": 10,
+      "diode": "D24",
+      "anode_pin": "1",
+      "net": "KEY_R4_5",
+      "x": 190.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "R4_6",
+      "reference": "SW54",
+      "row": 3,
+      "column": 11,
+      "diode": "D24",
+      "anode_pin": "2",
+      "net": "KEY_R4_6",
+      "x": 199.0,
+      "y": 19.0
+    },
+    {
+      "key_id": "R5_1",
+      "reference": "SW55",
+      "row": 4,
+      "column": 6,
+      "diode": "D28",
+      "anode_pin": "1",
+      "net": "KEY_R5_1",
+      "x": 155.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "R5_2",
+      "reference": "SW56",
+      "row": 4,
+      "column": 7,
+      "diode": "D28",
+      "anode_pin": "2",
+      "net": "KEY_R5_2",
+      "x": 166.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "R5_3",
+      "reference": "SW57",
+      "row": 4,
+      "column": 8,
+      "diode": "D29",
+      "anode_pin": "1",
+      "net": "KEY_R5_3",
+      "x": 174.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "R5_4",
+      "reference": "SW58",
+      "row": 4,
+      "column": 9,
+      "diode": "D29",
+      "anode_pin": "2",
+      "net": "KEY_R5_4",
+      "x": 182.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "R5_5",
+      "reference": "SW59",
+      "row": 4,
+      "column": 10,
+      "diode": "D30",
+      "anode_pin": "1",
+      "net": "KEY_R5_5",
+      "x": 190.0,
+      "y": 9.0
+    },
+    {
+      "key_id": "R5_6",
+      "reference": "SW60",
+      "row": 4,
+      "column": 11,
+      "diode": "D30",
+      "anode_pin": "2",
+      "net": "KEY_R5_6",
+      "x": 198.0,
+      "y": 9.0
+    }
+  ],
+  "root_uuid": "77e26e32-63d2-500f-9544-76b2dd8b20de",
+  "controller_sheet_uuid": "6fe06095-6837-584f-b7b6-3b32dfe1f4b6",
+  "controller_uuid": "820e6db1-1d50-58b5-a221-d35c1fb2e35a"
+}
