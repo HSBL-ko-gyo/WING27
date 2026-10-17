@@ -1,9 +1,9 @@
 {
-  "audit_utc": "2026-10-17T18:30:59.708283+00:00",
+  "audit_utc": "2026-10-17T19:04:48.282443+00:00",
   "status": "PASS: net topology and pin mapping only; not fabrication approval",
   "input_sha256": {
     "WING27.kicad_sch": "5310069479bfdfeea4a1748abaef6f99aeb5bdf9843223fcba71f18e7f1d1032",
-    "Controller.kicad_sch": "0bd176a8f657a04b027f5c10f95ef6b2d5574b028113cc94d036e4c8815b2b83",
+    "Controller.kicad_sch": "ea356a7facb6496ee43aa26c328d63da116bc4e96ff474d3698057a9f1d771f3",
     "WING27.kicad_pcb": "8e0c7fc27f5c5242dab30951dfe7e3ad95835b1216bdd35c218878b27fe3ecf4",
     "scripts/electrical_model.json": "2f59c94de7baf5b5b16447c27c657ea8d91d6cb44ebd6da05359f66c99639439"
   },
@@ -628,5 +628,12 @@
     "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
     "https://www.diodes.com/datasheet/download/AP2112.pdf",
     "https://gct.co/files/drawings/usb4105.pdf"
-  ]
+  ],
+  "schematic_layout_revision": {
+    "usb_esd_power_left_mcu_right": true,
+    "pins_compared": 375,
+    "net_differences": 0,
+    "component_and_pin_uuids_preserved": true,
+    "pcb_sha256_unchanged": true
+  }
 }

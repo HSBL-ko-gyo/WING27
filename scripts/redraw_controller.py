@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Replace Controller pin-stub artwork with a wired, reference-derived drawing.
+"""Lay out Controller from left-hand USB/power inputs to the right-hand MCU.
 
-Run after build_electrical.py.  The generated component instances, UUIDs, values,
+Existing wired revisions are rearranged in place without rebuilding components.
+Also supports fresh output from build_electrical.py. Component instances, UUIDs, values,
 library definitions and model connectivity remain authoritative.  Raspberry Pi's
 R4-S1 component placement and actual wire segments are reused for the MCU/SMPS,
 decoupling, crystal and switches, with pin-end adapters for the project symbols.
@@ -255,7 +256,7 @@ class Drawing:
         return self.sheet
 
 
-def redraw(source, model, reference):
+def reference_redraw(source, model, reference):
     d = Drawing(source, model, reference)
     d.import_block('core', (150, 60, 292, 210),
                    {r: r for r in ('U1', 'L1', 'C6', 'C7', 'R3', 'C9', 'R7', 'R8')})
@@ -453,6 +454,249 @@ def redraw(source, model, reference):
     return d.finish(), d.imported_segments
 
 
+def input_left_layout(source):
+    """Move existing v3 artwork only: USB/power on the left, MCU on the right.
+
+    All component/library content and net labels are retained.  Only coordinates,
+    symbol orientation, USB/BOOT/debug interconnect geometry and captions change.
+    The marker makes a second invocation a byte-identical no-op.
+    """
+    marker = uid('input-left-layout-title')
+    if any(child(t, 'uuid')[1] == marker for t in children(source, 'text')):
+        return copy.deepcopy(source)
+    sheet = copy.deepcopy(source)
+    symbols = {prop(s, 'Reference')[2]: s for s in children(sheet, 'symbol')}
+    libraries = {s[1]: s for s in children(child(sheet, 'lib_symbols'), 'symbol')}
+    usb_refs = {'J1', 'U3', 'C21', 'R20', 'R21'}
+    power_refs = {'U2', 'C1', 'C5', '#FLG01', '#FLG02'}
+    dvdd_refs = {'C8', 'C10', 'C11', '#FLG03'}
+    iovdd_refs = {f'C{i}' for i in range(12, 19)} | {'C20'}
+    boot_refs = {'SW61', 'R6'}
+    usb_names = {'USB_DP', 'USB_DM', 'USB_DP_MCU', 'USB_DM_MCU'}
+
+    def regular(p):
+        x, y = p
+        if 292.1 <= x <= 392 and 48.26 <= y <= 105:
+            return point(411.48 - x, y + 20.32), True
+        if 194 <= x <= 240 and y <= 49:
+            return point(x + 25.4, y), False
+        if 272 <= x <= 370 and y <= 49:
+            return point(x + 12.7, y), False
+        if x <= 115 and y <= 65:
+            return point(x, y), False
+        if x <= 120 and y >= 235:
+            return point(x, y), False
+        if 35 <= x <= 90 and 75 <= y <= 90:
+            return point(x + 8.89, y + 109.22), False
+        if 125 <= x <= 145 and 80 <= y <= 123:
+            return point(x + 39.37, y + 62.23), False
+        return point(x + 82.55, y), False
+
+    def move_symbol(s, dest, mirror_horizontal=False, new_angle=None):
+        at = child(s, 'at')
+        ox, oy, angle = map(float, at[1:4])
+        nx, ny = dest
+        old_mirror = child(s, 'mirror')
+        om = old_mirror[1] if old_mirror else None
+        nm = (None if om == 'y' else 'y') if mirror_horizontal else om
+        # Decode KiCad's mirrored field anchors, transform the visible position,
+        # then encode them for the new symbol mirror.
+        for p in children(s, 'property'):
+            pa = child(p, 'at')
+            px, py = map(float, pa[1:3])
+            if om == 'y': px = 2 * ox - px
+            if om == 'x': py = 2 * oy - py
+            px = nx - (px - ox) if mirror_horizontal else nx + px - ox
+            py += ny - oy
+            if nm == 'y': px = 2 * nx - px
+            if nm == 'x': py = 2 * ny - py
+            pa[1:3] = [number(px), number(py)]
+        at[1:4] = [number(nx), number(ny), number(angle if new_angle is None else new_angle)]
+        s[:] = [e for e in s if not isinstance(e, list) or e[0] != 'mirror']
+        if nm: s.append([S('mirror'), S(nm)])
+        if new_angle is not None:
+            for p in children(s, 'property'):
+                child(p, 'at')[3] = number(new_angle % 180)
+
+    def fields(ref, reference, value=None):
+        s = symbols[ref]
+        at = child(s, 'at'); sx, sy, a = map(float, at[1:4])
+        m = child(s, 'mirror')
+        for key, xy in [('Reference', reference), ('Value', value)]:
+            if xy is None: continue
+            px, py = xy
+            if m and m[1] == 'y': px = 2 * sx - px
+            if m and m[1] == 'x': py = 2 * sy - py
+            p = prop(s, key)
+            child(p, 'at')[1:4] = [number(px), number(py), number(a % 180)]
+            ef = child(p, 'effects')
+            ef[:] = [e for e in ef if not isinstance(e, list) or e[0] != 'justify']
+
+    for ref, s in symbols.items():
+        x, y = map(float, child(s, 'at')[1:3])
+        if ref in usb_refs:
+            move_symbol(s, (411.48 - x, y + 20.32), True)
+        elif ref in power_refs or ref.startswith('H'):
+            continue
+        elif ref in dvdd_refs:
+            move_symbol(s, (x + 25.4, y))
+        elif ref in iovdd_refs:
+            move_symbol(s, (x + 12.7, y))
+        elif ref in boot_refs:
+            move_symbol(s, (x + 39.37, y + 62.23))
+        elif ref in ('TP1', 'TP3'):
+            move_symbol(s, (x + 8.89, y + 109.22))
+        elif ref == 'TP2':
+            move_symbol(s, (294.64, 248.92))
+        elif ref in ('R7', 'R8'):
+            move_symbol(s, (245.11, 86.36 if ref == 'R7' else 95.25), new_angle=90)
+        elif ref == 'J3':
+            move_symbol(s, (370.84, 238.76))
+        else:
+            move_symbol(s, (x + 82.55, y))
+    for ref in ('R7', 'R8'):
+        x, y = map(float, child(symbols[ref], 'at')[1:3])
+        fields(ref, (x-3.81,y-5.08), (x+1.27,y-5.08))
+    fields('J3', (370.84,229.87), (370.84,232.41))
+    fields('TP2', (294.64,243.84))
+
+    def pins(ref):
+        s = symbols[ref]
+        return pin_locations(s, libraries[child(s, 'lib_id')[1]])
+
+    def old_j3_wire(a, b):
+        # The second debug footprint is relocated beside J2, outside the title block.
+        return ((min(a[1],b[1]) >= 236.22 and a[0] == b[0] == 233.68 and max(a[1],b[1]) > 236.22)
+             or (min(a[1],b[1]) >= 241.3 and a[0] == b[0] == 231.14 and max(a[1],b[1]) > 241.3)
+             or (230 <= min(a[0],b[0]) and max(a[0],b[0]) <= 244 and min(a[1],b[1]) >= 260))
+
+    kept = []
+    for e in sheet:
+        if not isinstance(e,list) or not e: kept.append(e); continue
+        tag = e[0]
+        if tag == 'text': continue
+        if tag == 'wire':
+            a,b = [point(*p[1:3]) for p in children(child(e,'pts'),'xy')]
+            old_usb = ((min(a[0],b[0]) >= 210 and max(a[0],b[0]) <= 292.1
+                        and min(a[1],b[1]) >= 60 and max(a[1],b[1]) <= 76)
+                    or (a[0] == b[0] and a[0] in (213.36,215.9) and min(a[1],b[1]) >= 60 and max(a[1],b[1]) == 121.92)
+                    or (a[1] == b[1] == 66.04 and a[0] == 285.75 and b[0] == 308.61))
+            old_boot = (a[1] == b[1] == 80.01 or
+                       (a[0] == b[0] == 187.96 and min(a[1],b[1]) == 80.01))
+            old_tp2 = a[0] == b[0] == 222.25 and max(a[1],b[1]) == 264.16
+            if old_usb or old_boot or old_tp2 or old_j3_wire(a,b): continue
+            for p in children(child(e,'pts'),'xy'):
+                p[1:3] = [number(v) for v in regular(point(*p[1:3]))[0]]
+        elif tag in ('label','global_label','junction','no_connect'):
+            at=child(e,'at'); p=point(*at[1:3])
+            if tag in ('label','global_label') and (e[1] in usb_names or e[1]=='QSPI_SS'
+                or (e[1]=='EXP_GPIO17_3V3' and p == (222.25,264.16))
+                or (e[1]=='GND' and p == (238.76,271.78))): continue
+            np,mirrored=regular(p); at[1:3]=[number(v) for v in np]
+            if mirrored and len(at)>3:
+                at[3]=number((180-float(at[3]))%360)
+                effects=child(e,'effects'); just=child(effects,'justify') if effects else None
+                if just:
+                    just[1:]=[S('right' if x=='left' else 'left' if x=='right' else x) for x in just[1:]]
+        kept.append(e)
+    sheet[:] = kept
+
+    def wire(*points):
+        for a,b in zip(points,points[1:]):
+            a,b=point(*a),point(*b)
+            if a==b: continue
+            assert a[0]==b[0] or a[1]==b[1], (a,b)
+            sheet.append(parse(f'(wire (pts(xy {a[0]} {a[1]})(xy {b[0]} {b[1]}))'
+                               f'(stroke(width 0)(type default))(uuid "{uid("input-left-wire"+str((a,b)))}"))'))
+    def label(name,p,angle=0):
+        sheet.append(parse(f'(label {json.dumps(name)}(at {p[0]} {p[1]} {angle})'
+                           f'(effects(font(size 1.016 1.016))(justify left bottom))'
+                           f'(uuid "{uid("input-left-label"+name+str(p))}"))'))
+    def text(message,x,y,size=1.27,key=None):
+        sheet.append(parse(f'(text {json.dumps(message)}(at {x} {y} 0)'
+                           f'(effects(font(size {size} {size}))(justify left))'
+                           f'(uuid "{key or uid("input-left-text"+message)}"))'))
+
+    # Left-to-right USB chain: receptacle -> ESD -> series R -> MCU pins.
+    wire((102.87,86.36), pins('R7')['1'])
+    wire((119.38,88.9),(130.81,88.9),(130.81,95.25),pins('R8')['1'])
+    for ref,pin,net,yy in [('R7','52','USB_DP_MCU',86.36),('R8','51','USB_DM_MCU',95.25)]:
+        a,b=pins(ref)['2'],pins('U1')[pin]
+        wire(a,(b[0],yy),b)
+        label(net,(259.08,yy))
+    label('USB_DP',(149.86,86.36)); label('USB_DM',(149.86,95.25))
+    # VBUS physically feeds the left-hand regulator and ESD decoupling.
+    wire((55.88,76.2),(55.88,69.85),(20.32,69.85),(20.32,43.18),(54.61,43.18))
+    wire((55.88,76.2),(60.96,76.2),(60.96,68.58),(109.22,68.58))
+    # BOOTSEL stays on the input side without crossing the USB pair.
+    wire((270.51,107.95),(190.5,107.95),(190.5,140.97),(170.18,140.97),pins('R6')['1'])
+    label('QSPI_SS',(194.31,107.95))
+    # Alternate DNP SWD footprint beside the primary JST connector.
+    if 'J3' in symbols:
+        wire((316.23,223.52),(355.6,223.52),(355.6,pins('J3')['1'][1]),pins('J3')['1'])
+        wire((313.69,226.06),(353.06,226.06),(353.06,pins('J3')['3'][1]),pins('J3')['3'])
+        wire(pins('J3')['2'],(358.14,pins('J3')['2'][1])); label('GND',(358.14,pins('J3')['2'][1]))
+    wire((304.8,200.66),(304.8,248.92),pins('TP2')['1'])
+    label('EXP_GPIO17_3V3',pins('TP2')['1'])
+
+    # Split T branches for KiCad and rebuild dots.  Preserve each existing wire's
+    # UUID on its first segment; component/pin/library UUIDs never change.
+    wires=children(sheet,'wire')
+    points={point(*p[1:3]) for w in wires for p in children(child(w,'pts'),'xy')}
+    points|={point(*child(j,'at')[1:3]) for j in children(sheet,'junction')}
+    split=[]; seen=set()
+    for w in wires:
+        a,b=[point(*p[1:3]) for p in children(child(w,'pts'),'xy')]
+        assert a[0] == b[0] or a[1] == b[1], ('Layout split a wire across blocks', a, b)
+        pp=sorted(p for p in points if
+            (a[0]==b[0]==p[0] and min(a[1],b[1])<=p[1]<=max(a[1],b[1])) or
+            (a[1]==b[1]==p[1] and min(a[0],b[0])<=p[0]<=max(a[0],b[0])))
+        for i,(p,q) in enumerate(zip(pp,pp[1:])):
+            if (p,q) in seen: continue
+            seen.add((p,q)); nw=copy.deepcopy(w)
+            for entry,xy in zip(children(child(nw,'pts'),'xy'),(p,q)):
+                entry[1:3]=[number(v) for v in xy]
+            if i: child(nw,'uuid')[1]=uid('input-left-split'+child(w,'uuid')[1]+str(i))
+            split.append(nw)
+    sheet[:]=[e for e in sheet if not isinstance(e,list) or e[0] not in ('wire','junction')]
+    sheet.extend(split)
+    for p in sorted({p for edge in seen for p in edge}):
+        if sum(p in edge for edge in seen)>=3:
+            sheet.append(parse(f'(junction(at {p[0]} {p[1]})(diameter 0)(color 0 0 0 0)'
+                               f'(uuid "{uid("input-left-junction"+str(p))}"))'))
+
+    text('WING27 / RP2354A コントローラ',15.24,13.97,2.286,marker)
+    text('USB入力 → ESD保護 → 直列抵抗 → MCU。電気接続・部品・PCB配置は変更なし。',15.24,20.32)
+    text('3.3 V 電源 / XC6206',40.64,26.67,1.778)
+    text('DVDD デカップリング / C10 = 4.7uF',219.71,20.32)
+    text('IOVDD デカップリング',292.1,20.32)
+    text('USB-C 入力 / USB2.0・ESD保護',25.4,132.08,1.778)
+    text('CC1・CC2は各5.1kΩ。USB給電は5 Vのみ。',25.4,138.43,1.016)
+    text('USB直列抵抗',230,72.39,1.27)
+    text('BOOTSEL',154.94,132.08,1.778)
+    text('12 MHz 水晶',228.6,219.71,1.778)
+    text('RESET',340.36,201.93,1.778)
+    text('SWD / 1:CLK  2:GND  3:DIO',316.23,218.44,1.016)
+    text('J3は未実装の代替端子。J2と同時接続しない。',316.23,220.98,1.016)
+    text('取付穴 / M2・非めっき',25.4,241.3)
+    text('TP2は3.3 V GPIO。5 V LEDドライバは搭載しない。',15.24,278.13,1.016)
+    text('SMPS・水晶は公式配置関係を維持。R7/R8はMCUの近くに配置。USB・発熱・突入電流は実機検証が必要。',15.24,283.21,1.016)
+    return sheet
+
+
+def redraw(source, model, reference):
+    # Preserve the current wired revision rather than regenerating its parts.
+    marker = uid('input-left-layout-title')
+    texts = children(source, 'text')
+    if any(child(t, 'uuid')[1] == marker for t in texts):
+        return copy.deepcopy(source), 0
+    wired = any('Raspberry Pi Minimal R4-S1 wired core' in t[1] for t in texts)
+    if wired:
+        return input_left_layout(source), 0
+    original, reused = reference_redraw(source, model, reference)
+    return input_left_layout(original), reused
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--input', type=Path, default=ROOT / 'Controller.kicad_sch')
@@ -465,7 +709,7 @@ def main():
     output, reused = redraw(source, model, reference)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(dump(output) + '\n')
-    print(f'Redrawn {args.output}: reused {reused} official wire segments; component and sheet UUIDs preserved.')
+    print(f'Redrawn {args.output}: left-to-right USB input layout; component and sheet UUIDs preserved.')
 
 
 if __name__ == '__main__':
