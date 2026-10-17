@@ -1,0 +1,85 @@
+{
+  "status": "VERIFIED KEY PLACEMENT ONLY; NOT ARTWORK-READY / NOT FOR FABRICATION",
+  "kicad_version": "10.0.5",
+  "switch_count": 60,
+  "blank_keys": [
+    "L3_1",
+    "L5_5"
+  ],
+  "coordinate_transform_mm": {
+    "x_pcb": "20 + x_source",
+    "y_pcb": "78 - y_source"
+  },
+  "coordinate_max_error_mm": 0.0,
+  "csv_dxf_json_agree": true,
+  "dxf_insunits_mm": true,
+  "all_keys_locked": true,
+  "minimum_key_center_distance_mm": 8.0,
+  "switch": {
+    "MPN": "CMI627301D60",
+    "reuse": "Original user footprint and completed 159654-byte STEP retained; only model path changed",
+    "body_mm": [
+      6.2,
+      6.2
+    ],
+    "pad_numbers": [
+      "1",
+      "2"
+    ],
+    "terminal_function": "SPST normally open; non-polarized. Numbers are KiCad project convention.",
+    "pad_centers_mm": [
+      [
+        -2.5,
+        0
+      ],
+      [
+        2.5,
+        0
+      ]
+    ],
+    "pad_size_mm": [
+      1.8,
+      1.8
+    ],
+    "plated_hole_diameter_mm": 1.1,
+    "annular_ring_mm": 0.35,
+    "drawing": "https://www.kailhswitch.com/Content/upload/2019306614/201906171604056828601.jpg",
+    "manufacturer_family_equivalence": "https://www.kailhswitch.com/news/the-kailh-silent-micro-switch-28891224.html",
+    "model_sha256": "a35adb3966618f12b8bed256d2dca0d9f4375225bf9c23b7f5a773f8be59982a",
+    "model_valid_solids": 10,
+    "model_bounds_mm": [
+      -3.1,
+      -3.1,
+      -3.3,
+      3.1,
+      3.1,
+      7.3
+    ]
+  },
+  "panel_reference": {
+    "width_mm": 208,
+    "height_mm": 58,
+    "corner_radius_mm": 2,
+    "layer": "Dwgs.User",
+    "is_pcb_outline": false
+  },
+  "pending_decisions": [
+    "Final MCU: RP2354A single MCU candidate",
+    "Electrical matrix: 5 x 12 and BAV70 C68978 x30 candidate",
+    "USB-C MPN, location and orientation",
+    "PCB outline, mounting and actual thickness",
+    "NeoPixel model, quantity, placement and current budget, or omission"
+  ],
+  "electrical_status": "Only 60 switches are in the native schematic and board. No intended matrix/controller nets are defined. Each open switch pin has a singleton net. No copper tracks or zones. ERC open-pin errors remain; no final electrical validation is claimed.",
+  "source_files": {
+    "01_APPEARANCE_REFERENCE.svg": "3cde64d5c471c53e4fab6fe21b9fbb5ffa628523050197aa2a746dec471cd457",
+    "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg": "66b50183908558fdc5c01a4c8f405614b75cad2cb944d936614f7abb7115c78f",
+    "06_OUTER_CUT_PROVISIONAL.svg": "287a728848e0cc96c7281218c74744b2509a04dfbd5e0fd2f09ad75f98eb5647",
+    "key_layout_P2.json": "0e4891afc7cb96a46e8c2278c8a55369a99168a0577440d2d84705e82d4b30da",
+    "Wing27_P2_60_key_centers_mm.dxf": "c5cce82d01b08b8f5da7b7b25afe117c9e144a730387f4be793da83a9b5f8131",
+    "Wing27_P2_60_key_center_coordinates_mm.csv": "d8a1f8395ebb4b889980ef9d1fc43ec42b2d30e67f0308ed7d5754ad9815f54d",
+    "Wing27_P2_reference_plate_T1_D1_60_centers.step": "95a0c455deff102517b1ffd0c38a812f907545113a549b8add2166ab50c369d5"
+  },
+  "reference_step_centers_agree": true,
+  "reference_step_valid_single_solid": true
+}

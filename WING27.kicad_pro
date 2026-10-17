@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "filename": "WING27.kicad_pro",
+    "version": 1
+  },
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.2,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.2
+      }
+    }
+  },
+  "text_variables": {
+    "DESIGN_STATUS": "VERIFIED KEY PLACEMENT; ELECTRICAL DESIGN PENDING"
+  }
+}
