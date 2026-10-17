@@ -12,7 +12,7 @@ a=parse((ROOT/'WING27.kicad_sch').read_text());m=json.loads((ROOT/'scripts/elect
 syms={prop(s,'Reference')[2]:s for s in children(a,'symbol')}
 components={c['ref']:c for c in m['components']}
 a=[e for e in a if not(isinstance(e,list) and e[0] in ['wire','junction','label','global_label','text'])]
-child(a,'title_block')[2]=node('(rev "electrical-2")')
+child(a,'title_block')[2]=node('(rev "electrical-3")')
 def wire(p,q):
  if p==q:return
  a.append(node(f'(wire(pts(xy {p[0]} {p[1]})(xy {q[0]} {q[1]}))(stroke(width 0)(type default))(uuid "{uid(str((p,q)))}"))'))
@@ -39,14 +39,15 @@ for r in range(5):
  y=55.88+r*55.88;row_y=y+22.86;xs=[]
  for p in range(6):
   x=63.5+p*83.82;move(f'D{r*6+p+1}',x,y+12.7);wire((x,y+17.78),(x,row_y));junction(x,row_y);xs.append(x)
- for x1,x2 in zip([25.4]+xs,xs):wire((x1,row_y),(x2,row_y))
- label(f'ROW{r}',25.4,row_y,0)
+ for side, subset, start in [('L',xs[:3],25.4),('R',xs[3:],285.75)]:
+  for x1,x2 in zip([start]+subset,subset):wire((x1,row_y),(x2,row_y))
+  label(f'ROW_{side}{r}',start,row_y,0)
 for c in range(12):
  x=50.8+(c//2)*83.82+(35.56 if c%2 else -10.16);ys=[35.56]+[55.88+r*55.88 for r in range(5)]
  for y1,y2 in zip(ys,ys[1:]):wire((x,y1),(x,y2))
  label(f'COL{c}',x,35.56,270)
-text('60-key matrix / COL0..11 input with pull-ups; selected ROW low, other ROWs high-impedance',20.32,15.24,1.5)
+text('Two independent 5x6 matrices / COL0..5 left, COL6..11 right / separate ROW_L and ROW_R',20.32,15.24,1.5)
 text('BAV70: independent anodes 1 / 2; common cathode 3. Dots are connections; unmarked bus crossings are not connected.',20.32,22.86,1.27)
 text('Logical rows preserve all 60 physical key IDs; staggered right-hand rows use nearby two-key pairs.',110,354.33,1.27)
 (ROOT/'WING27.kicad_sch').write_text(dump(a))
-print('Matrix: 12 column buses, 5 row buses, 60 wired keys')
+print('Matrix: 12 column buses, 10 independent row buses, 60 wired keys')

@@ -1,0 +1,119 @@
+{
+  "revision": "electrical-3",
+  "architecture": "Two independent 5x6 matrices, one RP2354A",
+  "matrix_gpio": 22,
+  "expansion_gpio": 17,
+  "unallocated_gpio": [
+    5,
+    12,
+    13,
+    14,
+    15,
+    16,
+    18
+  ],
+  "gpio_csv_matches_model": true,
+  "boot_reset": {
+    "references": [
+      "SW61",
+      "SW62"
+    ],
+    "manufacturer": "XUNPU",
+    "mpn": "TS-1088-AR02016",
+    "lcsc": "C720477",
+    "jlc_class": "Basic",
+    "body_mm": [
+      3.9,
+      3,
+      2
+    ],
+    "pad_size_mm": [
+      1.05,
+      2
+    ],
+    "pad_center_x_mm": [
+      -2.225,
+      2.225
+    ],
+    "sources": [
+      "https://jlcpcb.com/partdetail/TS-1088-AR02016/C720477",
+      "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
+    ]
+  },
+  "debug_test_header": {
+    "reference": "J3",
+    "dnp_schematic_and_pcb": true,
+    "pitch_mm": 2.54,
+    "pins": {
+      "1": "SWCLK",
+      "2": "GND",
+      "3": "SWDIO"
+    },
+    "position_mm": [
+      112,
+      39,
+      90
+    ],
+    "connection": "Same connector-side nets as J2, after R22/R23 100ohm; no power pin"
+  },
+  "footprints": 136,
+  "fitted_components": 128,
+  "tracks": 0,
+  "zones": 0,
+  "limitations": [
+    "Main PCB is unrouted; final outline/stackup/case tolerances and firmware/hardware tests remain.",
+    "Routing comparison uses the geometry before the new boot/reset switches and J3; not a final whole-board route."
+  ],
+  "ldo": {
+    "reference": "U2",
+    "manufacturer": "Torex Semiconductor",
+    "mpn": "XC6206P332MR-G",
+    "lcsc": "C5446",
+    "jlc_class": "Basic",
+    "pinout": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "VBUS"
+    },
+    "package": "SOT-23-3",
+    "input_cap": "C1 1uF 50V X5R0603 C15849",
+    "output_cap": "C5 4.7uF 16V X5R0603 C19666, Basic",
+    "continuous_load_design_target_mA": 100,
+    "target_is_measured": false,
+    "power_loss_at_5V_100mA_W": 0.17,
+    "thermal_validation_required": "Verify maximum firmware load, actual ambient/enclosure temperature, effective ceramic capacitance and regulator junction margin before fabrication release. 150mA continuous is not approved by this analysis.",
+    "led_power": "Future LEDs on USB VBUS, not the 3.3V LDO rail; LED parts remain unplaced pending optical decision.",
+    "sources": [
+      "https://jlcpcb.com/partdetail/C5446",
+      "https://product.torexsemi.com/system/files/series/xc6206.pdf",
+      "https://jlcpcb.com/partdetail/C19666"
+    ],
+    "land_reference": "https://www.torexsemi.com/file/SOT-23/SOT-23-pkg.pdf",
+    "land_pad_size_mm": [
+      1.0,
+      0.8
+    ],
+    "land_pad_centers_mm": {
+      "1": [
+        -1.2,
+        -0.95
+      ],
+      "2": [
+        -1.2,
+        0.95
+      ],
+      "3": [
+        1.2,
+        0
+      ]
+    }
+  },
+  "numbered_pad_nets_verified": 388,
+  "nets": 120,
+  "unconnected_items": 255,
+  "erc_violations": 0,
+  "schematic_parity_issues": 0,
+  "remaining_drc_violations": [
+    "invalid_outline: final PCB outline not defined"
+  ]
+}

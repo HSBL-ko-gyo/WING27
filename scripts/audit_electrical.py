@@ -61,13 +61,14 @@ for i in range(1,61):
     s=f'SW{i}';a,b=by_pin[s,'1'],by_pin[s,'2'];assert a.startswith('COL') and b.startswith('KEY_')
     nodes=by_net[b];ds=[(r,p) for r,p in nodes if r.startswith('D')];assert len(nodes)==2 and len(ds)==1
     d,p=ds[0];assert p in ['1','2'];row=by_pin[d,'3'];assert row.startswith('ROW')
-    keys[s]={'key':b[4:],'row':int(row[3:]),'col':int(a[3:]),'diode':d,'anode':p}
-assert set((k['row'],k['col']) for k in keys.values())==set(itertools.product(range(5),range(12)))
+    keys[s]={'key':b[4:],'row':row,'col':int(a[3:]),'diode':d,'anode':p}
+assert set((k['row'],k['col']) for k in keys.values())=={(f'ROW_{side}{r}',c) for side,cols in [('L',range(6)),('R',range(6,12))] for r in range(5) for c in cols}
 assert len(keys)==60
 for d in [f'D{i}' for i in range(1,31)]:
     branches=[k for k in keys.values() if k['diode']==d]
     assert len(branches)==2 and branches[0]['row']==branches[1]['row'] and branches[0]['col']!=branches[1]['col']
-for r in range(5):assert len(by_net[f'ROW{r}'])==7
+for side in ['L','R']:
+ for r in range(5):assert len(by_net[f'ROW_{side}{r}'])==4
 for c in range(12):assert len(by_net[f'COL{c}'])==6
 # Ideal diode graph: closed switch is bidirectional, diode is anode->cathode.
 # Unselected ROW nodes have no outgoing conduction paths, eliminating phantom paths
@@ -86,8 +87,10 @@ def sense(pressed):
             x=stack.pop()
             for nxt in graph.get(x,[]):
                 if nxt not in seen:seen.add(nxt);stack.append(nxt)
-        for r in range(5):
-            if f'ROW{r}' in seen:sensed.add((r,c))
+        for side in ['L','R']:
+            for r in range(5):
+                row=f'ROW_{side}{r}'
+                if row in seen:sensed.add((row,c))
     return sensed
 cases=0
 for count in range(4):
@@ -105,12 +108,13 @@ assert upins=={str(i+1):x for i,x in enumerate(pin_names)}
 expected_u={str(p):'+3V3' for p in [1,11,20,30,38,44,45,49,53,54]}
 expected_u.update({str(p):'+1V1' for p in [6,23,39,50]})
 expected_u.update({'46':'VREG_AVDD','47':'GND','48':'VREG_LX','61':'GND','21':'XIN','22':'XOUT','24':'SWCLK_MCU','25':'SWDIO_MCU','26':'RUN','51':'USB_DM_MCU','52':'USB_DP_MCU','60':'QSPI_SS','28':'EXP_GPIO17_3V3'})
-expected_u.update({str(p):f'COL{i}' for i,p in enumerate([2,3,4,5,7,8,9,10,12,13,14,15])})
-expected_u.update({str(p):f'ROW{i}' for i,p in enumerate([16,17,18,19,27])})
+expected_u.update({str(p):f'COL{i}' for i,p in enumerate([31,32,33,34,35,36,9,10,12,13,14,15])})
+expected_u.update({str(p):f'ROW_L{i}' for i,p in enumerate([37,40,41,42,43])})
+expected_u.update({str(p):f'ROW_R{i}' for i,p in enumerate([2,3,4,5,7])})
 for p,n in expected_u.items():assert by_pin['U1',p]==n
-for p in [29,31,32,33,34,35,36,37,40,41,42,43,55,56,57,58,59]:assert by_pin['U1',str(p)].startswith('unconnected-')
+for p in [8,16,17,18,19,27,29,55,56,57,58,59]:assert by_pin['U1',str(p)].startswith('unconnected-')
 expected={
- 'U2':{'1':'VBUS','2':'GND','3':'VBUS','5':'+3V3'},
+ 'U2':{'1':'GND','2':'+3V3','3':'VBUS'},
  'U3':{'1':'USB_DP','6':'USB_DP','3':'USB_DM','4':'USB_DM','2':'GND','5':'VBUS'},
  'R20':{'1':'CC1','2':'GND'},'R21':{'1':'CC2','2':'GND'},
  'R7':{'1':'USB_DP','2':'USB_DP_MCU'},'R8':{'1':'USB_DM','2':'USB_DM_MCU'},
@@ -118,13 +122,13 @@ expected={
  'L1':{'1':'+1V1','2':'VREG_LX'},'C7':{'1':'+1V1','2':'GND'},'C10':{'1':'+1V1','2':'GND'},
  'X1':{'1':'XIN','2':'GND','3':'XTAL_OUT','4':'GND'},'R2':{'1':'XOUT','2':'XTAL_OUT'},
  'C3':{'1':'XIN','2':'GND'},'C4':{'1':'XTAL_OUT','2':'GND'},
- 'R6':{'1':'QSPI_SS','2':'BOOT_SWITCH'},'SW61':{'1':'GND','2':'GND','3':'BOOT_SWITCH','4':'BOOT_SWITCH'},
- 'SW62':{'1':'RUN_SWITCH','2':'RUN_SWITCH','3':'RUN','4':'RUN'},'R4':{'1':'RUN_SWITCH','2':'GND'},
+ 'R6':{'1':'QSPI_SS','2':'BOOT_SWITCH'},'SW61':{'1':'GND','2':'BOOT_SWITCH'},
+ 'SW62':{'1':'RUN_SWITCH','2':'RUN'},'R4':{'1':'RUN_SWITCH','2':'GND'},
  'J1':{'A1':'GND','A12':'GND','B1':'GND','B12':'GND','S1':'GND','A4':'VBUS','A9':'VBUS','B4':'VBUS','B9':'VBUS','A5':'CC1','B5':'CC2','A6':'USB_DP','B6':'USB_DP','A7':'USB_DM','B7':'USB_DM'},
- 'J2':{'1':'SWCLK','2':'GND','3':'SWDIO','MP':'GND'},'R22':{'1':'SWCLK_MCU','2':'SWCLK'},'R23':{'1':'SWDIO_MCU','2':'SWDIO'}}
+ 'J3':{'1':'SWCLK','2':'GND','3':'SWDIO'},'J2':{'1':'SWCLK','2':'GND','3':'SWDIO','MP':'GND'},'R22':{'1':'SWCLK_MCU','2':'SWCLK'},'R23':{'1':'SWDIO_MCU','2':'SWDIO'}}
 for ref,pins in expected.items():
     for p,n in pins.items():assert by_pin[ref,p]==n,(ref,p,n)
-for ref,v in {'R22':'100','R23':'100','R20':'5.1k','R21':'5.1k','R7':'27','R8':'27','R3':'33','R4':'1k','R6':'1k','R2':'1k','C9':'4.7u','C7':'4.7u','C10':'4.7u','L1':'3.3uH','X1':'12MHz','C3':'15p','C4':'15p','C20':'100n'}.items():assert child(comps[ref],'value')[1]==v,(ref,v)
+for ref,v in {'C5':'4.7u','R22':'100','R23':'100','R20':'5.1k','R21':'5.1k','R7':'27','R8':'27','R3':'33','R4':'1k','R6':'1k','R2':'1k','C9':'4.7u','C7':'4.7u','C10':'4.7u','L1':'3.3uH','X1':'12MHz','C3':'15p','C4':'15p','C20':'100n'}.items():assert child(comps[ref],'value')[1]==v,(ref,v)
 # Native reference U1 pad geometry is inspected as S-expression because original is KiCad 10.
 def footprint(doc,ref):return next(f for f in children(doc,'footprint') if prop(f,'Reference') and prop(f,'Reference')[2]==ref)
 def pad_geometry(f):
@@ -154,7 +158,7 @@ result={
   'Ideal diode graph tests do not verify analogue low-level margins over temperature, leakage, scan timing, or hardware NKRO.',
   'Confirm final capacitor voltage/DC-bias derating, actual supply load, regulator thermal margin and inrush before manufacturing.',
   'USB current descriptors/suspend and phone-host operation require firmware and two-orientation C-C cable testing.',
-  'Do not power SWD VTREF externally while USB is attached; expansion GPIO is 3.3V only.'
+  'J2/J3 expose SWCLK/GND/SWDIO only, no VTREF or power pin. Expansion GPIO is 3.3V only.'
  ],
  'primary_sources':[
   'https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf',

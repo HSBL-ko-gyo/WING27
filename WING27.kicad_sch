@@ -5,7 +5,7 @@
 	(paper "A2")
 	(title_block
 		(title "WING27 / 60-key matrix")
-		(rev "electrical-2")
+		(rev "electrical-3")
 		(company "ハシビロ工業"))
 	(lib_symbols
 		(symbol
@@ -11315,14 +11315,23 @@ line
 			(width 0)
 			(type default))
 		(uuid "14fb8096-ccd1-5d03-b91f-438af16830c2"))
+	(global_label
+"ROW_L0"
+		(shape bidirectional)
+		(at 25.4 78.74000000000001 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "3bc0a992-f453-545b-b53d-2b414d08b02b"))
 	(wire
 		(pts
-			(xy 231.14 78.74000000000001)
+			(xy 285.75 78.74000000000001)
 			(xy 314.96 78.74000000000001))
 		(stroke
 			(width 0)
 			(type default))
-		(uuid "dcc1f693-d9f0-5ef6-bddb-c85cbbe36a22"))
+		(uuid "43973a25-7573-5820-b9cc-0910b3881a02"))
 	(wire
 		(pts
 			(xy 314.96 78.74000000000001)
@@ -11340,14 +11349,14 @@ line
 			(type default))
 		(uuid "4ce5ef61-a24e-5398-96d8-e5b907eebfcd"))
 	(global_label
-"ROW0"
+"ROW_R0"
 		(shape bidirectional)
-		(at 25.4 78.74000000000001 0)
+		(at 285.75 78.74000000000001 0)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify left))
-		(uuid "6b13bd3b-8491-5034-9cd3-a14a3c5c01a0"))
+		(uuid "a1ec4fee-72db-5033-92ba-ceed4aa8d253"))
 	(wire
 		(pts
 			(xy 63.5 129.54000000000002)
@@ -11450,14 +11459,23 @@ line
 			(width 0)
 			(type default))
 		(uuid "075b5d21-efc4-5219-8956-5c029213784f"))
+	(global_label
+"ROW_L1"
+		(shape bidirectional)
+		(at 25.4 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "e515dcca-a6ba-5030-81fb-8a907c104860"))
 	(wire
 		(pts
-			(xy 231.14 134.62)
+			(xy 285.75 134.62)
 			(xy 314.96 134.62))
 		(stroke
 			(width 0)
 			(type default))
-		(uuid "e5d33837-3a78-5ae1-ac97-c2fd602e806d"))
+		(uuid "c172a462-7d57-53ac-95c9-4c9730c893a9"))
 	(wire
 		(pts
 			(xy 314.96 134.62)
@@ -11475,14 +11493,14 @@ line
 			(type default))
 		(uuid "8a7523bf-de95-5bed-99b1-fb1b0ba382fe"))
 	(global_label
-"ROW1"
+"ROW_R1"
 		(shape bidirectional)
-		(at 25.4 134.62 0)
+		(at 285.75 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify left))
-		(uuid "494953f1-4073-56ec-b51a-fbb422cdeb02"))
+		(uuid "1ca5fbe3-1abb-571b-a6c3-0d2590a86ab4"))
 	(wire
 		(pts
 			(xy 63.5 185.42000000000002)
@@ -11585,14 +11603,23 @@ line
 			(width 0)
 			(type default))
 		(uuid "0fa3647d-932d-583c-bb2e-9272ca85c2cb"))
+	(global_label
+"ROW_L2"
+		(shape bidirectional)
+		(at 25.4 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "264dafae-c8dd-5841-8c09-4c27e73813e1"))
 	(wire
 		(pts
-			(xy 231.14 190.5)
+			(xy 285.75 190.5)
 			(xy 314.96 190.5))
 		(stroke
 			(width 0)
 			(type default))
-		(uuid "a851aa8c-d6c8-5ea0-aa82-446cb120a011"))
+		(uuid "88c30fda-1e78-5f10-9474-746a2e36168d"))
 	(wire
 		(pts
 			(xy 314.96 190.5)
@@ -11610,14 +11637,14 @@ line
 			(type default))
 		(uuid "398a290e-a15f-57fa-8f7c-62a6e9c8e17d"))
 	(global_label
-"ROW2"
+"ROW_R2"
 		(shape bidirectional)
-		(at 25.4 190.5 0)
+		(at 285.75 190.5 0)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify left))
-		(uuid "3290ba33-2fb1-5041-ac2a-84a1e4eb904c"))
+		(uuid "e25f8cc4-ff82-5fa4-b09f-b922331e2f1f"))
 	(wire
 		(pts
 			(xy 63.5 241.3)
@@ -11720,14 +11747,23 @@ line
 			(width 0)
 			(type default))
 		(uuid "635ae0fb-9d0d-594c-b42c-2f930e9a8739"))
+	(global_label
+"ROW_L3"
+		(shape bidirectional)
+		(at 25.4 246.38 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "f7f61f22-bb5d-5dca-ad63-70f907bc9ac4"))
 	(wire
 		(pts
-			(xy 231.14 246.38)
+			(xy 285.75 246.38)
 			(xy 314.96 246.38))
 		(stroke
 			(width 0)
 			(type default))
-		(uuid "a3e08e17-dd24-5b2d-aea0-c38d9d2c0381"))
+		(uuid "2a0fa60e-05f4-5cf6-aa15-b1779a818abd"))
 	(wire
 		(pts
 			(xy 314.96 246.38)
@@ -11745,14 +11781,14 @@ line
 			(type default))
 		(uuid "d184a374-1641-5791-8151-e76b56106c1c"))
 	(global_label
-"ROW3"
+"ROW_R3"
 		(shape bidirectional)
-		(at 25.4 246.38 0)
+		(at 285.75 246.38 0)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify left))
-		(uuid "fc5de941-5e3c-5b7c-8dda-8b0685027b51"))
+		(uuid "fcf1664e-020f-5cf0-ac5d-9c737895a1bd"))
 	(wire
 		(pts
 			(xy 63.5 297.18000000000006)
@@ -11855,14 +11891,23 @@ line
 			(width 0)
 			(type default))
 		(uuid "7ebb2e55-1823-5e2b-a231-cc8e18b425c9"))
+	(global_label
+"ROW_L4"
+		(shape bidirectional)
+		(at 25.4 302.26000000000005 0)
+		(effects
+			(font
+				(size 1.27 1.27))
+			(justify left))
+		(uuid "4116ff97-5d97-52e4-b388-f85899e3c628"))
 	(wire
 		(pts
-			(xy 231.14 302.26000000000005)
+			(xy 285.75 302.26000000000005)
 			(xy 314.96 302.26000000000005))
 		(stroke
 			(width 0)
 			(type default))
-		(uuid "c94d3638-b23d-54ce-a522-7d19070e3148"))
+		(uuid "76a78069-e17c-51a1-9ab8-762d966b3e4f"))
 	(wire
 		(pts
 			(xy 314.96 302.26000000000005)
@@ -11880,14 +11925,14 @@ line
 			(type default))
 		(uuid "51894e59-2f8d-5706-9299-6183eb7120fc"))
 	(global_label
-"ROW4"
+"ROW_R4"
 		(shape bidirectional)
-		(at 25.4 302.26000000000005 0)
+		(at 285.75 302.26000000000005 0)
 		(effects
 			(font
 				(size 1.27 1.27))
 			(justify left))
-		(uuid "618c2f01-cd5d-5272-ab9e-84ac8c6b3f2b"))
+		(uuid "973b6409-390d-5e0e-8859-436d79be2281"))
 	(wire
 		(pts
 			(xy 40.64 35.56)
@@ -12477,13 +12522,13 @@ line
 			(justify right))
 		(uuid "3f9b0cd8-6793-5193-9e7b-f91528c28ea8"))
 	(text
-"60-key matrix / COL0..11 input with pull-ups; selected ROW low, other ROWs high-impedance"
+"Two independent 5x6 matrices / COL0..5 left, COL6..11 right / separate ROW_L and ROW_R"
 		(at 20.32 15.24 0)
 		(effects
 			(font
 				(size 1.5 1.5))
 			(justify left))
-		(uuid "2b6343e0-a4dc-516e-a71a-1ff3b572d9f1"))
+		(uuid "94e9dfa1-35be-5399-9d13-e680a6515e41"))
 	(text
 "BAV70: independent anodes 1 / 2; common cathode 3. Dots are connections; unmarked bus crossings are not connected."
 		(at 20.32 22.86 0)

@@ -5,7 +5,7 @@ Run after build_electrical.py.  The generated component instances, UUIDs, values
 library definitions and model connectivity remain authoritative.  Raspberry Pi's
 R4-S1 component placement and actual wire segments are reused for the MCU/SMPS,
 decoupling, crystal and switches, with pin-end adapters for the project symbols.
-The USB-C/ESD/AP2112 circuit is drawn separately without changing its net model.
+The USB-C/ESD/XC6206 circuit is drawn separately without changing its net model.
 
     python scripts/redraw_controller.py
     python scripts/redraw_controller.py --output /tmp/Controller.kicad_sch
@@ -216,12 +216,11 @@ class Drawing:
                 continue
             net = str(label[1])
             self.anchors[(name, net)] = shifted(p)
-            if net.startswith('GPIO') and net[4:].isdigit():
-                n = int(net[4:])
-                if n < 12:
-                    self.label(f'COL{n}', shifted(p), int(child(label, 'at')[3]), True)
-                elif n < 17:
-                    self.label(f'ROW{n-12}', shifted(p), int(child(label, 'at')[3]), True)
+            if net.startswith('GPIO') and net[4:].split('_')[0].isdigit():
+                n = int(net[4:].split('_')[0])
+                mapped = {17: 'EXP_GPIO17_3V3', 19: 'COL0', 20: 'COL1', 21: 'COL2', 22: 'COL3', 23: 'COL4', 24: 'COL5', 6: 'COL6', 7: 'COL7', 8: 'COL8', 9: 'COL9', 10: 'COL10', 11: 'COL11', 25: 'ROW_L0', 26: 'ROW_L1', 27: 'ROW_L2', 28: 'ROW_L3', 29: 'ROW_L4', 0: 'ROW_R0', 1: 'ROW_R1', 2: 'ROW_R2', 3: 'ROW_R3', 4: 'ROW_R4'}.get(n)
+                if mapped and n != 17:
+                    self.label(mapped, shifted(p), int(child(label, 'at')[3]), True)
             elif net in ('VREG_LX', 'VREG_AVDD'):
                 self.label(net, shifted(p), int(child(label, 'at')[3]))
 
@@ -264,8 +263,17 @@ def redraw(source, model, reference):
     d.import_block('iovdd', (272, 25, 358, 49), {f'C{i}': f'C{i}' for i in range(12, 19)})
     d.import_block('crystal', (93, 205, 150, 230),
                    {r: r for r in ('X1', 'R2', 'C3', 'C4')}, (50.8, 20.32))
-    d.import_block('reset', (247, 211, 291, 220), {'SW2': 'SW62', 'R4': 'R4'})
-    d.import_block('boot', (24, 132, 32, 174), {'SW1': 'SW61', 'R6': 'R6'}, (102.87, -50.8))
+    # True two-terminal switches; preserve the official series resistors and real wire paths.
+    d.place('SW61',130.81,113.03,90)
+    d.place('R6',130.81,87.63)
+    d.wire(d.pins('SW61')['2'],d.pins('R6')['2'])
+    d.rail('SW61','1','GND')
+    d.place('SW62',264.16,215.9,180)
+    d.place('R4',279.4,215.9,90)
+    d.wire(d.pins('SW62')['1'],d.pins('R4')['1'])
+    d.rail('R4','2','GND')
+    d.anchors[('reset','RUN')]=d.pins('SW62')['2']
+
 
     # Complete the signal paths that were label jumps in the reference.
     qspi = d.anchors[('core', 'QSPI_SS')]
@@ -312,6 +320,13 @@ def redraw(source, model, reference):
         else:
             d.rail('J2', pin, net)
 
+    d.place('J3',248.92,262.89,text=((261.62,260.35),(267,262.89)))
+    for pin,xx in [('1',233.68),('3',231.14)]:
+        p=d.pins('J3')[pin]
+        old=d.pins('J2')[pin]
+        d.wire((xx,old[1]),(xx,p[1]),p)
+        d.junction((xx,old[1]))
+    p=d.pins('J3')['2'];d.wire(p,(238.76,p[1]),(238.76,271.78));d.label('GND',(238.76,271.78))
     # USB-C USB2 sink.  ESD I/O pairs are connected on both symbol sides.
     d.place('J1', 375.92, 71.12, mirror='y', text=((375.92, 44.45), (375.92, 46.99)))
     d.place('U3', 321.31, 66.04, text=((321.31, 57.15), (321.31, 59.69)))
@@ -353,19 +368,14 @@ def redraw(source, model, reference):
     d.junction((355.6, 101.6)); d.junction((375.92, 101.6))
     d.label('GND', (342.9, 101.6))
 
-    # AP2112 fixed 3.3 V supply: EN tied to VIN and local input/output capacitors.
-    d.place('U2', 77.47, 43.18, text=((77.47, 30.48), (77.47, 33.02)))
-    d.place('C1', 54.61, 48.26)
-    d.place('C5', 99.06, 48.26)
-    p, ci, co = d.pins('U2'), d.pins('C1'), d.pins('C5')
-    d.wire(p['1'], (62.23, p['1'][1]), (54.61, p['1'][1]), ci['1'])
-    d.wire(p['3'], (62.23, p['3'][1]), (62.23, p['1'][1]))
-    d.junction((62.23, p['1'][1])); d.label('VBUS', (54.61, p['1'][1]))
-    d.wire(p['5'], (99.06, p['5'][1]), co['1'])
-    d.label('+3V3', (99.06, p['5'][1]))
-    d.wire(ci['2'], (54.61, 59.69), (77.47, 59.69), (99.06, 59.69), co['2'])
-    d.wire(p['2'], (77.47, 59.69)); d.junction((77.47, 59.69))
-    d.label('GND', (77.47, 59.69))
+    # XC6206 fixed 3.3V LDO, 1=GND, 2=OUT, 3=IN, no enable pin.
+    d.place('U2',77.47,43.18,text=((77.47,30.48),(77.47,33.02)))
+    d.place('C1',54.61,48.26); d.place('C5',99.06,48.26)
+    p,ci,co=d.pins('U2'),d.pins('C1'),d.pins('C5')
+    d.wire(p['3'],(54.61,p['3'][1]),ci['1']); d.label('VBUS',(54.61,p['3'][1]))
+    d.wire(p['2'],(99.06,p['2'][1]),co['1']); d.label('+3V3',(99.06,p['2'][1]))
+    d.wire(ci['2'],(54.61,59.69),(77.47,59.69),(99.06,59.69),co['2'])
+    d.wire(p['1'],(77.47,59.69));d.junction((77.47,59.69));d.label('GND',(77.47,59.69))
 
     # Additional local bypass and unpopulated extension pads.
     d.place('C20', 365.76, 36.83)

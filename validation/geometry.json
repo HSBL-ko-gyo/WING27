@@ -60,7 +60,7 @@
     "width_mm": 208,
     "height_mm": 58,
     "corner_radius_mm": 2,
-    "layer": "Dwgs.User",
+    "layer": "User.1",
     "is_pcb_outline": false
   },
   "pending_decisions": [
@@ -68,7 +68,7 @@
     "Firmware matrix mapping, USB HID/power configuration, hardware bring-up and inrush/USB compliance measurements",
     "No LEDs fitted; extension signal is 3.3V only and needs appropriate level shifting for 5V LEDs"
   ],
-  "electrical_status": "RP2354A / 60-key 5x12 / BAV70x30 / USB-C / 3.3V supply fully netlisted. ERC and schematic parity: zero. No copper tracks or zones.",
+  "electrical_status": "RP2354A / independent left and right 5x6 matrices / 22 key GPIO / BAV70x30 / USB-C / 3.3V supply. ERC and schematic parity zero; no copper tracks or zones.",
   "source_files": {
     "01_APPEARANCE_REFERENCE.svg": "3cde64d5c471c53e4fab6fe21b9fbb5ffa628523050197aa2a746dec471cd457",
     "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg": "66b50183908558fdc5c01a4c8f405614b75cad2cb944d936614f7abb7115c78f",
@@ -80,7 +80,7 @@
   },
   "reference_step_centers_agree": true,
   "reference_step_valid_single_solid": true,
-  "footprint_count": 135,
+  "footprint_count": 136,
   "usb_footprint_adjustment": {
     "part": "USB4105-GF-A-060",
     "source": "https://gct.co/files/drawings/usb4105.pdf",
@@ -92,7 +92,7 @@
   "reference_core_reuse": {
     "source": "https://pip.raspberrypi.com/categories/1214-rp2350",
     "design": "RP2350A Minimal R4-S1 official KiCad",
-    "adaptation": "RP2354A internal flash; remove external flash; retain official MCU/SMPS/crystal footprints and relative placement. C10 updated to4.7uF per Release8 datasheet. Dedicated C20 on QSPI_IOVDD54. AP2112 3.3V and protected USB-C front end.",
+    "adaptation": "RP2354A internal flash; remove external flash; retain official MCU/SMPS/crystal footprints and relative placement. C10 updated to4.7uF per Release8 datasheet. Dedicated C20 on QSPI_IOVDD54. XC6206 3.3V and protected USB-C front end.",
     "placement_transform": "Official core translated x+24,y-51mm, then all central electronics rotated180deg around PCB(124,49). Relative core geometry and marked inductor orientation retained.",
     "license": "reference/RaspberryPi/LICENSE.txt"
   },

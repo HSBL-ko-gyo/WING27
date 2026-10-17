@@ -32,36 +32,36 @@
         "51": "USB_DM_MCU",
         "52": "USB_DP_MCU",
         "60": "QSPI_SS",
-        "2": "COL0",
-        "3": "COL1",
-        "4": "COL2",
-        "5": "COL3",
-        "7": "COL4",
-        "8": "COL5",
+        "2": "ROW_R0",
+        "3": "ROW_R1",
+        "4": "ROW_R2",
+        "5": "ROW_R3",
+        "7": "ROW_R4",
+        "8": null,
         "9": "COL6",
         "10": "COL7",
         "12": "COL8",
         "13": "COL9",
         "14": "COL10",
         "15": "COL11",
-        "16": "ROW0",
-        "17": "ROW1",
-        "18": "ROW2",
-        "19": "ROW3",
-        "27": "ROW4",
+        "16": null,
+        "17": null,
+        "18": null,
+        "19": null,
+        "27": null,
         "28": "EXP_GPIO17_3V3",
         "29": null,
-        "31": null,
-        "32": null,
-        "33": null,
-        "34": null,
-        "35": null,
-        "36": null,
-        "37": null,
-        "40": null,
-        "41": null,
-        "42": null,
-        "43": null,
+        "31": "COL0",
+        "32": "COL1",
+        "33": "COL2",
+        "34": "COL3",
+        "35": "COL4",
+        "36": "COL5",
+        "37": "ROW_L0",
+        "40": "ROW_L1",
+        "41": "ROW_L2",
+        "42": "ROW_L3",
+        "43": "ROW_L4",
         "55": null,
         "56": null,
         "57": null,
@@ -776,14 +776,12 @@
     },
     {
       "ref": "SW61",
-      "lib": "BOOT_RUN_SW",
+      "lib": "BOOT_RESET_2PIN",
       "value": "BOOTSEL",
-      "fp": "RPI_wurthelek_434133025816",
+      "fp": "SW_SPST_TS-1088-AR02016",
       "nets": {
         "1": "GND",
-        "2": "GND",
-        "3": "BOOT_SWITCH",
-        "4": "BOOT_SWITCH"
+        "2": "BOOT_SWITCH"
       },
       "pos": [
         280,
@@ -795,23 +793,23 @@
         180
       ],
       "metadata": {
-        "Description": "Tactile Pushbutton, SPST, N.O., 4.2x3.2x2.5mm",
-        "manufacturer": "Wurth Elektronik",
-        "manufacturer_pn": "434133025816"
+        "manufacturer": "XUNPU",
+        "manufacturer_pn": "TS-1088-AR02016",
+        "LCSC": "C720477",
+        "Description": "JLC Basic; 2-terminal SPST N.O. tactile 3.9x3.0x2.0mm, 160gf",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
       },
       "sheet": "controller",
       "uuid": "6c044c31-c3f4-5dd0-9d45-abf99985435a"
     },
     {
       "ref": "SW62",
-      "lib": "BOOT_RUN_SW",
+      "lib": "BOOT_RESET_2PIN",
       "value": "RESET",
-      "fp": "RPI_wurthelek_434133025816",
+      "fp": "SW_SPST_TS-1088-AR02016",
       "nets": {
         "1": "RUN_SWITCH",
-        "2": "RUN_SWITCH",
-        "3": "RUN",
-        "4": "RUN"
+        "2": "RUN"
       },
       "pos": [
         328,
@@ -823,9 +821,11 @@
         180
       ],
       "metadata": {
-        "Description": "Tactile Pushbutton, SPST, N.O., 4.2x3.2x2.5mm",
-        "manufacturer": "Wurth Elektronik",
-        "manufacturer_pn": "434133025816"
+        "manufacturer": "XUNPU",
+        "manufacturer_pn": "TS-1088-AR02016",
+        "LCSC": "C720477",
+        "Description": "JLC Basic; 2-terminal SPST N.O. tactile 3.9x3.0x2.0mm, 160gf",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
       },
       "sheet": "controller",
       "uuid": "50ac382a-5c48-5db3-817e-bfe96f552aa2"
@@ -958,15 +958,13 @@
     },
     {
       "ref": "U2",
-      "lib": "AP2112K-3.3",
-      "value": "AP2112K-3.3TRG1",
-      "fp": "SOT-23-5",
+      "lib": "XC6206PxxxMR",
+      "value": "XC6206P332MR-G",
+      "fp": "XC6206_SOT23_Torex_Reference",
       "nets": {
-        "1": "VBUS",
-        "2": "GND",
-        "3": "VBUS",
-        "4": null,
-        "5": "+3V3"
+        "1": "GND",
+        "2": "+3V3",
+        "3": "VBUS"
       },
       "pos": [
         340,
@@ -978,10 +976,11 @@
         180
       ],
       "metadata": {
-        "manufacturer": "Diodes Incorporated",
-        "manufacturer_pn": "AP2112K-3.3TRG1",
-        "LCSC": "C51118",
-        "Datasheet": "https://www.diodes.com/datasheet/download/AP2112.pdf"
+        "manufacturer": "Torex Semiconductor",
+        "manufacturer_pn": "XC6206P332MR-G",
+        "LCSC": "C5446",
+        "Description": "JLC Basic; fixed 3.3V LDO, SOT23-3. Design target <=100mA continuous, not measured. LED power must bypass this rail.",
+        "Datasheet": "https://product.torexsemi.com/system/files/series/xc6206.pdf"
       },
       "sheet": "controller",
       "uuid": "3b03603b-d865-53f5-978f-93749b5e7194"
@@ -1008,7 +1007,7 @@
         "manufacturer": "Samsung Electro-Mechanics",
         "manufacturer_pn": "CL10A105KB8NNNC",
         "LCSC": "C15849",
-        "Description": "1uF 50V X5R 0603, AP2112 input/output ceramic",
+        "Description": "1uF 50V X5R 0603, LDO input ceramic",
         "Datasheet": "https://jlcpcb.com/partdetail/C15849"
       },
       "sheet": "controller",
@@ -1017,7 +1016,7 @@
     {
       "ref": "C5",
       "lib": "C",
-      "value": "1u",
+      "value": "4.7u",
       "fp": "C_0603_1608Metric",
       "nets": {
         "1": "+3V3",
@@ -1034,10 +1033,10 @@
       ],
       "metadata": {
         "manufacturer": "Samsung Electro-Mechanics",
-        "manufacturer_pn": "CL10A105KB8NNNC",
-        "LCSC": "C15849",
-        "Description": "1uF 50V X5R 0603, AP2112 input/output ceramic",
-        "Datasheet": "https://jlcpcb.com/partdetail/C15849"
+        "manufacturer_pn": "CL10A475KO8NNNC",
+        "LCSC": "C19666",
+        "Description": "4.7uF 16V X5R0603 output bypass; verify effective capacitance including bias/tolerance",
+        "Datasheet": "https://jlcpcb.com/partdetail/C19666"
       },
       "sheet": "controller",
       "uuid": "608799dd-9879-5b68-851d-1769dc7ab8b6"
@@ -2976,7 +2975,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW0",
+        "3": "ROW_L0",
         "1": "KEY_L1_1",
         "2": "KEY_L1_2"
       },
@@ -3005,7 +3004,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW0",
+        "3": "ROW_L0",
         "1": "KEY_L1_3",
         "2": "KEY_L1_4"
       },
@@ -3034,7 +3033,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW0",
+        "3": "ROW_L0",
         "1": "KEY_L1_5",
         "2": "KEY_L1_6"
       },
@@ -3063,7 +3062,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW0",
+        "3": "ROW_R0",
         "1": "KEY_R1_1",
         "2": "KEY_R1_2"
       },
@@ -3074,7 +3073,7 @@
       "pcb": [
         145.0,
         38.0,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3092,7 +3091,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW0",
+        "3": "ROW_R0",
         "1": "KEY_R1_3",
         "2": "KEY_R1_4"
       },
@@ -3103,7 +3102,7 @@
       "pcb": [
         149.5,
         38.0,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3121,7 +3120,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW0",
+        "3": "ROW_R0",
         "1": "KEY_R1_5",
         "2": "KEY_R1_6"
       },
@@ -3132,7 +3131,7 @@
       "pcb": [
         154.0,
         38.0,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3150,7 +3149,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW1",
+        "3": "ROW_L1",
         "1": "KEY_L2_1",
         "2": "KEY_L2_2"
       },
@@ -3179,7 +3178,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW1",
+        "3": "ROW_L1",
         "1": "KEY_L2_3",
         "2": "KEY_L2_4"
       },
@@ -3208,7 +3207,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW1",
+        "3": "ROW_L1",
         "1": "KEY_L2_5",
         "2": "KEY_L2_6"
       },
@@ -3237,7 +3236,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW1",
+        "3": "ROW_R1",
         "1": "KEY_R2_1",
         "2": "KEY_R2_2"
       },
@@ -3248,7 +3247,7 @@
       "pcb": [
         145.0,
         42.8,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3266,7 +3265,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW1",
+        "3": "ROW_R1",
         "1": "KEY_R2_3",
         "2": "KEY_R2_4"
       },
@@ -3277,7 +3276,7 @@
       "pcb": [
         149.5,
         42.8,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3295,7 +3294,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW1",
+        "3": "ROW_R1",
         "1": "KEY_R1_7",
         "2": "KEY_R2_6"
       },
@@ -3306,7 +3305,7 @@
       "pcb": [
         154.0,
         42.8,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3324,7 +3323,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW2",
+        "3": "ROW_L2",
         "1": "KEY_L3_1",
         "2": "KEY_L3_2"
       },
@@ -3353,7 +3352,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW2",
+        "3": "ROW_L2",
         "1": "KEY_L3_3",
         "2": "KEY_L3_4"
       },
@@ -3382,7 +3381,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW2",
+        "3": "ROW_L2",
         "1": "KEY_L3_5",
         "2": "KEY_L3_6"
       },
@@ -3411,7 +3410,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW2",
+        "3": "ROW_R2",
         "1": "KEY_R3_1",
         "2": "KEY_R3_2"
       },
@@ -3422,7 +3421,7 @@
       "pcb": [
         145.0,
         47.6,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3440,7 +3439,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW2",
+        "3": "ROW_R2",
         "1": "KEY_R3_3",
         "2": "KEY_R3_4"
       },
@@ -3451,7 +3450,7 @@
       "pcb": [
         149.5,
         47.6,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3469,7 +3468,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW2",
+        "3": "ROW_R2",
         "1": "KEY_R2_5",
         "2": "KEY_R3_5"
       },
@@ -3480,7 +3479,7 @@
       "pcb": [
         154.0,
         47.6,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3498,7 +3497,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW3",
+        "3": "ROW_L3",
         "1": "KEY_L4_1",
         "2": "KEY_L4_2"
       },
@@ -3527,7 +3526,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW3",
+        "3": "ROW_L3",
         "1": "KEY_L4_3",
         "2": "KEY_L4_4"
       },
@@ -3556,7 +3555,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW3",
+        "3": "ROW_L3",
         "1": "KEY_L4_5",
         "2": "KEY_L4_6"
       },
@@ -3585,7 +3584,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW3",
+        "3": "ROW_R3",
         "1": "KEY_R4_1",
         "2": "KEY_R4_2"
       },
@@ -3596,7 +3595,7 @@
       "pcb": [
         145.0,
         52.4,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3614,7 +3613,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW3",
+        "3": "ROW_R3",
         "1": "KEY_R4_3",
         "2": "KEY_R4_4"
       },
@@ -3625,7 +3624,7 @@
       "pcb": [
         149.5,
         52.4,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3643,7 +3642,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW3",
+        "3": "ROW_R3",
         "1": "KEY_R4_5",
         "2": "KEY_R4_6"
       },
@@ -3654,7 +3653,7 @@
       "pcb": [
         154.0,
         52.4,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3672,7 +3671,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW4",
+        "3": "ROW_L4",
         "1": "KEY_L5_1",
         "2": "KEY_L5_2"
       },
@@ -3701,7 +3700,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW4",
+        "3": "ROW_L4",
         "1": "KEY_L5_3",
         "2": "KEY_L5_4"
       },
@@ -3730,7 +3729,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW4",
+        "3": "ROW_L4",
         "1": "KEY_L5_5",
         "2": "KEY_L5_6"
       },
@@ -3759,7 +3758,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW4",
+        "3": "ROW_R4",
         "1": "KEY_R5_1",
         "2": "KEY_R5_2"
       },
@@ -3770,7 +3769,7 @@
       "pcb": [
         145.0,
         57.2,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3788,7 +3787,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW4",
+        "3": "ROW_R4",
         "1": "KEY_R5_3",
         "2": "KEY_R5_4"
       },
@@ -3799,7 +3798,7 @@
       "pcb": [
         149.5,
         57.2,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3817,7 +3816,7 @@
       "value": "BAV70",
       "fp": "SOT-23",
       "nets": {
-        "3": "ROW4",
+        "3": "ROW_R4",
         "1": "KEY_R5_5",
         "2": "KEY_R5_6"
       },
@@ -3828,7 +3827,7 @@
       "pcb": [
         154.0,
         57.2,
-        0
+        180
       ],
       "metadata": {
         "manufacturer": "Jiangsu Changjing Electronics",
@@ -3891,6 +3890,32 @@
       },
       "sheet": "controller",
       "uuid": "92b90011-1488-512d-a313-c58bccd97682"
+    },
+    {
+      "ref": "J3",
+      "lib": "SWD_TEST_3PIN",
+      "value": "SWD 2.54 DNP",
+      "fp": "PinHeader_1x03_P2.54mm_Vertical",
+      "nets": {
+        "1": "SWCLK",
+        "2": "GND",
+        "3": "SWDIO"
+      },
+      "pos": [
+        200,
+        238
+      ],
+      "pcb": [
+        112,
+        39,
+        90
+      ],
+      "metadata": {
+        "Assembly": "DNP",
+        "Description": "Optional unpopulated 2.54mm 1x3 test/header holes; same order as SH: 1 SWCLK, 2 GND, 3 SWDIO; connector side of 100ohm resistors"
+      },
+      "sheet": "controller",
+      "uuid": "914fa755-8f6f-54b1-bc6d-86a13864fa8e"
     },
     {
       "ref": "H1",

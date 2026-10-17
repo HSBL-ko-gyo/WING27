@@ -13,6 +13,7 @@ for n in children(child(a,'nets'),'net'):
  for q in children(n,'node'):netnodes[(child(q,'ref')[1],child(q,'pin')[1])]=name
 old=parse((ROOT/'WING27.kicad_pcb').read_text());graphics=[x for x in old if isinstance(x,list) and str(x[0]).startswith('gr_')]
 source_members={u for g in children(old,'group') if g[1]==GROUP_NAME for u in (child(g,'members') or [])[1:]}
+graphics=[g for g in graphics if not(g[0]=='gr_text' and g[1] in ['1','1 CLK','CLK','GND','DIO','J3 SWD DNP'])]
 graphics=[g for g in graphics if not(child(g,'uuid') and child(g,'uuid')[1] in source_members)]
 # Remove obsolete text but retain panel drawing as a non-fabrication reference.
 for g in graphics:
@@ -20,7 +21,7 @@ for g in graphics:
 b=pcbnew.BOARD();b.GetDesignSettings().SetBoardThickness(pcbnew.FromMM(1.6))
 b.GetTitleBlock().SetCompany('ハシビロ工業')
 b.GetTitleBlock().SetTitle('WING27 / 60-key keyboard / unrouted')
-b.GetTitleBlock().SetRevision('electrical-2')
+b.GetTitleBlock().SetRevision('electrical-3')
 nets={}
 for name in sorted(netnames):
  n=pcbnew.NETINFO_ITEM(b,name);b.Add(n);nets[name]=n
@@ -32,6 +33,7 @@ for c in m['components']:
  path.push_back(pcbnew.KIID(c['uuid']));f.SetPath(path)
  f.SetSheetfile('Controller.kicad_sch' if c['sheet']=='controller' else 'WING27.kicad_sch');f.SetSheetname('Controller' if c['sheet']=='controller' else '')
  f.SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(c['pcb'][0]),pcbnew.FromMM(c['pcb'][1])));f.SetOrientationDegrees(c['pcb'][2])
+ if c['ref']=='J3':f.SetAttributes(f.GetAttributes() | pcbnew.FP_DNP)
  f.SetLocked(c['ref'].startswith('SW') and int(c['ref'][2:])<=60)
  f.Reference().SetTextSize(pcbnew.VECTOR2I(pcbnew.FromMM(0.8),pcbnew.FromMM(0.8)));f.Reference().SetTextThickness(pcbnew.FromMM(0.1));f.Value().SetVisible(False)
  if not (c["ref"].startswith("SW") and int(c["ref"][2:])<=60):f.Reference().SetLayer(pcbnew.F_Fab)
@@ -45,6 +47,9 @@ for c in m['components']:
   if not pn:continue
   name=netnodes.get((c['ref'],pn));assert name,(c['ref'],pn)
   pad.SetNet(nets[name])
+# Optional SWD header: readable signals and pin-1 identification, no fitted connector.
+for text,x,y in [('1',110.4,37.8),('CLK',112,36.9),('GND',114.54,36.9),('DIO',117.08,36.9),('J3 SWD DNP',114.54,42.1)]:
+ t=pcbnew.PCB_TEXT(b);t.SetText(text);t.SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(x),pcbnew.FromMM(y)));t.SetLayer(pcbnew.F_SilkS);t.SetTextSize(pcbnew.VECTOR2I(pcbnew.FromMM(.8),pcbnew.FromMM(.8)));t.SetTextThickness(pcbnew.FromMM(.1));b.Add(t)
 b.BuildConnectivity();overlay_report=import_panel_svg(b);pcbnew.SaveBoard(str(ROOT/'WING27.kicad_pcb'),b)
 # Keep provisional printed-case boss envelopes separate from the source SVG layer.
 graphics=[g for g in graphics if child(g,'layer')!=['layer','User.2']]
