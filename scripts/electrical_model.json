@@ -1118,7 +1118,7 @@
         180
       ],
       "metadata": {
-        "Description": "Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+        "Description": "VBUS power test pad; shared 5V USB rail for the side LEDs"
       },
       "sheet": "controller",
       "uuid": "2c93d44d-ce13-593d-9406-5d002903431f"
@@ -1141,7 +1141,7 @@
         180
       ],
       "metadata": {
-        "Description": "Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+        "Description": "GPIO17 3.3V LED data test point; R24 100ohm drives the first WS2812B-4020-V6 DIN directly."
       },
       "sheet": "controller",
       "uuid": "0ddab8d5-6300-523d-bea4-844fbbbf8b6f"
@@ -1164,7 +1164,7 @@
         180
       ],
       "metadata": {
-        "Description": "Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+        "Description": "GND reference test pad"
       },
       "sheet": "controller",
       "uuid": "87b0f0fb-5507-551b-8365-6a139860768b"
@@ -4000,6 +4000,1520 @@
       },
       "sheet": "controller",
       "uuid": "1018181b-70d0-5e17-b735-403210f356c5"
+    },
+    {
+      "ref": "D31",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_DATA_3V3",
+        "2": "VBUS",
+        "3": "LED_CHAIN_01",
+        "4": "GND"
+      },
+      "pos": [
+        76.2,
+        63.5
+      ],
+      "pcb": [
+        79.5,
+        34.0,
+        270.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "left_inner",
+        "LED_Chain_Index": "1",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "7c5cf88d-fd21-5499-b31c-d472fd49ffdb"
+    },
+    {
+      "ref": "C22",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        99.06,
+        46.99
+      ],
+      "pcb": [
+        76.5,
+        34.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D31",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "56eade7f-7edc-5009-bfd0-9a7ba266fb95"
+    },
+    {
+      "ref": "JP1",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_DATA_3V3",
+        "2": "LED_CHAIN_01"
+      },
+      "pos": [
+        76.2,
+        88.9
+      ],
+      "pcb": [
+        77.5,
+        34.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D31; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D31",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "3a31d577-8340-524b-a518-87b801b2bad7",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D32",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_01",
+        "2": "VBUS",
+        "3": "LED_CHAIN_02",
+        "4": "GND"
+      },
+      "pos": [
+        152.4,
+        63.5
+      ],
+      "pcb": [
+        79.5,
+        44.0,
+        270.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "left_inner",
+        "LED_Chain_Index": "2",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "c81aa32e-088e-5277-b01e-0615c5e66e1a"
+    },
+    {
+      "ref": "C23",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        175.26,
+        46.99
+      ],
+      "pcb": [
+        76.5,
+        44.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D32",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "69c89422-1a5e-5edd-b5b3-25036834346e"
+    },
+    {
+      "ref": "JP2",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_01",
+        "2": "LED_CHAIN_02"
+      },
+      "pos": [
+        152.4,
+        88.9
+      ],
+      "pcb": [
+        77.5,
+        44.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D32; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D32",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "c79ceeda-d0c7-5c8b-a215-e698dd45c230",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D33",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_02",
+        "2": "VBUS",
+        "3": "LED_CHAIN_03",
+        "4": "GND"
+      },
+      "pos": [
+        228.6,
+        63.5
+      ],
+      "pcb": [
+        79.5,
+        54.0,
+        270.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "left_inner",
+        "LED_Chain_Index": "3",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "3a7fc752-4d49-5d91-b3b1-b9223a527fbe"
+    },
+    {
+      "ref": "C24",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        251.46,
+        46.99
+      ],
+      "pcb": [
+        76.5,
+        54.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D33",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "66f977df-5195-5df9-850e-e5b2114eb6a3"
+    },
+    {
+      "ref": "JP3",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_02",
+        "2": "LED_CHAIN_03"
+      },
+      "pos": [
+        228.6,
+        88.9
+      ],
+      "pcb": [
+        77.5,
+        54.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D33; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D33",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "7bf83449-0504-5c48-a656-e6875e16f89b",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D34",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_03",
+        "2": "VBUS",
+        "3": "LED_CHAIN_04",
+        "4": "GND"
+      },
+      "pos": [
+        304.8,
+        63.5
+      ],
+      "pcb": [
+        79.5,
+        64.0,
+        270.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "left_inner",
+        "LED_Chain_Index": "4",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "9d52edcc-4f9e-572a-a947-039d57af427a"
+    },
+    {
+      "ref": "C25",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        327.66,
+        46.99
+      ],
+      "pcb": [
+        76.5,
+        64.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D34",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "452ab466-17b2-5013-a8c9-78a820db1a0b"
+    },
+    {
+      "ref": "JP4",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_03",
+        "2": "LED_CHAIN_04"
+      },
+      "pos": [
+        304.8,
+        88.9
+      ],
+      "pcb": [
+        77.5,
+        64.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D34; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D34",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "6531f7bc-c5d9-5ec2-8db3-bc9a6ca008f0",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D35",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_04",
+        "2": "VBUS",
+        "3": "LED_CHAIN_05",
+        "4": "GND"
+      },
+      "pos": [
+        304.8,
+        115.57
+      ],
+      "pcb": [
+        22.5,
+        64.0,
+        90.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "left_outer",
+        "LED_Chain_Index": "5",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "95111f1f-0b86-5178-bbe8-949b73b75d61"
+    },
+    {
+      "ref": "C26",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        327.66,
+        99.06
+      ],
+      "pcb": [
+        25.5,
+        64.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D35",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "0c603553-3934-5cf0-a184-71e526e127f3"
+    },
+    {
+      "ref": "JP5",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_04",
+        "2": "LED_CHAIN_05"
+      },
+      "pos": [
+        304.8,
+        140.97
+      ],
+      "pcb": [
+        24.5,
+        64.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D35; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D35",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "03ff569a-0053-5420-bb63-2d4bb7672361",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D36",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_05",
+        "2": "VBUS",
+        "3": "LED_CHAIN_06",
+        "4": "GND"
+      },
+      "pos": [
+        228.6,
+        115.57
+      ],
+      "pcb": [
+        22.5,
+        54.0,
+        90.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "left_outer",
+        "LED_Chain_Index": "6",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "f5deed0f-5438-58cd-b0ba-d43e857cff5c"
+    },
+    {
+      "ref": "C27",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        251.46,
+        99.06
+      ],
+      "pcb": [
+        25.5,
+        54.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D36",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "8968f904-63c3-55ef-8a7f-5085272d4694"
+    },
+    {
+      "ref": "JP6",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_05",
+        "2": "LED_CHAIN_06"
+      },
+      "pos": [
+        228.6,
+        140.97
+      ],
+      "pcb": [
+        24.5,
+        54.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D36; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D36",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "954b21aa-f6c1-5777-9648-64cc24ffdaa5",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D37",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_06",
+        "2": "VBUS",
+        "3": "LED_CHAIN_07",
+        "4": "GND"
+      },
+      "pos": [
+        152.4,
+        115.57
+      ],
+      "pcb": [
+        22.5,
+        44.0,
+        90.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "left_outer",
+        "LED_Chain_Index": "7",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "960d1b1c-08ea-5fd7-ab56-48b1d1ac9a63"
+    },
+    {
+      "ref": "C28",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        175.26,
+        99.06
+      ],
+      "pcb": [
+        25.5,
+        44.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D37",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "9f114576-8566-5d60-9a8f-c76f3a2ea9bf"
+    },
+    {
+      "ref": "JP7",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_06",
+        "2": "LED_CHAIN_07"
+      },
+      "pos": [
+        152.4,
+        140.97
+      ],
+      "pcb": [
+        24.5,
+        44.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D37; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D37",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "867fbf8b-c476-5854-9e6d-e56e13010256",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D38",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_07",
+        "2": "VBUS",
+        "3": "LED_CHAIN_08",
+        "4": "GND"
+      },
+      "pos": [
+        76.2,
+        115.57
+      ],
+      "pcb": [
+        22.5,
+        34.0,
+        90.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "left_outer",
+        "LED_Chain_Index": "8",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "a812ef99-a4b3-51c2-8d60-2f7407658769"
+    },
+    {
+      "ref": "C29",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        99.06,
+        99.06
+      ],
+      "pcb": [
+        25.5,
+        34.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D38",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "cbf48a61-a687-57ff-a0ce-53e2fcabc44d"
+    },
+    {
+      "ref": "JP8",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_07",
+        "2": "LED_CHAIN_08"
+      },
+      "pos": [
+        76.2,
+        140.97
+      ],
+      "pcb": [
+        24.5,
+        34.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D38; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D38",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "035f80b9-e53a-54ab-a3e7-5a82b2f64506",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D39",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_08",
+        "2": "VBUS",
+        "3": "LED_CHAIN_09",
+        "4": "GND"
+      },
+      "pos": [
+        76.2,
+        167.64
+      ],
+      "pcb": [
+        166.5,
+        34.0,
+        90.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "right_inner",
+        "LED_Chain_Index": "9",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "e46c6d39-50d2-51fe-b8b9-23ca20f329ac"
+    },
+    {
+      "ref": "C30",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        99.06,
+        151.13
+      ],
+      "pcb": [
+        169.5,
+        34.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D39",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "8197c30b-f06e-5cf7-a618-a739935283d9"
+    },
+    {
+      "ref": "JP9",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_08",
+        "2": "LED_CHAIN_09"
+      },
+      "pos": [
+        76.2,
+        193.04
+      ],
+      "pcb": [
+        168.5,
+        34.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D39; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D39",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "5c5eeab3-5672-50a5-a935-978aaf223a14",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D40",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_09",
+        "2": "VBUS",
+        "3": "LED_CHAIN_10",
+        "4": "GND"
+      },
+      "pos": [
+        152.4,
+        167.64
+      ],
+      "pcb": [
+        166.5,
+        44.0,
+        90.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "right_inner",
+        "LED_Chain_Index": "10",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "63b5f531-256a-5aad-a08b-3ba8324c67e6"
+    },
+    {
+      "ref": "C31",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        175.26,
+        151.13
+      ],
+      "pcb": [
+        169.5,
+        44.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D40",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "0b82dc77-45aa-5db9-9860-97f27e8098f0"
+    },
+    {
+      "ref": "JP10",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_09",
+        "2": "LED_CHAIN_10"
+      },
+      "pos": [
+        152.4,
+        193.04
+      ],
+      "pcb": [
+        168.5,
+        44.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D40; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D40",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "9efc29d7-ffe2-592a-a292-d7100f9d89cd",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D41",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_10",
+        "2": "VBUS",
+        "3": "LED_CHAIN_11",
+        "4": "GND"
+      },
+      "pos": [
+        228.6,
+        167.64
+      ],
+      "pcb": [
+        166.5,
+        54.0,
+        90.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "right_inner",
+        "LED_Chain_Index": "11",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "91c5c98b-c2b4-564e-ad6a-4a304cd2ea28"
+    },
+    {
+      "ref": "C32",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        251.46,
+        151.13
+      ],
+      "pcb": [
+        169.5,
+        54.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D41",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "9c04b55a-8028-5cc5-b3af-6eecf08531f7"
+    },
+    {
+      "ref": "JP11",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_10",
+        "2": "LED_CHAIN_11"
+      },
+      "pos": [
+        228.6,
+        193.04
+      ],
+      "pcb": [
+        168.5,
+        54.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D41; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D41",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "c0ddf28a-d726-5d5e-8b30-e9941400b7f7",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D42",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_11",
+        "2": "VBUS",
+        "3": "LED_CHAIN_12",
+        "4": "GND"
+      },
+      "pos": [
+        304.8,
+        167.64
+      ],
+      "pcb": [
+        166.5,
+        64.0,
+        90.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "right_inner",
+        "LED_Chain_Index": "12",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "8d553fd6-fef7-54f8-93da-a0a25bfe5d97"
+    },
+    {
+      "ref": "C33",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        327.66,
+        151.13
+      ],
+      "pcb": [
+        169.5,
+        64.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D42",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "499ef2d5-e5e4-5d4d-90e6-56674e8ef796"
+    },
+    {
+      "ref": "JP12",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_11",
+        "2": "LED_CHAIN_12"
+      },
+      "pos": [
+        304.8,
+        193.04
+      ],
+      "pcb": [
+        168.5,
+        64.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D42; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D42",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "11096999-da73-5ef1-af99-aa9afb117d5c",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D43",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_12",
+        "2": "VBUS",
+        "3": "LED_CHAIN_13",
+        "4": "GND"
+      },
+      "pos": [
+        304.8,
+        219.71
+      ],
+      "pcb": [
+        225.5,
+        64.0,
+        270.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "right_outer",
+        "LED_Chain_Index": "13",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "7c31ee86-7408-53a2-abaa-aac95b65eb93"
+    },
+    {
+      "ref": "C34",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        327.66,
+        203.2
+      ],
+      "pcb": [
+        222.5,
+        64.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D43",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "7491f4e5-2088-50bf-9806-d80eb7f9d010"
+    },
+    {
+      "ref": "JP13",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_12",
+        "2": "LED_CHAIN_13"
+      },
+      "pos": [
+        304.8,
+        245.11
+      ],
+      "pcb": [
+        223.5,
+        64.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D43; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D43",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "50022603-2049-5900-a067-1c0074ff1bed",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D44",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_13",
+        "2": "VBUS",
+        "3": "LED_CHAIN_14",
+        "4": "GND"
+      },
+      "pos": [
+        228.6,
+        219.71
+      ],
+      "pcb": [
+        225.5,
+        54.0,
+        270.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "right_outer",
+        "LED_Chain_Index": "14",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "7366e799-1f6c-50cf-af08-b1b77d996341"
+    },
+    {
+      "ref": "C35",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        251.46,
+        203.2
+      ],
+      "pcb": [
+        222.5,
+        54.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D44",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "cb38582f-bc94-5ece-9373-24191a25002a"
+    },
+    {
+      "ref": "JP14",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_13",
+        "2": "LED_CHAIN_14"
+      },
+      "pos": [
+        228.6,
+        245.11
+      ],
+      "pcb": [
+        223.5,
+        54.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D44; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D44",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "1ad35ccf-9828-554d-a55b-955566a8633d",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D45",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_14",
+        "2": "VBUS",
+        "3": "LED_CHAIN_15",
+        "4": "GND"
+      },
+      "pos": [
+        152.4,
+        219.71
+      ],
+      "pcb": [
+        225.5,
+        44.0,
+        270.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "right_outer",
+        "LED_Chain_Index": "15",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "dd9c709b-4b65-593d-9c42-d9c1562abe18"
+    },
+    {
+      "ref": "C36",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        175.26,
+        203.2
+      ],
+      "pcb": [
+        222.5,
+        44.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D45",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "44ab907a-a623-5145-ac20-ad353cd4e5d6"
+    },
+    {
+      "ref": "JP15",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_14",
+        "2": "LED_CHAIN_15"
+      },
+      "pos": [
+        152.4,
+        245.11
+      ],
+      "pcb": [
+        223.5,
+        44.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D45; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D45",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "e638631b-31a9-5ab0-ba7c-f348190cf8ce",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "D46",
+      "lib": "WS2812B-4020-V6",
+      "value": "WS2812B-4020-V6",
+      "fp": "WS2812B_4020_V6_LCSC_Reference",
+      "nets": {
+        "1": "LED_CHAIN_15",
+        "2": "VBUS",
+        "3": "LED_CHAIN_16_END",
+        "4": "GND"
+      },
+      "pos": [
+        76.2,
+        219.71
+      ],
+      "pcb": [
+        225.5,
+        34.0,
+        270.0
+      ],
+      "metadata": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet_revision": "V1.4 / 2026-07-28",
+        "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
+        "LED_Group": "right_outer",
+        "LED_Chain_Index": "16",
+        "ReferenceLand": "LCSC C52941387 shared reference CAD; pad widths/positions checked against Worldsemi V1.4, not manufacturer-approved land.",
+        "Emission": "Provisional +localY emission inferred from U-outline; verify actual part orientation and mounted height before fabrication."
+      },
+      "sheet": "leds",
+      "uuid": "551cce1e-64dd-5006-a79c-a5c7c92dc0d1"
+    },
+    {
+      "ref": "C37",
+      "lib": "C",
+      "value": "100n",
+      "fp": "RPI_generic_capc1005x50",
+      "nets": {
+        "1": "VBUS",
+        "2": "GND"
+      },
+      "pos": [
+        99.06,
+        203.2
+      ],
+      "pcb": [
+        222.5,
+        34.8,
+        0
+      ],
+      "metadata": {
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D46",
+        "voltage": "25V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "manufacturer": "Murata",
+        "manufacturer_pn": "GRM155R71E104KE14D"
+      },
+      "sheet": "leds",
+      "uuid": "19e39822-be3e-56ae-9af1-26cd977cfbbe"
+    },
+    {
+      "ref": "JP16",
+      "lib": "SolderJumper_2_Open",
+      "value": "OPEN",
+      "fp": "SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm",
+      "nets": {
+        "1": "LED_CHAIN_15",
+        "2": "LED_CHAIN_16_END"
+      },
+      "pos": [
+        76.2,
+        245.11
+      ],
+      "pcb": [
+        223.5,
+        34.0,
+        0
+      ],
+      "metadata": {
+        "Description": "Normally OPEN copper bypass for D46; remove LED before bridging DIN to DOUT",
+        "Assembly": "PCB copper only; no fitted part",
+        "Bypass_For": "D46",
+        "BoardSide": "B.Cu"
+      },
+      "sheet": "leds",
+      "uuid": "a67ed9b6-c2ab-5489-84e9-942da762797f",
+      "in_bom": false,
+      "dnp": false
+    },
+    {
+      "ref": "R24",
+      "lib": "R",
+      "value": "100",
+      "fp": "RPI_generic_resc1005x35",
+      "nets": {
+        "1": "EXP_GPIO17_3V3",
+        "2": "LED_DATA_3V3"
+      },
+      "pos": [
+        40.64,
+        63.5
+      ],
+      "pcb": [
+        135.0,
+        34.0,
+        0
+      ],
+      "metadata": {
+        "manufacturer": "Yageo",
+        "manufacturer_pn": "RC0402FR-07100RL",
+        "Description": "100ohm 1% series damping for GPIO17 to first side-LED DIN; place near MCU"
+      },
+      "sheet": "leds",
+      "uuid": "60000c7f-5963-5e8a-bda5-d97289f953a4"
     }
   ],
   "key_mapping": [
@@ -4666,5 +6180,7 @@
   ],
   "root_uuid": "77e26e32-63d2-500f-9544-76b2dd8b20de",
   "controller_sheet_uuid": "6fe06095-6837-584f-b7b6-3b32dfe1f4b6",
-  "controller_uuid": "820e6db1-1d50-58b5-a221-d35c1fb2e35a"
+  "controller_uuid": "820e6db1-1d50-58b5-a221-d35c1fb2e35a",
+  "led_sheet_uuid": "5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c",
+  "led_uuid": "582e6294-cfab-50e8-81f5-8b6ad86955ac"
 }

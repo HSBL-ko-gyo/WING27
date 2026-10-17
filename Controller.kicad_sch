@@ -7040,7 +7040,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+"VBUS power test pad; shared 5V USB rail for the side LEDs"
 			(at 54.61 193.04 0)
 			(effects
 				(font
@@ -7090,7 +7090,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+"GPIO17 3.3V LED data test point; R24 100ohm drives the first WS2812B-4020-V6 DIN directly."
 			(at 294.64 248.92 0)
 			(effects
 				(font
@@ -7140,7 +7140,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Expansion pads only. LED not fitted; GPIO is 3.3V, not a 5V NeoPixel driver."
+"GND reference test pad"
 			(at 82.55 193.04 0)
 			(effects
 				(font
@@ -7667,8 +7667,9 @@ line
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "X1")
 					(unit 1)))))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 255.27 179.07 0)
 		(effects
 			(font
@@ -7683,8 +7684,9 @@ line
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "51f6112f-0bdb-5719-936c-560fb093debe"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 355.6 128.27 0)
 		(effects
 			(font
@@ -7779,8 +7781,9 @@ line
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "52551911-b047-50b3-9455-70f29ef9f13a"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 328.93 110.49 0)
 		(effects
 			(font
@@ -8009,8 +8012,9 @@ line
 				(size 1.016 1.016))
 			(justify right bottom))
 		(uuid "18529cf2-b309-531c-a880-a7d25848b892"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 231.14 46.99 0)
 		(effects
 			(font
@@ -8033,32 +8037,36 @@ line
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "fcb0a85f-bea4-5c88-9690-ffe28264ee56"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 367.03 45.72 0)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "98943817-2f1c-5b13-bb0a-c766b248c802"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 228.6 247.65 0)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "e4069ad2-dda1-51df-8cf6-fb4fc2d6499b"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 170.18 184.15 0)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "6b28c0bb-5a8d-5c5e-856b-b2b58ca07655"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 365.76 219.71 0)
 		(effects
 			(font
@@ -8129,8 +8137,9 @@ line
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "b709ba13-f8a0-5be1-a094-1017cfc57927"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 321.31 248.92 0)
 		(effects
 			(font
@@ -8153,24 +8162,27 @@ line
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "256f2fc2-2550-5370-8f4e-2313df058de3"))
-	(label
+	(global_label
 "VBUS"
+		(shape bidirectional)
 		(at 109.22 68.58 180)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify right bottom))
 		(uuid "3e908dd2-0af8-5bcb-a112-c88ff3006b9e"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 109.22 101.6 180)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify right bottom))
 		(uuid "5065e491-125d-5276-8bd6-b64bd02b7975"))
-	(label
+	(global_label
 "VBUS"
+		(shape bidirectional)
 		(at 55.88 76.2 180)
 		(effects
 			(font
@@ -8193,16 +8205,18 @@ line
 				(size 1.016 1.016))
 			(justify right bottom))
 		(uuid "a5f01d28-0f0c-59e7-b13f-361ac92eaa32"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 68.58 121.92 180)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify right bottom))
 		(uuid "475111e6-503a-5c48-8028-0301a54b22c6"))
-	(label
+	(global_label
 "VBUS"
+		(shape bidirectional)
 		(at 54.61 43.18 0)
 		(effects
 			(font
@@ -8217,40 +8231,45 @@ line
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "e3551176-6678-5f54-835a-3c753da31c24"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 77.47 59.69 0)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "fa35e81a-8f7a-5638-97ae-dbf1f5f7cc60"))
-	(label
+	(global_label
 "VBUS"
+		(shape bidirectional)
 		(at 54.61 189.23 0)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "6f951c2d-f18a-5939-b447-9940c3ba6513"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 82.55 196.85 0)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "b91cf9ba-aa15-5858-855f-f81e65595cfe"))
-	(label
+	(global_label
 "VBUS"
+		(shape bidirectional)
 		(at 40.64 40.64 0)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "3c9b5244-b8c6-5233-b1f6-5807c467667c"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 40.64 59.69 0)
 		(effects
 			(font
@@ -8347,16 +8366,18 @@ line
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "254cd47d-3709-5990-a10f-e834767a65d1"))
-	(label
+	(global_label
 "GND"
+		(shape bidirectional)
 		(at 358.14 238.76 0)
 		(effects
 			(font
 				(size 1.016 1.016))
 			(justify left bottom))
 		(uuid "018417bf-0b92-52c4-b7a9-7c1189eb8763"))
-	(label
+	(global_label
 "EXP_GPIO17_3V3"
+		(shape bidirectional)
 		(at 294.64 248.92 0)
 		(effects
 			(font
@@ -10608,7 +10629,7 @@ line
 			(justify left))
 		(uuid "71beac43-bcfd-5b35-a653-c0672518d25f"))
 	(text
-"TP2は3.3 V GPIO。5 V LEDドライバは搭載しない。"
+"TP2：GPIO17の3.3 Vデータ。R24（100Ω）経由でサイドLEDを駆動。"
 		(at 15.24 278.13 0)
 		(effects
 			(font

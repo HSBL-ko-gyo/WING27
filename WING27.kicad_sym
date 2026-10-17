@@ -4265,4 +4265,274 @@ line
 			(effects
 				(font
 					(size 1.27 1.27))
-				(hide yes)))))
+				(hide yes))))
+	(symbol
+"WS2812B-4020-V6"
+		(pin_names
+			(offset 1.016))
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property
+"Reference"
+"D"
+			(at -13.97 8.89 0)
+			(effects
+				(font
+					(size 1.016 1.016))))
+		(property
+"Value"
+"WS2812B-4020-V6"
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.016 1.016))))
+		(property
+"Footprint"
+""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.016 1.016))
+				(hide yes)))
+		(property
+"Datasheet"
+"https://www.lcsc.com/product-detail/C52941387.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.016 1.016))
+				(hide yes)))
+		(property
+"Description"
+"Worldsemi side-view 4020 V6; 1 DIN, 2 VDD, 3 DOUT, 4 VSS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.016 1.016))
+				(hide yes)))
+		(symbol
+"WS2812B-4020-V6_0_1"
+			(rectangle
+				(start -7.62 6.35)
+				(end 7.62 -6.35)
+				(stroke
+					(width 0)
+					(type default))
+				(fill
+					(type background))))
+		(symbol
+"WS2812B-4020-V6_1_1"
+			(pin
+input
+line
+				(at -12.7 0 0)
+				(length 5.08)
+				(name
+"DIN"
+					(effects
+						(font
+							(size 1.016 1.016))))
+				(number
+"1"
+					(effects
+						(font
+							(size 1.016 1.016)))))
+			(pin
+power_in
+line
+				(at 0 11.43 270)
+				(length 5.08)
+				(name
+"VDD"
+					(effects
+						(font
+							(size 1.016 1.016))))
+				(number
+"2"
+					(effects
+						(font
+							(size 1.016 1.016)))))
+			(pin
+output
+line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name
+"DOUT"
+					(effects
+						(font
+							(size 1.016 1.016))))
+				(number
+"3"
+					(effects
+						(font
+							(size 1.016 1.016)))))
+			(pin
+power_in
+line
+				(at 0 -11.43 90)
+				(length 5.08)
+				(name
+"VSS"
+					(effects
+						(font
+							(size 1.016 1.016))))
+				(number
+"4"
+					(effects
+						(font
+							(size 1.016 1.016)))))))
+	(symbol
+"SolderJumper_2_Open"
+		(pin_numbers
+			(hide yes))
+		(pin_names
+			(offset 0)
+			(hide yes))
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property
+"Reference"
+"JP"
+			(at 0 2.032 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property
+"Value"
+"SolderJumper_2_Open"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27))))
+		(property
+"Footprint"
+""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+"Datasheet"
+"~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+"Description"
+"Solder Jumper, 2-pole, open"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+"ki_keywords"
+"solder jumper SPST"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(property
+"ki_fp_filters"
+"SolderJumper*Open*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(hide yes)))
+		(symbol
+"SolderJumper_2_Open_0_1"
+			(polyline
+				(pts
+					(xy -0.254 1.016)
+					(xy -0.254 -1.016))
+				(stroke
+					(width 0)
+					(type default))
+				(fill
+					(type none)))
+			(arc
+				(start -0.254 -1.016)
+				(mid -1.2656 0)
+				(end -0.254 1.016)
+				(stroke
+					(width 0)
+					(type default))
+				(fill
+					(type none)))
+			(arc
+				(start -0.254 -1.016)
+				(mid -1.2656 0)
+				(end -0.254 1.016)
+				(stroke
+					(width 0)
+					(type default))
+				(fill
+					(type outline)))
+			(arc
+				(start 0.254 1.016)
+				(mid 1.2656 0)
+				(end 0.254 -1.016)
+				(stroke
+					(width 0)
+					(type default))
+				(fill
+					(type none)))
+			(arc
+				(start 0.254 1.016)
+				(mid 1.2656 0)
+				(end 0.254 -1.016)
+				(stroke
+					(width 0)
+					(type default))
+				(fill
+					(type outline)))
+			(polyline
+				(pts
+					(xy 0.254 1.016)
+					(xy 0.254 -1.016))
+				(stroke
+					(width 0)
+					(type default))
+				(fill
+					(type none))))
+		(symbol
+"SolderJumper_2_Open_1_1"
+			(pin
+passive
+line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name
+"A"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number
+"1"
+					(effects
+						(font
+							(size 1.27 1.27)))))
+			(pin
+passive
+line
+				(at 3.81 0 180)
+				(length 2.54)
+				(name
+"B"
+					(effects
+						(font
+							(size 1.27 1.27))))
+				(number
+"2"
+					(effects
+						(font
+							(size 1.27 1.27))))))
+		(embedded_fonts no)))

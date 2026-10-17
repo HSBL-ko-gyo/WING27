@@ -12544,4 +12544,36 @@ line
 			(font
 				(size 1.27 1.27))
 			(justify left))
-		(uuid "f7cba3f8-4330-52a0-978e-0e00eb276195")))
+		(uuid "f7cba3f8-4330-52a0-978e-0e00eb276195"))
+	(sheet
+		(at 110 350)
+		(size 90 20)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type default))
+		(fill
+			(color 0 0 0 0))
+		(uuid "5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c")
+		(property
+"Sheetname"
+"Side LEDs"
+			(at 110 348 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left bottom)))
+		(property
+"Sheetfile"
+"LEDs.kicad_sch"
+			(at 110 372 0)
+			(effects
+				(font
+					(size 1.27 1.27))
+				(justify left top)))
+		(instances
+			(project
+"WING27"
+				(path
+"/77e26e32-63d2-500f-9544-76b2dd8b20de"
+					(page "3"))))))

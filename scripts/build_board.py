@@ -30,8 +30,11 @@ for c in m['components']:
  b.Add(f);f.SetReference(c['ref']);f.SetValue(c['value']);f.SetFPID(pcbnew.LIB_ID('WING27',c['fp']))
  path=pcbnew.KIID_PATH();path.push_back(pcbnew.KIID(m['root_uuid']))
  if c['sheet']=='controller':path.push_back(pcbnew.KIID(m['controller_sheet_uuid']))
+ if c['sheet']=='leds':path.push_back(pcbnew.KIID(m['led_sheet_uuid']))
  path.push_back(pcbnew.KIID(c['uuid']));f.SetPath(path)
- f.SetSheetfile('Controller.kicad_sch' if c['sheet']=='controller' else 'WING27.kicad_sch');f.SetSheetname('Controller' if c['sheet']=='controller' else '')
+ f.SetSheetfile({'controller':'Controller.kicad_sch','leds':'LEDs.kicad_sch'}.get(c['sheet'],'WING27.kicad_sch'));f.SetSheetname({'controller':'Controller','leds':'LED'}.get(c['sheet'],''))
+ if c['ref'].startswith('JP'):
+  f.Flip(f.GetPosition(),False);f.SetAttributes(f.GetAttributes()|pcbnew.FP_EXCLUDE_FROM_BOM|pcbnew.FP_EXCLUDE_FROM_POS_FILES)
  f.SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(c['pcb'][0]),pcbnew.FromMM(c['pcb'][1])));f.SetOrientationDegrees(c['pcb'][2])
  if c['ref']=='J3':f.SetAttributes(f.GetAttributes() | pcbnew.FP_DNP)
  f.SetLocked(c['ref'].startswith('SW') and int(c['ref'][2:])<=60)
@@ -50,6 +53,9 @@ for c in m['components']:
 # Optional SWD header: readable signals and pin-1 identification, no fitted connector.
 for text,x,y in [('1',110.4,37.8),('CLK',112,36.9),('GND',114.54,36.9),('DIO',117.08,36.9),('J3 SWD DNP',114.54,42.1)]:
  t=pcbnew.PCB_TEXT(b);t.SetText(text);t.SetPosition(pcbnew.VECTOR2I(pcbnew.FromMM(x),pcbnew.FromMM(y)));t.SetLayer(pcbnew.F_SilkS);t.SetTextSize(pcbnew.VECTOR2I(pcbnew.FromMM(.8),pcbnew.FromMM(.8)));t.SetTextThickness(pcbnew.FromMM(.1));b.Add(t)
+for f in b.GetFootprints():
+ if f.GetReference()=='SW24':f.Reference().SetLayer(pcbnew.F_Fab)
+ if f.GetReference().startswith('JP'):f.Reference().SetLayer(pcbnew.B_Fab)
 b.BuildConnectivity();overlay_report=import_panel_svg(b);pcbnew.SaveBoard(str(ROOT/'WING27.kicad_pcb'),b)
 # Keep provisional printed-case boss envelopes separate from the source SVG layer.
 graphics=[g for g in graphics if child(g,'layer')!=['layer','User.2']]
@@ -71,3 +77,7 @@ pro.write_text(json.dumps(settings,indent=2)+'\n')
 reread=pcbnew.LoadBoard(str(ROOT/'WING27.kicad_pcb'));sources,_,_=audit_sources(reread)
 overlay_report.update(verify_imported_geometry(reread,sources));overlay_report['saved_board_round_trip_verified']=True
 (ROOT/'validation/panel_svg.json').write_text(json.dumps(overlay_report,ensure_ascii=False,indent=2)+'\n')
+
+# Restore the user-authorized MCU core copper after rebuilding placements.
+import subprocess,sys
+subprocess.run([sys.executable,str(ROOT/"scripts/route_official_core.py"),"apply",str(ROOT/"WING27.kicad_pcb"),str(ROOT/"reference/CoreCopper")],check=True)

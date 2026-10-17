@@ -1,0 +1,49 @@
+{
+  "counts": {
+    "components": 185,
+    "netlist_pins": 505,
+    "LED": 16,
+    "capacitors": 16,
+    "resistors": 1,
+    "open_bypasses": 16,
+    "raw_pcb_pads": 524,
+    "numbered_electrical_pads": 518,
+    "mechanical_NPTH_pads": 6
+  },
+  "original_v5_files": {
+    "WING27.kicad_sch": {
+      "recovered_git_sha": "19b89c47b3246755b0ebc2186a5b8f19bc16d1f5",
+      "saved_v5_git_sha": "19b89c47b3246755b0ebc2186a5b8f19bc16d1f5",
+      "exact_match": true
+    },
+    "Controller.kicad_sch": {
+      "recovered_git_sha": "792ca440c9bb0a8160ba6bbf2a442b8ac6c395cf",
+      "saved_v5_git_sha": "792ca440c9bb0a8160ba6bbf2a442b8ac6c395cf",
+      "exact_match": true
+    },
+    "LEDs.kicad_sch": {
+      "recovered_git_sha": "0aa55681b97fbba114a9277c1b77e27f73bbe777",
+      "saved_v5_git_sha": "0aa55681b97fbba114a9277c1b77e27f73bbe777",
+      "exact_match": true
+    },
+    "WING27.kicad_sym": {
+      "recovered_git_sha": "bd70a85ae699c738f6fb865b60e0aa38cfd565c3",
+      "saved_v5_git_sha": "bd70a85ae699c738f6fb865b60e0aa38cfd565c3",
+      "exact_match": true
+    },
+    "WING27.kicad_pcb": {
+      "recovered_git_sha": "4260ac723d8c4c56be1196d120d159be04e9545b",
+      "saved_v5_git_sha": "4260ac723d8c4c56be1196d120d159be04e9545b",
+      "exact_match": true
+    }
+  },
+  "model_net_mismatches": [],
+  "pcb_pad_net_mismatches": [],
+  "pcb_model_uuid_mismatches": [],
+  "pcb_model_placement_mismatches_over_2nm": [],
+  "led_metadata_mismatches": [],
+  "erc_violations": 0,
+  "helper_idempotent": true,
+  "full_regeneration_netlist_identical": true,
+  "full_regeneration_erc_violations": 0
+}

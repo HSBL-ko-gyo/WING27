@@ -1,0 +1,277 @@
+{
+  "status": "PASS electrical pin/rotation/placement audit; emission direction remains provisional",
+  "led_count": 16,
+  "per_led_decoupling": "100nF 25V X7R",
+  "signal": "GPIO17 / 3.3V -> R24 100ohm -> D31 DIN, serial DOUT->DIN to D46",
+  "driver": "No buffer. V1.4 DIN max 1uA/15pF; verify waveform and supply extremes",
+  "full_white_typical_current_mA": 576,
+  "power_requirement": "USB current budget and firmware brightness limit require verification; unrestricted full white is not approved",
+  "land_source": "https://www.lcsc.com/product-image/C52941387.html",
+  "datasheet": "https://www.lcsc.com/datasheet/C52941387.pdf",
+  "land_status": "LCSC shared reference CAD, not manufacturer-approved land; nonuniform widths/pitches checked against V1.4",
+  "manufacturing_blockers": [
+    "Confirm actual C52941387 emitting face, mounted height, pad1 and land fit",
+    "Final PCB outline, stackup and mechanical clearances",
+    "DIN timing/margin, USB inrush and current budget tests"
+  ],
+  "placement_adjustment": "Inner LEDs shifted 0.5mm toward centre for switch courtyard clearance; half-row optical y unchanged",
+  "bypass_usage": "Normally open backside bridges. Remove LED before shorting DIN/DOUT. No fitted parts. Firmware address count changes after bypass.",
+  "footprints": [
+    {
+      "ref": "D31",
+      "source_top_left_mm": [
+        59.5,
+        14.0
+      ],
+      "pcb_mm": [
+        79.5,
+        34.0
+      ],
+      "rotation_deg": 270.0,
+      "inferred_emission": "-X",
+      "bypass": "JP1",
+      "bypass_layer": "B.Cu",
+      "cap": "C22"
+    },
+    {
+      "ref": "D32",
+      "source_top_left_mm": [
+        59.5,
+        24.0
+      ],
+      "pcb_mm": [
+        79.5,
+        44.0
+      ],
+      "rotation_deg": 270.0,
+      "inferred_emission": "-X",
+      "bypass": "JP2",
+      "bypass_layer": "B.Cu",
+      "cap": "C23"
+    },
+    {
+      "ref": "D33",
+      "source_top_left_mm": [
+        59.5,
+        34.0
+      ],
+      "pcb_mm": [
+        79.5,
+        54.0
+      ],
+      "rotation_deg": 270.0,
+      "inferred_emission": "-X",
+      "bypass": "JP3",
+      "bypass_layer": "B.Cu",
+      "cap": "C24"
+    },
+    {
+      "ref": "D34",
+      "source_top_left_mm": [
+        59.5,
+        44.0
+      ],
+      "pcb_mm": [
+        79.5,
+        64.0
+      ],
+      "rotation_deg": 270.0,
+      "inferred_emission": "-X",
+      "bypass": "JP4",
+      "bypass_layer": "B.Cu",
+      "cap": "C25"
+    },
+    {
+      "ref": "D35",
+      "source_top_left_mm": [
+        2.5,
+        44.0
+      ],
+      "pcb_mm": [
+        22.5,
+        64.0
+      ],
+      "rotation_deg": 90.0,
+      "inferred_emission": "+X",
+      "bypass": "JP5",
+      "bypass_layer": "B.Cu",
+      "cap": "C26"
+    },
+    {
+      "ref": "D36",
+      "source_top_left_mm": [
+        2.5,
+        34.0
+      ],
+      "pcb_mm": [
+        22.5,
+        54.0
+      ],
+      "rotation_deg": 90.0,
+      "inferred_emission": "+X",
+      "bypass": "JP6",
+      "bypass_layer": "B.Cu",
+      "cap": "C27"
+    },
+    {
+      "ref": "D37",
+      "source_top_left_mm": [
+        2.5,
+        24.0
+      ],
+      "pcb_mm": [
+        22.5,
+        44.0
+      ],
+      "rotation_deg": 90.0,
+      "inferred_emission": "+X",
+      "bypass": "JP7",
+      "bypass_layer": "B.Cu",
+      "cap": "C28"
+    },
+    {
+      "ref": "D38",
+      "source_top_left_mm": [
+        2.5,
+        14.0
+      ],
+      "pcb_mm": [
+        22.5,
+        34.0
+      ],
+      "rotation_deg": 90.0,
+      "inferred_emission": "+X",
+      "bypass": "JP8",
+      "bypass_layer": "B.Cu",
+      "cap": "C29"
+    },
+    {
+      "ref": "D39",
+      "source_top_left_mm": [
+        146.5,
+        14.0
+      ],
+      "pcb_mm": [
+        166.5,
+        34.0
+      ],
+      "rotation_deg": 90.0,
+      "inferred_emission": "+X",
+      "bypass": "JP9",
+      "bypass_layer": "B.Cu",
+      "cap": "C30"
+    },
+    {
+      "ref": "D40",
+      "source_top_left_mm": [
+        146.5,
+        24.0
+      ],
+      "pcb_mm": [
+        166.5,
+        44.0
+      ],
+      "rotation_deg": 90.0,
+      "inferred_emission": "+X",
+      "bypass": "JP10",
+      "bypass_layer": "B.Cu",
+      "cap": "C31"
+    },
+    {
+      "ref": "D41",
+      "source_top_left_mm": [
+        146.5,
+        34.0
+      ],
+      "pcb_mm": [
+        166.5,
+        54.0
+      ],
+      "rotation_deg": 90.0,
+      "inferred_emission": "+X",
+      "bypass": "JP11",
+      "bypass_layer": "B.Cu",
+      "cap": "C32"
+    },
+    {
+      "ref": "D42",
+      "source_top_left_mm": [
+        146.5,
+        44.0
+      ],
+      "pcb_mm": [
+        166.5,
+        64.0
+      ],
+      "rotation_deg": 90.0,
+      "inferred_emission": "+X",
+      "bypass": "JP12",
+      "bypass_layer": "B.Cu",
+      "cap": "C33"
+    },
+    {
+      "ref": "D43",
+      "source_top_left_mm": [
+        205.5,
+        44.0
+      ],
+      "pcb_mm": [
+        225.5,
+        64.0
+      ],
+      "rotation_deg": 270.0,
+      "inferred_emission": "-X",
+      "bypass": "JP13",
+      "bypass_layer": "B.Cu",
+      "cap": "C34"
+    },
+    {
+      "ref": "D44",
+      "source_top_left_mm": [
+        205.5,
+        34.0
+      ],
+      "pcb_mm": [
+        225.5,
+        54.0
+      ],
+      "rotation_deg": 270.0,
+      "inferred_emission": "-X",
+      "bypass": "JP14",
+      "bypass_layer": "B.Cu",
+      "cap": "C35"
+    },
+    {
+      "ref": "D45",
+      "source_top_left_mm": [
+        205.5,
+        24.0
+      ],
+      "pcb_mm": [
+        225.5,
+        44.0
+      ],
+      "rotation_deg": 270.0,
+      "inferred_emission": "-X",
+      "bypass": "JP15",
+      "bypass_layer": "B.Cu",
+      "cap": "C36"
+    },
+    {
+      "ref": "D46",
+      "source_top_left_mm": [
+        205.5,
+        14.0
+      ],
+      "pcb_mm": [
+        225.5,
+        34.0
+      ],
+      "rotation_deg": 270.0,
+      "inferred_emission": "-X",
+      "bypass": "JP16",
+      "bypass_layer": "B.Cu",
+      "cap": "C37"
+    }
+  ]
+}

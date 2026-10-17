@@ -25,6 +25,7 @@ def child(a,k):return next(iter(children(a,k)),None)
 def prop(a,k):return next((x for x in children(a,'property') if x[1]==k),None)
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 inputs=['WING27.kicad_sch','Controller.kicad_sch','WING27.kicad_pcb','scripts/electrical_model.json']
+if (ROOT/'LEDs.kicad_sch').exists():inputs.append('LEDs.kicad_sch')
 before={name:digest(ROOT/name) for name in inputs}
 run=subprocess.run(['kicad-cli','sch','export','netlist','-o',str(OUT/'independent.net'),str(ROOT/'WING27.kicad_sch')],capture_output=True,text=True,env=os.environ)
 (OUT/'netlist_export.log').write_text(run.stdout+run.stderr)

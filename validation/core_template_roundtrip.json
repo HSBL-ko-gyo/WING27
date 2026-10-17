@@ -1,0 +1,7 @@
+{
+  "original_v5_sha256": "8023d31209713e03c09ae599d3b0120d1959e8e404da5e6cf2493064f30dd9b7",
+  "idempotent_reapply_core_geometry_and_fill_unchanged": true,
+  "footprints_unchanged": true,
+  "source_unchanged": true,
+  "reapply_after_clearing_all_core_copper_exact_match": true
+}

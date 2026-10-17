@@ -1,0 +1,38 @@
+{
+  "source_pcb_sha256": "8023d31209713e03c09ae599d3b0120d1959e8e404da5e6cf2493064f30dd9b7",
+  "method": "KiCad DRC on core-only footprint copy retaining the exact saved filled copper; no refill or reroute. Every net shared by retained pads must be physically connected.",
+  "core_refs": [
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C20",
+    "C3",
+    "C4",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "L1",
+    "R2",
+    "R3",
+    "U1",
+    "X1"
+  ],
+  "core_copper_counts": {
+    "segment": 87,
+    "via": 27,
+    "zone": 10
+  },
+  "saved_filled_polygons": 12,
+  "physical_unconnected_items": 0,
+  "copper_or_unexpected_drc_violations": 0,
+  "known_outline_violations": 1,
+  "source_unchanged": true,
+  "pass": true
+}

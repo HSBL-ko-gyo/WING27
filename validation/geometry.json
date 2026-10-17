@@ -1,5 +1,5 @@
 {
-  "status": "ELECTRICAL SCHEMATIC AND FOOTPRINT NETS VERIFIED; UNROUTED; NOT FOR FABRICATION",
+  "status": "ELECTRICAL SCHEMATIC AND FOOTPRINT NETS VERIFIED; CORE ROUTING ONLY IF CORE REPORT PRESENT; NOT FOR FABRICATION",
   "kicad_version": "9.0.2",
   "switch_count": 60,
   "blank_keys": [
@@ -66,9 +66,9 @@
   "pending_decisions": [
     "User artwork/routing, final PCB outline/stackup/thickness, M2 screw and boss tolerances, JST top-access clearance",
     "Firmware matrix mapping, USB HID/power configuration, hardware bring-up and inrush/USB compliance measurements",
-    "No LEDs fitted; extension signal is 3.3V only and needs appropriate level shifting for 5V LEDs"
+    "LED footprint and emission orientation provisional: verify actual C52941387 before fabrication; validate 3.3V DIN waveform, USB power limit and LED brightness cap"
   ],
-  "electrical_status": "RP2354A / independent left and right 5x6 matrices / 22 key GPIO / BAV70x30 / USB-C / 3.3V supply. ERC and schematic parity zero; no copper tracks or zones.",
+  "electrical_status": "RP2354A / independent left and right 5x6 matrices / 22 key GPIO / BAV70x30 / USB-C / XC6206 3.3V / 16 side LEDs on USB5V with GPIO17 data. MCU core routing status is recorded separately.",
   "source_files": {
     "01_APPEARANCE_REFERENCE.svg": "3cde64d5c471c53e4fab6fe21b9fbb5ffa628523050197aa2a746dec471cd457",
     "05_EMBOSS_KEY_BOUNDARIES_REFERENCE.svg": "66b50183908558fdc5c01a4c8f405614b75cad2cb944d936614f7abb7115c78f",
@@ -80,7 +80,7 @@
   },
   "reference_step_centers_agree": true,
   "reference_step_valid_single_solid": true,
-  "footprint_count": 136,
+  "footprint_count": 185,
   "usb_footprint_adjustment": {
     "part": "USB4105-GF-A-060",
     "source": "https://gct.co/files/drawings/usb4105.pdf",

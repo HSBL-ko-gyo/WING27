@@ -1,0 +1,23 @@
+{
+  "reference": "reference/RaspberryPi/RPI-RP2350A-MINIMAL_R4-S1.kicad_pcb",
+  "transform": "x=224-x_ref; y=149-y_ref; rotation +180 degrees",
+  "core_bounds_mm": [
+    115,
+    34,
+    132.5,
+    58.2
+  ],
+  "preserved_footprint_count": 185,
+  "moved_footprints": [],
+  "counts": {
+    "segment": 87,
+    "via": 27,
+    "zone": 10
+  },
+  "deviations": [
+    "DVDD23/C10 local fanout and via adjusted to avoid R22 without moving components",
+    "Added C20 3.3V connection to C12 and local GND via"
+  ],
+  "scope": "Core power, clock, local GND only. LDO feed, external ground, USB, GPIO, LEDs, keys, SWD, BOOT and RESET remain unrouted.",
+  "recovery": "Exact v5 copper recovered from saved Git blob; template preserves original UUIDs, saved zone fills and pad-mapped nets."
+}
