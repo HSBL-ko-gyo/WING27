@@ -578,7 +578,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 76.2 63.5 0)
 			(effects
 				(font
@@ -684,7 +684,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D31"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D31"
 			(at 99.06 46.99 0)
 			(effects
 				(font
@@ -692,7 +692,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 99.06 46.99 0)
 			(effects
 				(font
@@ -716,7 +716,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 99.06 46.99 0)
 			(effects
 				(font
@@ -724,7 +724,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 99.06 46.99 0)
 			(effects
 				(font
@@ -742,7 +742,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C22")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 76.2 88.9 0)
@@ -895,7 +899,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 152.4 63.5 0)
 			(effects
 				(font
@@ -1001,7 +1005,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D32"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D32"
 			(at 175.26 46.99 0)
 			(effects
 				(font
@@ -1009,7 +1013,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 175.26 46.99 0)
 			(effects
 				(font
@@ -1033,7 +1037,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 175.26 46.99 0)
 			(effects
 				(font
@@ -1041,7 +1045,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 175.26 46.99 0)
 			(effects
 				(font
@@ -1059,7 +1063,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C23")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 152.4 88.9 0)
@@ -1212,7 +1220,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 228.6 63.5 0)
 			(effects
 				(font
@@ -1318,7 +1326,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D33"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D33"
 			(at 251.46 46.99 0)
 			(effects
 				(font
@@ -1326,7 +1334,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 251.46 46.99 0)
 			(effects
 				(font
@@ -1350,7 +1358,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 251.46 46.99 0)
 			(effects
 				(font
@@ -1358,7 +1366,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 251.46 46.99 0)
 			(effects
 				(font
@@ -1376,7 +1384,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C24")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 228.6 88.9 0)
@@ -1529,7 +1541,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 304.8 63.5 0)
 			(effects
 				(font
@@ -1635,7 +1647,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D34"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D34"
 			(at 327.66 46.99 0)
 			(effects
 				(font
@@ -1643,7 +1655,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 327.66 46.99 0)
 			(effects
 				(font
@@ -1667,7 +1679,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 327.66 46.99 0)
 			(effects
 				(font
@@ -1675,7 +1687,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 327.66 46.99 0)
 			(effects
 				(font
@@ -1693,7 +1705,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C25")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 304.8 88.9 0)
@@ -1864,7 +1880,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 304.8 115.57 0)
 			(effects
 				(font
@@ -1970,7 +1986,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D35"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D35"
 			(at 327.66 99.06 0)
 			(effects
 				(font
@@ -1978,7 +1994,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 327.66 99.06 0)
 			(effects
 				(font
@@ -2002,7 +2018,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 327.66 99.06 0)
 			(effects
 				(font
@@ -2010,7 +2026,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 327.66 99.06 0)
 			(effects
 				(font
@@ -2028,7 +2044,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C26")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 304.8 140.97 0)
@@ -2183,7 +2203,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 228.6 115.57 0)
 			(effects
 				(font
@@ -2289,7 +2309,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D36"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D36"
 			(at 251.46 99.06 0)
 			(effects
 				(font
@@ -2297,7 +2317,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 251.46 99.06 0)
 			(effects
 				(font
@@ -2321,7 +2341,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 251.46 99.06 0)
 			(effects
 				(font
@@ -2329,7 +2349,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 251.46 99.06 0)
 			(effects
 				(font
@@ -2347,7 +2367,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C27")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 228.6 140.97 0)
@@ -2502,7 +2526,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 152.4 115.57 0)
 			(effects
 				(font
@@ -2608,7 +2632,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D37"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D37"
 			(at 175.26 99.06 0)
 			(effects
 				(font
@@ -2616,7 +2640,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 175.26 99.06 0)
 			(effects
 				(font
@@ -2640,7 +2664,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 175.26 99.06 0)
 			(effects
 				(font
@@ -2648,7 +2672,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 175.26 99.06 0)
 			(effects
 				(font
@@ -2666,7 +2690,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C28")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 152.4 140.97 0)
@@ -2821,7 +2849,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 76.2 115.57 0)
 			(effects
 				(font
@@ -2927,7 +2955,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D38"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D38"
 			(at 99.06 99.06 0)
 			(effects
 				(font
@@ -2935,7 +2963,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 99.06 99.06 0)
 			(effects
 				(font
@@ -2959,7 +2987,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 99.06 99.06 0)
 			(effects
 				(font
@@ -2967,7 +2995,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 99.06 99.06 0)
 			(effects
 				(font
@@ -2985,7 +3013,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C29")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 76.2 140.97 0)
@@ -3156,7 +3188,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 76.2 167.64 0)
 			(effects
 				(font
@@ -3262,7 +3294,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D39"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D39"
 			(at 99.06 151.13 0)
 			(effects
 				(font
@@ -3270,7 +3302,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 99.06 151.13 0)
 			(effects
 				(font
@@ -3294,7 +3326,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 99.06 151.13 0)
 			(effects
 				(font
@@ -3302,7 +3334,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 99.06 151.13 0)
 			(effects
 				(font
@@ -3320,7 +3352,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C30")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 76.2 193.04 0)
@@ -3473,7 +3509,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 152.4 167.64 0)
 			(effects
 				(font
@@ -3579,7 +3615,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D40"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D40"
 			(at 175.26 151.13 0)
 			(effects
 				(font
@@ -3587,7 +3623,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 175.26 151.13 0)
 			(effects
 				(font
@@ -3611,7 +3647,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 175.26 151.13 0)
 			(effects
 				(font
@@ -3619,7 +3655,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 175.26 151.13 0)
 			(effects
 				(font
@@ -3637,7 +3673,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C31")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 152.4 193.04 0)
@@ -3790,7 +3830,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 228.6 167.64 0)
 			(effects
 				(font
@@ -3896,7 +3936,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D41"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D41"
 			(at 251.46 151.13 0)
 			(effects
 				(font
@@ -3904,7 +3944,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 251.46 151.13 0)
 			(effects
 				(font
@@ -3928,7 +3968,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 251.46 151.13 0)
 			(effects
 				(font
@@ -3936,7 +3976,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 251.46 151.13 0)
 			(effects
 				(font
@@ -3954,7 +3994,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C32")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 228.6 193.04 0)
@@ -4107,7 +4151,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 304.8 167.64 0)
 			(effects
 				(font
@@ -4213,7 +4257,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D42"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D42"
 			(at 327.66 151.13 0)
 			(effects
 				(font
@@ -4221,7 +4265,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 327.66 151.13 0)
 			(effects
 				(font
@@ -4245,7 +4289,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 327.66 151.13 0)
 			(effects
 				(font
@@ -4253,7 +4297,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 327.66 151.13 0)
 			(effects
 				(font
@@ -4271,7 +4315,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C33")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 304.8 193.04 0)
@@ -4442,7 +4490,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 304.8 219.71 0)
 			(effects
 				(font
@@ -4548,7 +4596,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D43"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D43"
 			(at 327.66 203.2 0)
 			(effects
 				(font
@@ -4556,7 +4604,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 327.66 203.2 0)
 			(effects
 				(font
@@ -4580,7 +4628,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 327.66 203.2 0)
 			(effects
 				(font
@@ -4588,7 +4636,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 327.66 203.2 0)
 			(effects
 				(font
@@ -4606,7 +4654,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C34")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 304.8 245.11 0)
@@ -4761,7 +4813,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 228.6 219.71 0)
 			(effects
 				(font
@@ -4867,7 +4919,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D44"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D44"
 			(at 251.46 203.2 0)
 			(effects
 				(font
@@ -4875,7 +4927,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 251.46 203.2 0)
 			(effects
 				(font
@@ -4899,7 +4951,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 251.46 203.2 0)
 			(effects
 				(font
@@ -4907,7 +4959,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 251.46 203.2 0)
 			(effects
 				(font
@@ -4925,7 +4977,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C35")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 228.6 245.11 0)
@@ -5080,7 +5136,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 152.4 219.71 0)
 			(effects
 				(font
@@ -5186,7 +5242,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D45"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D45"
 			(at 175.26 203.2 0)
 			(effects
 				(font
@@ -5194,7 +5250,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 175.26 203.2 0)
 			(effects
 				(font
@@ -5218,7 +5274,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 175.26 203.2 0)
 			(effects
 				(font
@@ -5226,7 +5282,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 175.26 203.2 0)
 			(effects
 				(font
@@ -5244,7 +5300,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C36")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 152.4 245.11 0)
@@ -5399,7 +5459,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://www.lcsc.com/product-detail/C52941387.html"
+"https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 76.2 219.71 0)
 			(effects
 				(font
@@ -5505,7 +5565,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D46"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D46"
 			(at 99.06 203.2 0)
 			(effects
 				(font
@@ -5513,7 +5573,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 99.06 203.2 0)
 			(effects
 				(font
@@ -5537,7 +5597,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 99.06 203.2 0)
 			(effects
 				(font
@@ -5545,7 +5605,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 99.06 203.2 0)
 			(effects
 				(font
@@ -5563,7 +5623,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "C37")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:SolderJumper_2_Open")
 		(at 76.2 245.11 0)
@@ -5692,7 +5756,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 40.64 63.5 90)
 			(effects
 				(font
@@ -5700,7 +5764,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-07100RL"
+"0402WGF1000TCE"
 			(at 40.64 63.5 90)
 			(effects
 				(font
@@ -5726,7 +5790,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/5bea8a7b-c2c5-5e8e-9d26-23f67eb16f6c"
 					(reference "R24")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C25076"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(global_label
 "EXP_GPIO17_3V3"
 		(shape bidirectional)

@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-18",
+  "pcb_sha256": "579d5803c82215cda1b10623110b23f17eb86e0d6d889f5dcfa8a04a42002477",
+  "erc_violations": 0,
+  "drc_violations": 1,
+  "drc_types": [
+    "invalid_outline"
+  ],
+  "unconnected_items": 313,
+  "schematic_parity": 0,
+  "changed_component_geometry": [],
+  "core_copper_exact": {
+    "segment": true,
+    "via": true,
+    "zone": true
+  },
+  "core_physical_unconnected": 0,
+  "core_copper_drc": 0,
+  "trial_not_merged": true,
+  "fabrication_release": false,
+  "metadata_apply_idempotent": true
+}

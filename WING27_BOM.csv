@@ -1,25 +1,25 @@
 ﻿References,Quantity,Value,Manufacturer,MPN,Footprint,LCSC,Assembly,Datasheet
-U1,1,RP2354A,Raspberry Pi,RP2354A,WING27:RPI_rpi_rp2350a_vias,,PCBA,https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
-L1,1,3.3uH,Abracon,AOTA-B201610S3R3-101-T,WING27:RPI_abracon_aota-b201610s3r3-101-t,,PCBA,
-X1,1,12MHz,Abracon,ABM8-272-T3,WING27:RPI_generic_xtalcc320x250x80-4,,PCBA,
-"R2,R4,R6",3,1k,Yageo,RC0402FR-071KL,WING27:RPI_generic_resc1005x35,,PCBA,
-R3,1,33,Yageo,RC0402FR-0733RL,WING27:RPI_generic_resc1005x35,,PCBA,
-"R7,R8",2,27,Yageo,RC0402FR-0727RL,WING27:RPI_generic_resc1005x35,,PCBA,
-"C3,C4",2,15p,Murata,GRM1555C1H150JA01D,WING27:RPI_generic_capc1005x50,,PCBA,
-"C6,C7",2,4.7u,Murata,GRM155R60J475ME47D,WING27:RPI_generic_capc1005x50_wide,,PCBA,
-"C8,C11,C12,C13,C14,C15,C16,C17,C18,C20,C21,C22,C23,C24,C25,C26,C27,C28,C29,C30,C31,C32,C33,C34,C35,C36,C37",27,100n,Murata,GRM155R71E104KE14D,WING27:RPI_generic_capc1005x50,,PCBA,
-"C9,C10",2,4.7u,Murata,GRM155R60J475ME47D,WING27:RPI_generic_capc1005x50,,PCBA,
+U1,1,RP2354A,Raspberry Pi,RP2354A,WING27:RPI_rpi_rp2350a_vias,C41378174,PCBA,https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf
+L1,1,3.3uH,Abracon,AOTA-B201610S3R3-101-T,WING27:RPI_abracon_aota-b201610s3r3-101-t,C42411119,PCBA,https://abracon.com/datasheets/AOTA-B201610S3R3-101-T.pdf
+X1,1,12MHz,Abracon,ABM8-272-T3,WING27:RPI_generic_xtalcc320x250x80-4,C20625731,PCBA,https://abracon.com/datasheets/ABM8-272-T3.pdf
+"R2,R4,R6",3,1k,UNI-ROYAL(Uniroyal Elec),0402WGF1001TCE,WING27:RPI_generic_resc1005x35,C11702,PCBA,https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702
+R3,1,33,UNI-ROYAL(Uniroyal Elec),0402WGF330JTCE,WING27:RPI_generic_resc1005x35,C25105,PCBA,https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702
+"R7,R8",2,27,UNI-ROYAL(Uniroyal Elec),0402WGF270JTCE,WING27:RPI_generic_resc1005x35,C25100,PCBA,https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702
+"C3,C4",2,15p,FH (Guangdong Fenghua Advanced Tech),0402CG150J500NT,WING27:RPI_generic_capc1005x50,C1548,PCBA,https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548
+"C6,C7",2,4.7u,Murata Electronics,GRM155R60J475ME47D,WING27:RPI_generic_capc1005x50_wide,C82453,PCBA,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf
+"C8,C11,C12,C13,C14,C15,C16,C17,C18,C20,C21,C22,C23,C24,C25,C26,C27,C28,C29,C30,C31,C32,C33,C34,C35,C36,C37",27,100n,Samsung Electro-Mechanics,CL05B104KB54PNC,WING27:RPI_generic_capc1005x50,C307331,PCBA,https://product.samsungsem.com/mlcc/CL05B104KB54PN.do
+"C9,C10",2,4.7u,Murata Electronics,GRM155R60J475ME47D,WING27:RPI_generic_capc1005x50,C82453,PCBA,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf
 SW61,1,BOOTSEL,XUNPU,TS-1088-AR02016,WING27:SW_SPST_TS-1088-AR02016,C720477,PCBA,https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477
 SW62,1,RESET,XUNPU,TS-1088-AR02016,WING27:SW_SPST_TS-1088-AR02016,C720477,PCBA,https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477
 J1,1,USB4105-GF-A-060,GCT,USB4105-GF-A-060,WING27:USB_C_GCT_USB4105_GF_A060_JLC,C3025063,PCBA,https://gct.co/files/drawings/usb4105.pdf
-"R20,R21",2,5.1k,Yageo,RC0402FR-075K1L,WING27:RPI_generic_resc1005x35,,PCBA,
+"R20,R21",2,5.1k,UNI-ROYAL(Uniroyal Elec),0402WGF5101TCE,WING27:RPI_generic_resc1005x35,C25905,PCBA,https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702
 U3,1,USBLC6-2SC6,STMicroelectronics,USBLC6-2SC6,WING27:SOT-23-6,C7519,PCBA,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
 U2,1,XC6206P332MR-G,Torex Semiconductor,XC6206P332MR-G,WING27:XC6206_SOT23_Torex_Reference,C5446,PCBA,https://product.torexsemi.com/system/files/series/xc6206.pdf
-C1,1,1u,Samsung Electro-Mechanics,CL10A105KB8NNNC,WING27:C_0603_1608Metric,C15849,PCBA,https://jlcpcb.com/partdetail/C15849
-C5,1,4.7u,Samsung Electro-Mechanics,CL10A475KO8NNNC,WING27:C_0603_1608Metric,C19666,PCBA,https://jlcpcb.com/partdetail/C19666
-J2,1,BM03B-SRSS-TB,JST,BM03B-SRSS-TB(LF)(SN),WING27:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical,C5306067,PCBA,https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf
+C1,1,1u,Samsung Electro-Mechanics,CL10A105KB8NNNC,WING27:C_0603_1608Metric,C15849,PCBA,https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do
+C5,1,4.7u,Samsung Electro-Mechanics,CL10A475KO8NNNC,WING27:C_0603_1608Metric,C19666,PCBA,https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do
+J2,1,BM03B-SRSS-TB,JST,BM03B-SRSS-TB(LF)(SN),WING27:JST_SH_BM03B-SRSS-TB_1x03-1MP_P1.00mm_Vertical,C160389,PCBA,https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf
 "SW1,SW2,SW3,SW4,SW5,SW6,SW7,SW8,SW9,SW10,SW11,SW12,SW13,SW14,SW15,SW16,SW17,SW18,SW19,SW20,SW21,SW22,SW23,SW24,SW25,SW26,SW27,SW28,SW29,SW30,SW31,SW32,SW33,SW34,SW35,SW36,SW37,SW38,SW39,SW40,SW41,SW42,SW43,SW44,SW45,SW46,SW47,SW48,SW49,SW50,SW51,SW52,SW53,SW54,SW55,SW56,SW57,SW58,SW59,SW60",60,CMI627301D60,Kailh,CMI627301D60,WING27:Kailh_CMI627301D60,,Hand solder,
 "D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D25,D26,D27,D28,D29,D30",30,BAV70,Jiangsu Changjing Electronics,BAV70,WING27:SOT-23,C68978,PCBA,https://jlcpcb.com/partdetail/BAV70/C68978
-"R22,R23,R24",3,100,Yageo,RC0402FR-07100RL,WING27:RPI_generic_resc1005x35,,PCBA,
+"R22,R23,R24",3,100,UNI-ROYAL(Uniroyal Elec),0402WGF1000TCE,WING27:RPI_generic_resc1005x35,C25076,PCBA,https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702
 J3,1,SWD 2.54 DNP,,,WING27:PinHeader_1x03_P2.54mm_Vertical,,DNP,
-"D31,D32,D33,D34,D35,D36,D37,D38,D39,D40,D41,D42,D43,D44,D45,D46",16,WS2812B-4020-V6,Worldsemi,WS2812B-4020-V6,WING27:WS2812B_4020_V6_LCSC_Reference,C52941387,PCBA,https://www.lcsc.com/product-detail/C52941387.html
+"D31,D32,D33,D34,D35,D36,D37,D38,D39,D40,D41,D42,D43,D44,D45,D46",16,WS2812B-4020-V6,Worldsemi,WS2812B-4020-V6,WING27:WS2812B_4020_V6_LCSC_Reference,C52941387,PCBA,https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf

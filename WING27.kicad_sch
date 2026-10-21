@@ -48,7 +48,7 @@
 					(hide yes)))
 			(property
 "Description"
-"Dual 100V 215mA high-speed switching diodes, common cathode, SOT-23"
+"JSCJ BAV70: dual 70V 200mA switching diodes, common cathode, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6403,7 +6403,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 63.5 68.58 0)
 			(effects
 				(font
@@ -6490,7 +6490,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 147.32 68.58 0)
 			(effects
 				(font
@@ -6577,7 +6577,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 231.14 68.58 0)
 			(effects
 				(font
@@ -6664,7 +6664,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 314.96 68.58 0)
 			(effects
 				(font
@@ -6751,7 +6751,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 398.78 68.58 0)
 			(effects
 				(font
@@ -6838,7 +6838,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 482.6 68.58 0)
 			(effects
 				(font
@@ -6925,7 +6925,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 63.5 124.46 0)
 			(effects
 				(font
@@ -7012,7 +7012,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 147.32 124.46 0)
 			(effects
 				(font
@@ -7099,7 +7099,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 231.14 124.46 0)
 			(effects
 				(font
@@ -7186,7 +7186,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 314.96 124.46 0)
 			(effects
 				(font
@@ -7273,7 +7273,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 398.78 124.46 0)
 			(effects
 				(font
@@ -7360,7 +7360,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 482.6 124.46 0)
 			(effects
 				(font
@@ -7447,7 +7447,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 63.5 180.34 0)
 			(effects
 				(font
@@ -7534,7 +7534,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 147.32 180.34 0)
 			(effects
 				(font
@@ -7621,7 +7621,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 231.14 180.34 0)
 			(effects
 				(font
@@ -7708,7 +7708,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 314.96 180.34 0)
 			(effects
 				(font
@@ -7795,7 +7795,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 398.78 180.34 0)
 			(effects
 				(font
@@ -7882,7 +7882,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 482.6 180.34 0)
 			(effects
 				(font
@@ -7969,7 +7969,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 63.5 236.22 0)
 			(effects
 				(font
@@ -8056,7 +8056,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 147.32 236.22 0)
 			(effects
 				(font
@@ -8143,7 +8143,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 231.14 236.22 0)
 			(effects
 				(font
@@ -8230,7 +8230,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 314.96 236.22 0)
 			(effects
 				(font
@@ -8317,7 +8317,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 398.78 236.22 0)
 			(effects
 				(font
@@ -8404,7 +8404,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 482.6 236.22 0)
 			(effects
 				(font
@@ -8491,7 +8491,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 63.5 292.1 0)
 			(effects
 				(font
@@ -8578,7 +8578,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 147.32 292.1 0)
 			(effects
 				(font
@@ -8665,7 +8665,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 231.14 292.1 0)
 			(effects
 				(font
@@ -8752,7 +8752,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 314.96 292.1 0)
 			(effects
 				(font
@@ -8839,7 +8839,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 398.78 292.1 0)
 			(effects
 				(font
@@ -8926,7 +8926,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual common cathode; both anodes belong to same ROW"
+"JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 482.6 292.1 0)
 			(effects
 				(font

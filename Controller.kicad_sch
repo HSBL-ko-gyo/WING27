@@ -3849,7 +3849,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://jlcpcb.com/partdetail/C15849"
+"https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do"
 			(at 54.61 48.26 0)
 			(effects
 				(font
@@ -3933,7 +3933,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Murata Electronics"
 			(at 242.57 36.83 0)
 			(effects
 				(font
@@ -3959,7 +3959,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C10")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C82453"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 254 36.83 0)
@@ -3993,7 +3997,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 254 36.83 0)
 			(effects
 				(font
@@ -4001,7 +4005,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 254 36.83 0)
 			(effects
 				(font
@@ -4025,7 +4029,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 254 36.83 0)
 			(effects
 				(font
@@ -4033,7 +4037,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 254 36.83 0)
 			(effects
 				(font
@@ -4051,7 +4055,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C11")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 298.45 36.83 0)
@@ -4085,7 +4093,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 298.45 36.83 0)
 			(effects
 				(font
@@ -4093,7 +4101,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 298.45 36.83 0)
 			(effects
 				(font
@@ -4117,7 +4125,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 298.45 36.83 0)
 			(effects
 				(font
@@ -4125,7 +4133,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 298.45 36.83 0)
 			(effects
 				(font
@@ -4143,7 +4151,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C12")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 309.88 36.83 0)
@@ -4177,7 +4189,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 309.88 36.83 0)
 			(effects
 				(font
@@ -4185,7 +4197,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 309.88 36.83 0)
 			(effects
 				(font
@@ -4209,7 +4221,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 309.88 36.83 0)
 			(effects
 				(font
@@ -4217,7 +4229,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 309.88 36.83 0)
 			(effects
 				(font
@@ -4235,7 +4247,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C13")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 321.31 36.83 0)
@@ -4269,7 +4285,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 321.31 36.83 0)
 			(effects
 				(font
@@ -4277,7 +4293,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 321.31 36.83 0)
 			(effects
 				(font
@@ -4301,7 +4317,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 321.31 36.83 0)
 			(effects
 				(font
@@ -4309,7 +4325,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 321.31 36.83 0)
 			(effects
 				(font
@@ -4327,7 +4343,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C14")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 332.74 36.83 0)
@@ -4361,7 +4381,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 332.74 36.83 0)
 			(effects
 				(font
@@ -4369,7 +4389,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 332.74 36.83 0)
 			(effects
 				(font
@@ -4393,7 +4413,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 332.74 36.83 0)
 			(effects
 				(font
@@ -4401,7 +4421,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 332.74 36.83 0)
 			(effects
 				(font
@@ -4419,7 +4439,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C15")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 344.17 36.83 0)
@@ -4453,7 +4477,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 344.17 36.83 0)
 			(effects
 				(font
@@ -4461,7 +4485,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 344.17 36.83 0)
 			(effects
 				(font
@@ -4485,7 +4509,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 344.17 36.83 0)
 			(effects
 				(font
@@ -4493,7 +4517,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 344.17 36.83 0)
 			(effects
 				(font
@@ -4511,7 +4535,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C16")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 355.6 36.83 0)
@@ -4545,7 +4573,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 355.6 36.83 0)
 			(effects
 				(font
@@ -4553,7 +4581,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 355.6 36.83 0)
 			(effects
 				(font
@@ -4577,7 +4605,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 355.6 36.83 0)
 			(effects
 				(font
@@ -4585,7 +4613,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 355.6 36.83 0)
 			(effects
 				(font
@@ -4603,7 +4631,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C17")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 367.03 36.83 0)
@@ -4637,7 +4669,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 367.03 36.83 0)
 			(effects
 				(font
@@ -4645,7 +4677,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 367.03 36.83 0)
 			(effects
 				(font
@@ -4669,7 +4701,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 367.03 36.83 0)
 			(effects
 				(font
@@ -4677,7 +4709,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 367.03 36.83 0)
 			(effects
 				(font
@@ -4695,7 +4727,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C18")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 378.46 36.83 0)
@@ -4729,7 +4765,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 378.46 36.83 0)
 			(effects
 				(font
@@ -4737,7 +4773,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 378.46 36.83 0)
 			(effects
 				(font
@@ -4761,7 +4797,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 378.46 36.83 0)
 			(effects
 				(font
@@ -4769,7 +4805,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 378.46 36.83 0)
 			(effects
 				(font
@@ -4787,7 +4823,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C20")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 109.22 74.93 0)
@@ -4821,7 +4861,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 109.22 74.93 0)
 			(effects
 				(font
@@ -4829,7 +4869,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 109.22 74.93 0)
 			(effects
 				(font
@@ -4853,7 +4893,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 109.22 74.93 0)
 			(effects
 				(font
@@ -4861,7 +4901,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 109.22 74.93 0)
 			(effects
 				(font
@@ -4880,7 +4920,11 @@ line
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C21")
 					(unit 1))))
-		(mirror y))
+		(mirror y)
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 240.03 229.87 270)
@@ -4946,7 +4990,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"FH (Guangdong Fenghua Advanced Tech)"
 			(at 240.03 229.87 90)
 			(effects
 				(font
@@ -4954,7 +4998,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM1555C1H150JA01D"
+"0402CG150J500NT"
 			(at 240.03 229.87 90)
 			(effects
 				(font
@@ -4973,7 +5017,11 @@ line
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C3")
 					(unit 1))))
-		(mirror x))
+		(mirror x)
+(property "LCSC" "C1548"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 240.03 245.11 270)
@@ -5039,7 +5087,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"FH (Guangdong Fenghua Advanced Tech)"
 			(at 240.03 245.11 90)
 			(effects
 				(font
@@ -5047,7 +5095,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM1555C1H150JA01D"
+"0402CG150J500NT"
 			(at 240.03 245.11 90)
 			(effects
 				(font
@@ -5065,7 +5113,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C4")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C1548"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 99.06 48.26 0)
@@ -5131,7 +5183,7 @@ line
 				(hide yes)))
 		(property
 "Datasheet"
-"https://jlcpcb.com/partdetail/C19666"
+"https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
 			(at 99.06 48.26 0)
 			(effects
 				(font
@@ -5215,7 +5267,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Murata Electronics"
 			(at 328.93 101.6 0)
 			(effects
 				(font
@@ -5241,7 +5293,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C6")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C82453"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 317.5 101.6 0)
@@ -5307,7 +5363,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Murata Electronics"
 			(at 317.5 101.6 0)
 			(effects
 				(font
@@ -5333,7 +5389,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C7")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C82453"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 231.14 36.83 0)
@@ -5367,7 +5427,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+"Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -5375,7 +5435,7 @@ line
 				(hide yes)))
 		(property
 "voltage"
-"25V"
+"50V"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -5399,7 +5459,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Samsung Electro-Mechanics"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -5407,7 +5467,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"GRM155R71E104KE14D"
+"CL05B104KB54PNC"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -5425,7 +5485,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C8")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C307331"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:C")
 		(at 355.6 124.46 0)
@@ -5491,7 +5555,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Murata"
+"Murata Electronics"
 			(at 355.6 124.46 0)
 			(effects
 				(font
@@ -5517,7 +5581,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "C9")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C82453"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:MountingHole")
 		(at 30.48 251.46 0)
@@ -5880,7 +5948,7 @@ line
 				(hide yes)))
 		(property
 "LCSC"
-"C5306067"
+"C160389"
 			(at 331.47 238.76 0)
 			(effects
 				(font
@@ -6059,7 +6127,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "L1")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C42411119"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://abracon.com/datasheets/AOTA-B201610S3R3-101-T.pdf"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 267.97 245.11 270)
@@ -6109,7 +6181,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 267.97 245.11 90)
 			(effects
 				(font
@@ -6117,7 +6189,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-071KL"
+"0402WGF1001TCE"
 			(at 267.97 245.11 90)
 			(effects
 				(font
@@ -6143,7 +6215,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R2")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 68.58 111.76 0)
@@ -6177,7 +6253,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 68.58 111.76 0)
 			(effects
 				(font
@@ -6185,7 +6261,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-075K1L"
+"0402WGF5101TCE"
 			(at 68.58 111.76 0)
 			(effects
 				(font
@@ -6212,7 +6288,11 @@ line
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R20")
 					(unit 1))))
-		(mirror y))
+		(mirror y)
+(property "LCSC" "C25905"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 55.88 111.76 0)
@@ -6246,7 +6326,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 55.88 111.76 0)
 			(effects
 				(font
@@ -6254,7 +6334,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-075K1L"
+"0402WGF5101TCE"
 			(at 55.88 111.76 0)
 			(effects
 				(font
@@ -6281,7 +6361,11 @@ line
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R21")
 					(unit 1))))
-		(mirror y))
+		(mirror y)
+(property "LCSC" "C25905"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 294.64 210.82 0)
@@ -6315,7 +6399,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 294.64 210.82 0)
 			(effects
 				(font
@@ -6323,7 +6407,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-07100RL"
+"0402WGF1000TCE"
 			(at 294.64 210.82 0)
 			(effects
 				(font
@@ -6349,7 +6433,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R22")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C25076"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 308.61 218.44 0)
@@ -6383,7 +6471,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 308.61 218.44 0)
 			(effects
 				(font
@@ -6391,7 +6479,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-07100RL"
+"0402WGF1000TCE"
 			(at 308.61 218.44 0)
 			(effects
 				(font
@@ -6417,7 +6505,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R23")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C25076"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 355.6 109.22 0)
@@ -6467,7 +6559,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 355.6 109.22 0)
 			(effects
 				(font
@@ -6475,7 +6567,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-0733RL"
+"0402WGF330JTCE"
 			(at 355.6 109.22 0)
 			(effects
 				(font
@@ -6501,7 +6593,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R3")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C25105"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 361.95 215.9 90)
@@ -6551,7 +6647,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 361.95 215.9 90)
 			(effects
 				(font
@@ -6559,7 +6655,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-071KL"
+"0402WGF1001TCE"
 			(at 361.95 215.9 90)
 			(effects
 				(font
@@ -6585,7 +6681,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R4")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 170.18 149.86 0)
@@ -6635,7 +6735,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 170.18 149.86 0)
 			(effects
 				(font
@@ -6643,7 +6743,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-071KL"
+"0402WGF1001TCE"
 			(at 170.18 149.86 0)
 			(effects
 				(font
@@ -6669,7 +6769,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R6")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 245.11 86.36 90)
@@ -6719,7 +6823,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 245.11 86.36 90)
 			(effects
 				(font
@@ -6727,7 +6831,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-0727RL"
+"0402WGF270JTCE"
 			(at 245.11 86.36 90)
 			(effects
 				(font
@@ -6753,7 +6857,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R7")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C25100"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:R")
 		(at 245.11 95.25 90)
@@ -6803,7 +6911,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer"
-"Yageo"
+"UNI-ROYAL(Uniroyal Elec)"
 			(at 245.11 95.25 90)
 			(effects
 				(font
@@ -6811,7 +6919,7 @@ line
 				(hide yes)))
 		(property
 "manufacturer_pn"
-"RC0402FR-0727RL"
+"0402WGF270JTCE"
 			(at 245.11 95.25 90)
 			(effects
 				(font
@@ -6837,7 +6945,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "R8")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C25100"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:BOOT_RESET_2PIN")
 		(at 170.18 175.26 90)
@@ -7408,7 +7520,9 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "U1")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C41378174"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(symbol
 		(lib_id "WING27:XC6206PxxxMR")
 		(at 77.47 43.18 0)
@@ -7666,7 +7780,11 @@ line
 				(path
 "/77e26e32-63d2-500f-9544-76b2dd8b20de/6fe06095-6837-584f-b7b6-3b32dfe1f4b6"
 					(reference "X1")
-					(unit 1)))))
+					(unit 1))))
+(property "LCSC" "C20625731"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+
+(property "Datasheet" "https://abracon.com/datasheets/ABM8-272-T3.pdf"(at 0 0 0)(effects(font(size 1 1))(hide yes)))
+)
 	(global_label
 "GND"
 		(shape bidirectional)

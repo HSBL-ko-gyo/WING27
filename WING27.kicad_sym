@@ -637,7 +637,7 @@ line
 				(hide yes)))
 		(property
 "Description"
-"Dual 100V 215mA high-speed switching diodes, common cathode, SOT-23"
+"JSCJ BAV70: dual 70V 200mA switching diodes, common cathode, SOT-23"
 			(at 0 0 0)
 			(effects
 				(font

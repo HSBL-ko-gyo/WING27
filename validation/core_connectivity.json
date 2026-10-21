@@ -1,5 +1,5 @@
 {
-  "source_pcb_sha256": "8023d31209713e03c09ae599d3b0120d1959e8e404da5e6cf2493064f30dd9b7",
+  "source_pcb_sha256": "579d5803c82215cda1b10623110b23f17eb86e0d6d889f5dcfa8a04a42002477",
   "method": "KiCad DRC on core-only footprint copy retaining the exact saved filled copper; no refill or reroute. Every net shared by retained pads must be physically connected.",
   "core_refs": [
     "C10",

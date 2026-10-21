@@ -1,0 +1,952 @@
+{
+  "source_commit": "9d37752a5d09a2c02791a56489a6369f36636ab4",
+  "review_date_utc": "2026-10-18",
+  "parts": {
+    "U1": {
+      "fields": {
+        "manufacturer": "Raspberry Pi",
+        "manufacturer_pn": "RP2354A",
+        "Datasheet": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf",
+        "LCSC": "C41378174"
+      }
+    },
+    "L1": {
+      "fields": {
+        "manufacturer": "Abracon",
+        "manufacturer_pn": "AOTA-B201610S3R3-101-T",
+        "LCSC": "C42411119",
+        "Datasheet": "https://abracon.com/datasheets/AOTA-B201610S3R3-101-T.pdf"
+      }
+    },
+    "X1": {
+      "fields": {
+        "manufacturer": "Abracon",
+        "manufacturer_pn": "ABM8-272-T3",
+        "LCSC": "C20625731",
+        "Datasheet": "https://abracon.com/datasheets/ABM8-272-T3.pdf"
+      }
+    },
+    "R2": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1001TCE",
+        "LCSC": "C11702",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "R3": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF330JTCE",
+        "LCSC": "C25105",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "R4": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1001TCE",
+        "LCSC": "C11702",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "R6": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1001TCE",
+        "LCSC": "C11702",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "R7": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF270JTCE",
+        "LCSC": "C25100",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "R8": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF270JTCE",
+        "LCSC": "C25100",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "C3": {
+      "fields": {
+        "manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+        "manufacturer_pn": "0402CG150J500NT",
+        "LCSC": "C1548",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548"
+      }
+    },
+    "C4": {
+      "fields": {
+        "manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+        "manufacturer_pn": "0402CG150J500NT",
+        "LCSC": "C1548",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548"
+      }
+    },
+    "C6": {
+      "fields": {
+        "manufacturer": "Murata Electronics",
+        "manufacturer_pn": "GRM155R60J475ME47D",
+        "LCSC": "C82453",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
+      }
+    },
+    "C7": {
+      "fields": {
+        "manufacturer": "Murata Electronics",
+        "manufacturer_pn": "GRM155R60J475ME47D",
+        "LCSC": "C82453",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
+      }
+    },
+    "C8": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C9": {
+      "fields": {
+        "manufacturer": "Murata Electronics",
+        "manufacturer_pn": "GRM155R60J475ME47D",
+        "LCSC": "C82453",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
+      }
+    },
+    "C10": {
+      "fields": {
+        "manufacturer": "Murata Electronics",
+        "manufacturer_pn": "GRM155R60J475ME47D",
+        "LCSC": "C82453",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
+      }
+    },
+    "C11": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C12": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C13": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C14": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C15": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C16": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C17": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C18": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "C20": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "SW61": {
+      "fields": {
+        "manufacturer": "XUNPU",
+        "manufacturer_pn": "TS-1088-AR02016",
+        "LCSC": "C720477",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
+      }
+    },
+    "SW62": {
+      "fields": {
+        "manufacturer": "XUNPU",
+        "manufacturer_pn": "TS-1088-AR02016",
+        "LCSC": "C720477",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0475ac02febf455ca9ddcfb380b0df0d.pdf?productCode=C720477"
+      }
+    },
+    "J1": {
+      "fields": {
+        "manufacturer": "GCT",
+        "manufacturer_pn": "USB4105-GF-A-060",
+        "LCSC": "C3025063",
+        "Datasheet": "https://gct.co/files/drawings/usb4105.pdf"
+      }
+    },
+    "R20": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF5101TCE",
+        "LCSC": "C25905",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "R21": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF5101TCE",
+        "LCSC": "C25905",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "U3": {
+      "fields": {
+        "manufacturer": "STMicroelectronics",
+        "manufacturer_pn": "USBLC6-2SC6",
+        "LCSC": "C7519",
+        "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf"
+      }
+    },
+    "U2": {
+      "fields": {
+        "manufacturer": "Torex Semiconductor",
+        "manufacturer_pn": "XC6206P332MR-G",
+        "LCSC": "C5446",
+        "Datasheet": "https://product.torexsemi.com/system/files/series/xc6206.pdf"
+      }
+    },
+    "C1": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL10A105KB8NNNC",
+        "LCSC": "C15849",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do"
+      }
+    },
+    "C5": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL10A475KO8NNNC",
+        "LCSC": "C19666",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
+      }
+    },
+    "C21": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
+      }
+    },
+    "J2": {
+      "fields": {
+        "manufacturer": "JST",
+        "manufacturer_pn": "BM03B-SRSS-TB(LF)(SN)",
+        "LCSC": "C160389",
+        "Datasheet": "https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf"
+      }
+    },
+    "D1": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D2": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D3": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D4": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D5": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D6": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D7": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D8": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D9": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D10": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D11": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D12": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D13": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D14": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D15": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D16": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D17": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D18": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D19": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D20": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D21": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D22": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D23": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D24": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D25": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D26": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D27": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D28": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D29": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "D30": {
+      "fields": {
+        "manufacturer": "Jiangsu Changjing Electronics",
+        "manufacturer_pn": "BAV70",
+        "LCSC": "C68978",
+        "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
+      }
+    },
+    "R22": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1000TCE",
+        "LCSC": "C25076",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "R23": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1000TCE",
+        "LCSC": "C25076",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    },
+    "D31": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C22": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D31"
+      }
+    },
+    "D32": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C23": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D32"
+      }
+    },
+    "D33": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C24": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D33"
+      }
+    },
+    "D34": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C25": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D34"
+      }
+    },
+    "D35": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C26": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D35"
+      }
+    },
+    "D36": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C27": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D36"
+      }
+    },
+    "D37": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C28": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D37"
+      }
+    },
+    "D38": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C29": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D38"
+      }
+    },
+    "D39": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C30": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D39"
+      }
+    },
+    "D40": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C31": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D40"
+      }
+    },
+    "D41": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C32": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D41"
+      }
+    },
+    "D42": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C33": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D42"
+      }
+    },
+    "D43": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C34": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D43"
+      }
+    },
+    "D44": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C35": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D44"
+      }
+    },
+    "D45": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C36": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D45"
+      }
+    },
+    "D46": {
+      "fields": {
+        "manufacturer": "Worldsemi",
+        "manufacturer_pn": "WS2812B-4020-V6",
+        "LCSC": "C52941387",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
+      }
+    },
+    "C37": {
+      "fields": {
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do",
+        "voltage": "50V",
+        "dielectric": "X7R",
+        "tolerance": "10%",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D46"
+      }
+    },
+    "R24": {
+      "fields": {
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1000TCE",
+        "LCSC": "C25076",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
+      }
+    }
+  }
+}

@@ -154,7 +154,7 @@ result={
  'power_usb_boot_expected_pin_checks':'PASS',
  'assembly_values':{ref:child(c,'value')[1] for ref,c in comps.items()},
  'residual_risks':[
-  'Board is intentionally unrouted: USB signal integrity, power impedance, SMPS/XTAL stability, ESD return paths and current capability are unverified.',
+  'Only the official MCU core is routed. Remaining routing, USB signal integrity, power impedance, SMPS/XTAL hardware stability, ESD return paths and current capability remain unverified.',
   'Firmware must pull up columns, drive only selected ROW LOW, disable pulls and output drive on other rows, and allow settling/debounce. Physical row labels do not equal logical row for the two staggered pairs.',
   'Ideal diode graph tests do not verify analogue low-level margins over temperature, leakage, scan timing, or hardware NKRO.',
   'Confirm final capacitor voltage/DC-bias derating, actual supply load, regulator thermal margin and inrush before manufacturing.',
@@ -166,7 +166,7 @@ result={
   'https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008280-DS-2-hardware-design-with-rp2350.pdf',
   'https://www.jscj-elec.com/gallery/file/BAW56%20BAV70%20BAV99%20SOT-23%20V1.pdf',
   'https://www.st.com/resource/en/datasheet/usblc6-2.pdf',
-  'https://www.diodes.com/datasheet/download/AP2112.pdf',
+  'https://product.torexsemi.com/system/files/series/xc6206.pdf',
   'https://gct.co/files/drawings/usb4105.pdf'
  ]}
 (OUT/'audit_result.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
