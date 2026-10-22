@@ -1,0 +1,70 @@
+{
+  "baseline_commit": "9d37752a5d09a2c02791a56489a6369f36636ab4",
+  "input_sha256": {
+    "WING27.kicad_pcb": "579d5803c82215cda1b10623110b23f17eb86e0d6d889f5dcfa8a04a42002477",
+    "WING27_BOM.csv": "c50e802c91cda7fc8a63937c00d0982d31df653daf913e03b13f6afa0cee4367",
+    "LEDs.kicad_sch": "dee5b7d4719d391971c2bd1760d52f6b0b558323c2e9fbd92c02720d373df63b",
+    "WING27.kicad_sch": "851f1f9334869ccb0f8c37188cdbe73781d60b4e00c54a67b31bff1ca2c78769",
+    "Controller.kicad_sch": "44a193b27303411003ac013b7cf824a5286bc0fefa32faf192ca70305873067f"
+  },
+  "schematic_components": 185,
+  "pcb_footprints": 185,
+  "bom_rows": 24,
+  "counts": {
+    "PCBA": 101,
+    "PCBA_assigned": 101,
+    "Hand solder": 60,
+    "Hand solder_assigned": 0,
+    "DNP": 1,
+    "DNP_assigned": 0
+  },
+  "mismatches": [],
+  "missing": [
+    {
+      "References": "SW1,SW2,SW3,SW4,SW5,SW6,SW7,SW8,SW9,SW10,SW11,SW12,SW13,SW14,SW15,SW16,SW17,SW18,SW19,SW20,SW21,SW22,SW23,SW24,SW25,SW26,SW27,SW28,SW29,SW30,SW31,SW32,SW33,SW34,SW35,SW36,SW37,SW38,SW39,SW40,SW41,SW42,SW43,SW44,SW45,SW46,SW47,SW48,SW49,SW50,SW51,SW52,SW53,SW54,SW55,SW56,SW57,SW58,SW59,SW60",
+      "Quantity": "60",
+      "Value": "CMI627301D60",
+      "MPN": "CMI627301D60",
+      "Assembly": "Hand solder"
+    },
+    {
+      "References": "J3",
+      "Quantity": "1",
+      "Value": "SWD 2.54 DNP",
+      "MPN": "",
+      "Assembly": "DNP"
+    }
+  ],
+  "excluded": {
+    "TP": [
+      "TP1",
+      "TP2",
+      "TP3"
+    ],
+    "H": [
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ],
+    "JP": [
+      "JP1",
+      "JP10",
+      "JP11",
+      "JP12",
+      "JP13",
+      "JP14",
+      "JP15",
+      "JP16",
+      "JP2",
+      "JP3",
+      "JP4",
+      "JP5",
+      "JP6",
+      "JP7",
+      "JP8",
+      "JP9"
+    ]
+  },
+  "assigned_sku_count": 20
+}

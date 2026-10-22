@@ -1,12 +1,12 @@
 {
-  "audit_utc": "2026-10-17T20:25:20.430963+00:00",
+  "audit_utc": "2026-10-18T06:23:28.713193+00:00",
   "status": "PASS: net topology and pin mapping only; not fabrication approval",
   "input_sha256": {
-    "WING27.kicad_sch": "e67be8daa37e0b90952bc922fb00f302043262e58a61f3d9c653e4956b2186fb",
-    "Controller.kicad_sch": "e7c433af279682349dab59b45da29294c2425d8fb20bb974ca6e943464e9b417",
-    "WING27.kicad_pcb": "8023d31209713e03c09ae599d3b0120d1959e8e404da5e6cf2493064f30dd9b7",
-    "scripts/electrical_model.json": "b37c3ef611ea620496e47afdf1fdc8db5bc2cb2bd2e165f0aa801b1e181b377b",
-    "LEDs.kicad_sch": "e554c9017b8127e7fe12be9f9961f95d16e0864e81b7259b65640bbfd2b76bfd"
+    "WING27.kicad_sch": "851f1f9334869ccb0f8c37188cdbe73781d60b4e00c54a67b31bff1ca2c78769",
+    "Controller.kicad_sch": "44a193b27303411003ac013b7cf824a5286bc0fefa32faf192ca70305873067f",
+    "WING27.kicad_pcb": "579d5803c82215cda1b10623110b23f17eb86e0d6d889f5dcfa8a04a42002477",
+    "scripts/electrical_model.json": "c03ad95763d19b77c8112c4db4a37a3d5a82f478c2422b8be9e5d145f3e91f06",
+    "LEDs.kicad_sch": "dee5b7d4719d391971c2bd1760d52f6b0b558323c2e9fbd92c02720d373df63b"
   },
   "component_count": 185,
   "physical_copper_pads_checked": 518,
@@ -664,7 +664,7 @@
     "R24": "100"
   },
   "residual_risks": [
-    "Board is intentionally unrouted: USB signal integrity, power impedance, SMPS/XTAL stability, ESD return paths and current capability are unverified.",
+    "Only the official MCU core is routed. Remaining routing, USB signal integrity, power impedance, SMPS/XTAL hardware stability, ESD return paths and current capability remain unverified.",
     "Firmware must pull up columns, drive only selected ROW LOW, disable pulls and output drive on other rows, and allow settling/debounce. Physical row labels do not equal logical row for the two staggered pairs.",
     "Ideal diode graph tests do not verify analogue low-level margins over temperature, leakage, scan timing, or hardware NKRO.",
     "Confirm final capacitor voltage/DC-bias derating, actual supply load, regulator thermal margin and inrush before manufacturing.",
@@ -676,7 +676,7 @@
     "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008280-DS-2-hardware-design-with-rp2350.pdf",
     "https://www.jscj-elec.com/gallery/file/BAW56%20BAV70%20BAV99%20SOT-23%20V1.pdf",
     "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
-    "https://www.diodes.com/datasheet/download/AP2112.pdf",
+    "https://product.torexsemi.com/system/files/series/xc6206.pdf",
     "https://gct.co/files/drawings/usb4105.pdf"
   ]
 }

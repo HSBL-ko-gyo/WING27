@@ -261,7 +261,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1198,7 +1198,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1302,7 +1302,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Murata Electronics"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1522,7 +1522,9 @@
 			(uuid "6a479dbf-4904-4202-b392-6c37f23aa8d4")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C82453"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "3b9a5d14-508e-54fc-98ef-5420a6350e5f")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -1849,7 +1851,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2171,7 +2173,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3209,7 +3211,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3300,7 +3302,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3313,7 +3315,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-075K1L"
+		(property "manufacturer_pn" "0402WGF5101TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3559,7 +3561,9 @@
 			(uuid "9cd0aeb9-a39e-45de-b0b5-063af2cc06f7")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C25905"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "3a7bd438-a478-529b-9f5b-3ba6630a0d91")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "0c52b6df-9a38-4348-b5a5-88b24a780779")
@@ -4573,7 +4577,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5212,7 +5216,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5303,7 +5307,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5316,7 +5320,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-071KL"
+		(property "manufacturer_pn" "0402WGF1001TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5562,7 +5566,9 @@
 			(uuid "40015b89-9b45-420e-ba55-9f471d36eea1")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C11702"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "0032e0a1-aa69-51f8-9b37-c1d865ffceab")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:MountingHole_2.2mm_M2"
 		(layer "F.Cu")
 		(uuid "17436ff1-035c-4180-a1ac-e74bcff5c904")
@@ -6001,7 +6007,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6342,7 +6348,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6355,7 +6361,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6381,7 +6387,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6446,7 +6452,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6459,7 +6465,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6666,7 +6672,9 @@
 			(uuid "77f861fd-e12d-41c9-b8bf-55a02b9f7c1f")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "df023d03-3e45-5eed-bae3-2ad9d5c1de77")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "1bdfe79e-de1e-41c5-b388-6bd492377671")
@@ -6698,7 +6706,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6711,7 +6719,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D46"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D46"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6736,7 +6744,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6798,7 +6806,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -6810,7 +6818,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7016,7 +7024,9 @@
 			(uuid "b07b4b2b-7547-4b41-b140-94f93588836a")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "29e3033a-a1e2-5bad-a4be-d19b8c2bfc26")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -7346,7 +7356,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7436,7 +7446,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7448,7 +7458,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-07100RL"
+		(property "manufacturer_pn" "0402WGF1000TCE"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7693,7 +7703,9 @@
 			(uuid "e8898425-c40d-4ea1-a463-2ad111adb5e2")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C25076"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "c0498189-1932-5d9e-8f26-fd911fb22a04")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "1f000452-fb93-4c55-9ce4-76cbd81c71cd")
@@ -7725,7 +7737,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7738,7 +7750,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D33"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D33"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7763,7 +7775,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7825,7 +7837,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -7837,7 +7849,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -8043,7 +8055,9 @@
 			(uuid "61f91abd-fb82-40c3-8c1e-21ecd67e0faa")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "3f38ac78-bf41-5cff-a014-acd8f3884633")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -8373,7 +8387,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8477,7 +8491,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8490,7 +8504,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM1555C1H150JA01D"
+		(property "manufacturer_pn" "0402CG150J500NT"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8697,7 +8711,9 @@
 			(uuid "f489a379-94d3-4c03-a0c5-91a3abc5bdef")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C1548"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "e3db1b61-dbd5-5451-b390-8c7f18e94cd9")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SOT-23"
 		(layer "F.Cu")
 		(uuid "246f33fb-3dd0-47e2-8480-e2a5738a1570")
@@ -8739,7 +8755,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9686,7 +9702,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10921,7 +10937,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10934,7 +10950,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10960,7 +10976,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11025,7 +11041,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11038,7 +11054,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11245,7 +11261,9 @@
 			(uuid "e70af5b5-f803-4297-bda4-7e03ed39e378")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "c771a98b-cee8-5bfd-b024-bb209d79f550")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SOT-23"
 		(layer "F.Cu")
 		(uuid "30e0839a-77c5-422e-80b7-e9d9cdbcf86d")
@@ -11287,7 +11305,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -11628,7 +11646,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R60J475ME47D\\datasheets"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11732,7 +11750,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Murata Electronics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11954,7 +11972,9 @@
 			(uuid "4092cb0e-01ea-4959-8668-5c1b94b677ee")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C82453"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "fd49034d-47e2-5839-b12a-6bff8e3b29e5")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:MountingHole_2.2mm_M2"
 		(layer "F.Cu")
 		(uuid "34b37b68-a405-407b-9870-46f8455cb3d7")
@@ -12085,7 +12105,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12098,7 +12118,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D43"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D43"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -12123,7 +12143,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -12185,7 +12205,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -12197,7 +12217,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -12403,7 +12423,9 @@
 			(uuid "b80ca8fb-5167-4340-8b9f-b821fee86e31")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "5524f481-d5e7-59c5-9dd6-eb836439b1fc")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -13798,7 +13820,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -14447,7 +14469,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15381,7 +15403,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -15989,7 +16011,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Inductors\\Fixed\\M2016\\ABRACON_AOTA-B201610S3R3-101-T\\datasheets"
+		(property "Datasheet" "https://abracon.com/datasheets/AOTA-B201610S3R3-101-T.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16335,7 +16357,9 @@
 			(uuid "fb5ef452-b598-419b-945a-5cdc0ef12f04")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C42411119"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "1ea67fe4-171f-5099-8d6c-331f6a899569")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SOT-23"
 		(layer "F.Cu")
 		(uuid "510db47d-88a2-4d15-baa6-1c9d7a44ed1e")
@@ -16377,7 +16401,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16728,7 +16752,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -17328,7 +17352,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17341,7 +17365,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D35"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D35"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -17366,7 +17390,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -17428,7 +17452,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -17440,7 +17464,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -17646,7 +17670,9 @@
 			(uuid "3dda129d-35a6-49e2-8110-c6bd9b6ad566")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "13bb659a-a93d-5113-8f14-a100a87bdcbf")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "52562129-090c-420d-ae82-332035c1263b")
@@ -17678,7 +17704,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17691,7 +17717,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17717,7 +17743,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17782,7 +17808,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17795,7 +17821,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18002,7 +18028,9 @@
 			(uuid "ae4e0fff-33bd-45cd-9091-6ba11e50c81a")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "384d62b7-b976-5b00-b9d6-d2f01061513d")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:USB_C_GCT_USB4105_GF_A060_JLC"
 		(layer "F.Cu")
 		(uuid "54c3eb58-953d-4c4a-a799-af0159464f2f")
@@ -18987,7 +19015,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19000,7 +19028,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19026,7 +19054,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19091,7 +19119,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19104,7 +19132,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19311,7 +19339,9 @@
 			(uuid "b8469106-ca24-4543-a594-51fa65bd3700")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "af75a473-90e0-5909-b043-a14479080ce5")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -19651,7 +19681,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20287,7 +20317,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -20609,7 +20639,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20950,7 +20980,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20963,7 +20993,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D42"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D42"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -20988,7 +21018,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -21050,7 +21080,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -21062,7 +21092,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -21268,7 +21298,9 @@
 			(uuid "07398758-bedb-4e3e-a762-11373ec9feda")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "81323fe1-4f7c-555c-bc19-c0e9503fbc4c")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -21598,7 +21630,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21702,7 +21734,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Murata Electronics"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21922,7 +21954,9 @@
 			(uuid "7b334573-d804-48ad-95ac-25c129807823")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C82453"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "c4fe55e7-204f-5514-8e41-83a40ac9c211")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:WS2812B_4020_V6_LCSC_Reference"
 		(layer "F.Cu")
 		(uuid "796edaad-9504-46e7-91ab-2117413c0f25")
@@ -21951,7 +21985,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -22559,7 +22593,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/C19666"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -22881,7 +22915,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23193,7 +23227,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23206,7 +23240,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D32"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D32"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23231,7 +23265,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23293,7 +23327,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23305,7 +23339,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23511,7 +23545,9 @@
 			(uuid "601dc0cc-738b-4f32-8761-e7bfdd6a5f88")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "1ec7f361-56a7-53e3-8737-4806a3449af7")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "86ed2976-7acf-4701-9b03-ba22f4e9bd2c")
@@ -23543,7 +23579,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23556,7 +23592,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D44"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D44"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23581,7 +23617,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23643,7 +23679,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23655,7 +23691,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -23861,7 +23897,9 @@
 			(uuid "9156ee9f-2376-4047-9666-e0d817f92bfc")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "9e849e69-9305-5b7d-8a85-93be571e3b17")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "8837d470-1038-4708-9bca-3bb4214c2a13")
@@ -23893,7 +23931,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23906,7 +23944,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23932,7 +23970,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23997,7 +24035,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24010,7 +24048,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24217,7 +24255,9 @@
 			(uuid "04bacdda-fb4f-4e95-8ad5-3c8745b5628d")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "9d7f035a-4ef1-5c0d-ae10-a0d4a2bfafa8")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:WS2812B_4020_V6_LCSC_Reference"
 		(layer "F.Cu")
 		(uuid "893d8b95-f33c-4f5f-815f-3bfbce7cf097")
@@ -24246,7 +24286,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -24558,7 +24598,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24571,7 +24611,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D34"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D34"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -24596,7 +24636,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -24658,7 +24698,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -24670,7 +24710,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -24876,7 +24916,9 @@
 			(uuid "e21606d5-3664-4010-89cd-dec841a6758d")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "81b58e91-b9a5-5fbc-8583-ceb79347f970")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SOT-23"
 		(layer "F.Cu")
 		(uuid "8bd37d58-352d-484d-9e92-9f86b379296a")
@@ -24918,7 +24960,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -27021,7 +27063,9 @@
 			(uuid "5f24bdff-66a9-44e0-aac5-5cc4b14e77db")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C41378174"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "d53d7548-2d4a-5e3b-ad61-6a1ac82c7150")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_resc1005x35"
 		(layer "F.Cu")
 		(uuid "8bfc3b27-0dda-428e-9c07-0fed7fcfb275")
@@ -27053,7 +27097,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27144,7 +27188,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27157,7 +27201,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-071KL"
+		(property "manufacturer_pn" "0402WGF1001TCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27403,7 +27447,9 @@
 			(uuid "7443351c-4f04-46a8-9a36-c42214cccdc3")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C11702"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "b50c8ab7-69ad-5032-8575-eaaf9a55f86b")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "8d593a1c-679a-4125-9058-c1221366929a")
@@ -27435,7 +27481,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27448,7 +27494,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27474,7 +27520,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27539,7 +27585,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27552,7 +27598,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27759,7 +27805,9 @@
 			(uuid "a83a8659-0a8b-409f-b6cf-64c005cbff3d")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "10b76d8a-3687-5587-a39a-92382279bf95")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_resc1005x35"
 		(layer "F.Cu")
 		(uuid "907d4a4d-8c3a-452c-b76c-c966d077dad4")
@@ -27791,7 +27839,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27882,7 +27930,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27895,7 +27943,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-0727RL"
+		(property "manufacturer_pn" "0402WGF270JTCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28141,7 +28189,9 @@
 			(uuid "f70a6da7-69cc-4e1f-911d-ef5e5490f5c6")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C25100"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "aede6d08-cf3c-5263-a03c-2737c06807ea")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -28481,7 +28531,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -29117,7 +29167,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -29426,7 +29476,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -29748,7 +29798,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -30387,7 +30437,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30400,7 +30450,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30426,7 +30476,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30491,7 +30541,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30504,7 +30554,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30711,7 +30761,9 @@
 			(uuid "f3ee12ae-a2ff-4d40-99a0-c33a57129cf7")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "4d620da1-02d3-5fca-a22a-acd558fc454d")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "964fd9c0-ca59-4a39-874c-5a2ab56df3a4")
@@ -30743,7 +30795,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30756,7 +30808,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D31"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D31"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -30781,7 +30833,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -30843,7 +30895,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -30855,7 +30907,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -31061,7 +31113,9 @@
 			(uuid "e9810c5f-5c54-41c2-9d2e-bd95e730db7e")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "de021a52-8ff1-5026-adaa-d55d6347c3d3")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:MountingHole_2.2mm_M2"
 		(layer "F.Cu")
 		(uuid "984febb7-27e6-42dd-8c75-cf6d95a107d7")
@@ -31490,7 +31544,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31503,7 +31557,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31529,7 +31583,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31594,7 +31648,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31607,7 +31661,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31814,7 +31868,9 @@
 			(uuid "55ecad4f-e51e-494d-b66d-dabb45f9cd96")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "e1eb1b0b-910b-5a70-bccf-cc03f7eb28db")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:WS2812B_4020_V6_LCSC_Reference"
 		(layer "F.Cu")
 		(uuid "9b730921-064e-4813-9bc0-1b1efe168c60")
@@ -31843,7 +31899,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -33059,7 +33115,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -34157,7 +34213,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34170,7 +34226,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D41"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D41"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -34195,7 +34251,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -34257,7 +34313,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -34269,7 +34325,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -34475,7 +34531,9 @@
 			(uuid "533973bd-b2b7-4813-877b-8a2dba1315d6")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "0cb22c4a-cd27-5235-a008-2fbf2fe1dd69")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:WS2812B_4020_V6_LCSC_Reference"
 		(layer "F.Cu")
 		(uuid "a08ed8d5-3c25-4271-b176-95a700abb34e")
@@ -34504,7 +34562,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -34816,7 +34874,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34907,7 +34965,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -34920,7 +34978,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-07100RL"
+		(property "manufacturer_pn" "0402WGF1000TCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -35166,7 +35224,9 @@
 			(uuid "6e5775e3-fda6-4e81-a2bd-3ca48b43e3a3")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C25076"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "cd9740b5-db44-5f5f-bd0c-85b5e281ba6c")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -36388,7 +36448,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/C15849"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -36612,7 +36672,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R60J475ME47D\\datasheets"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36716,7 +36776,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Murata Electronics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36938,7 +36998,9 @@
 			(uuid "f1feab60-062f-48e0-b4c4-c8c7ca3ff950")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C82453"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "2b6ca6e5-46a6-5cee-bca2-31b8356a4544")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "aaad17e0-df36-4375-b202-84c80cd6988a")
@@ -36970,7 +37032,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36983,7 +37045,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D40"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D40"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -37008,7 +37070,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -37070,7 +37132,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -37082,7 +37144,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -37288,7 +37350,9 @@
 			(uuid "0056f4d0-125b-4ff9-9850-f99e2a1e50bc")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "c8429450-7e38-5026-9450-49d71307ff74")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -37618,7 +37682,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37709,7 +37773,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37722,7 +37786,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-071KL"
+		(property "manufacturer_pn" "0402WGF1001TCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37968,7 +38032,9 @@
 			(uuid "d0508aa5-150a-4855-8835-bd0f48e3e744")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C11702"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "f2151ad8-2dc0-5e67-b88f-70a7afdee351")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -38308,7 +38374,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -38649,7 +38715,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38662,7 +38728,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38688,7 +38754,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38753,7 +38819,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38766,7 +38832,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38973,7 +39039,9 @@
 			(uuid "a6a0bb0a-2835-4f60-9584-3ca9ba24f801")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "f4b9b2fb-0f62-5b67-b878-d5183bf01db8")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -39300,7 +39368,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -39658,7 +39726,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5306067"
+		(property "LCSC" "C160389"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -39951,7 +40019,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Frequency_Timing\\Crystals\\ABRACON_ABM8-272-T3\\datasheets"
+		(property "Datasheet" "https://abracon.com/datasheets/ABM8-272-T3.pdf"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40300,7 +40368,9 @@
 			(uuid "eba3c5ab-3d47-4447-b358-4365be7feaf5")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C20625731"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "8e5ec15c-c074-5aaf-ae69-d6a350abab05")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -40925,7 +40995,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -41932,7 +42002,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41945,7 +42015,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41971,7 +42041,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42036,7 +42106,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42049,7 +42119,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42256,7 +42326,9 @@
 			(uuid "faf8e684-7c4d-4b19-a567-f3250af6b1e1")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "6a406a40-b9ba-5bf3-80a2-300f7f0d7776")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SOT-23"
 		(layer "F.Cu")
 		(uuid "c09e7c31-5026-4d45-b0f7-18c15ad1b807")
@@ -42298,7 +42370,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -42639,7 +42711,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42652,7 +42724,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D38"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D38"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -42677,7 +42749,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -42739,7 +42811,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -42751,7 +42823,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -42957,7 +43029,9 @@
 			(uuid "e72bea89-b4be-4955-aabd-ff842a4bc115")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "bd2770b7-0382-5b59-81be-023e22b0b2cd")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SOT-23"
 		(layer "F.Cu")
 		(uuid "c1dcdac9-ca85-476d-9ad5-58bdb3f76368")
@@ -42999,7 +43073,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -43350,7 +43424,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -44100,7 +44174,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -44441,7 +44515,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44545,7 +44619,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44558,7 +44632,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM1555C1H150JA01D"
+		(property "manufacturer_pn" "0402CG150J500NT"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44765,7 +44839,9 @@
 			(uuid "e9738bec-7db1-408e-9e03-cade252e57fc")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C1548"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "6584460a-fd49-5fea-ab61-28277fabb503")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -45105,7 +45181,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -45744,7 +45820,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45835,7 +45911,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45848,7 +45924,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-07100RL"
+		(property "manufacturer_pn" "0402WGF1000TCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46094,7 +46170,9 @@
 			(uuid "67d988a4-26d6-45e7-b44a-b913b6b0525a")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C25076"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "d089683b-3a01-55ef-8b11-840256922173")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:WS2812B_4020_V6_LCSC_Reference"
 		(layer "F.Cu")
 		(uuid "cf0ef396-a511-4cf4-90dc-0491ecb71b39")
@@ -46123,7 +46201,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -46435,7 +46513,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46448,7 +46526,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D45"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D45"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -46473,7 +46551,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -46535,7 +46613,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -46547,7 +46625,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -46753,7 +46831,9 @@
 			(uuid "be2fcd8c-aa27-4cef-8ba4-e5ce9719c188")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "4a2ac5a3-0e8e-5bf1-ba8d-8805fd4b190c")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:WS2812B_4020_V6_LCSC_Reference"
 		(layer "F.Cu")
 		(uuid "cfda72bf-c9a8-42da-95fd-16cde628383c")
@@ -46782,7 +46862,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -47104,7 +47184,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -47753,7 +47833,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -48094,7 +48174,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48107,7 +48187,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D37"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D37"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -48132,7 +48212,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -48194,7 +48274,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -48206,7 +48286,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -48412,7 +48492,9 @@
 			(uuid "67b3c408-62a0-4ee2-b6f4-1799c5653e26")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "c037762d-b0d0-50e0-b3aa-7f9174767c21")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -48739,7 +48821,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -49048,7 +49130,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C52941387.html"
+		(property "Datasheet" "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -49360,7 +49442,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -49373,7 +49455,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D36"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D36"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -49398,7 +49480,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -49460,7 +49542,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -49472,7 +49554,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -49678,7 +49760,9 @@
 			(uuid "bf54fd0b-5ee2-416c-bf4c-3ab3686b65fa")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "57f71254-1923-5cc1-80f1-331ffe7dbeed")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SOT-23"
 		(layer "F.Cu")
 		(uuid "e01f2bd9-ca78-4446-a285-475b42afa495")
@@ -49720,7 +49804,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -50071,7 +50155,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -50422,7 +50506,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -50763,7 +50847,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50854,7 +50938,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50867,7 +50951,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-075K1L"
+		(property "manufacturer_pn" "0402WGF5101TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51113,7 +51197,9 @@
 			(uuid "58514fac-d188-446a-9e06-e3eb80c9625d")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C25905"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "01f6fcb0-3de0-5e8c-bd37-d51d4fb3afd8")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -51443,7 +51529,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51456,7 +51542,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51482,7 +51568,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51547,7 +51633,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51560,7 +51646,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51767,7 +51853,9 @@
 			(uuid "57882624-a677-44c6-80ad-0d38cdf8a1d0")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "6d0e954a-3730-5d0b-a3e2-53557ec34980")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -52107,7 +52195,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -52746,7 +52834,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -52837,7 +52925,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -52850,7 +52938,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-0733RL"
+		(property "manufacturer_pn" "0402WGF330JTCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -53096,7 +53184,9 @@
 			(uuid "873e56b9-dd11-495a-8ec1-1200e576eb87")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C25105"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "0b4d7aea-df0b-5fb1-84c6-e0dc1bbd42f1")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:Kailh_CMI627301D60"
 		(locked yes)
 		(layer "F.Cu")
@@ -53436,7 +53526,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual common cathode; both anodes belong to same ROW"
+		(property "Description" "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -54427,7 +54517,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Resistors\\Chip\\M1005\\YAGEO_RC0402FR-07.autogen\\datasheets"
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54518,7 +54608,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Yageo"
+		(property "manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54531,7 +54621,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "RC0402FR-0727RL"
+		(property "manufacturer_pn" "0402WGF270JTCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54777,7 +54867,9 @@
 			(uuid "7632a2e4-70b6-4908-b799-f7a163a11d1b")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C25100"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "06090bfd-66b9-54de-a44e-641ee9077064")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:RPI_generic_capc1005x50"
 		(layer "F.Cu")
 		(uuid "fec12727-a848-403c-9705-05a1e7b2a992")
@@ -54809,7 +54901,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "file:///C:\\rpi-pdb\\parts\\Capacitors\\MLCC\\M1005\\MURATA_GRM155R71E104KE14D\\datasheets"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -54822,7 +54914,7 @@
 				)
 			)
 		)
-		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D39"
+		(property "Description" "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D39"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -54847,7 +54939,7 @@
 				)
 			)
 		)
-		(property "voltage" "25V"
+		(property "voltage" "50V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -54909,7 +55001,7 @@
 				)
 			)
 		)
-		(property "manufacturer" "Murata"
+		(property "manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -54921,7 +55013,7 @@
 				)
 			)
 		)
-		(property "manufacturer_pn" "GRM155R71E104KE14D"
+		(property "manufacturer_pn" "CL05B104KB54PNC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -55127,7 +55219,9 @@
 			(uuid "b473895b-65e9-4239-b750-bb77e104001c")
 		)
 		(embedded_fonts no)
-	)
+
+(property "LCSC" "C307331"(at 0 0 0)(layer "F.Fab")(hide yes)(uuid "d9cce6be-5f94-5bde-8807-1fa36a844790")(effects(font(size 1 1)(thickness 0.15))))
+)
 	(footprint "WING27:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 		(layer "B.Cu")
 		(uuid "09babe0b-1c2f-4aae-964b-6d944bcef0ea")

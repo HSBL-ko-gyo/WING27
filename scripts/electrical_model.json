@@ -81,7 +81,8 @@
         "manufacturer": "Raspberry Pi",
         "manufacturer_pn": "RP2354A",
         "Description": "2MB internal flash, QFN60 + exposed ground; 30 GPIO",
-        "Datasheet": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf"
+        "Datasheet": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf",
+        "LCSC": "C41378174"
       },
       "sheet": "controller",
       "uuid": "aae4b6e4-1099-5e9e-ba0f-2f76ea2f68ab"
@@ -108,7 +109,9 @@
         "Description": "Inductor, SMT, 3.3uH, 20%, Irms=2.1A, Isat=2.4A, DCR=115mR typ 140mR max, Polarity Marked, M2016",
         "manufacturer": "Abracon",
         "manufacturer_pn": "AOTA-B201610S3R3-101-T",
-        "tolerance": "20%"
+        "tolerance": "20%",
+        "LCSC": "C42411119",
+        "Datasheet": "https://abracon.com/datasheets/AOTA-B201610S3R3-101-T.pdf"
       },
       "sheet": "controller",
       "uuid": "8109c99e-f771-5381-a8f8-8245f83c1d50"
@@ -137,7 +140,9 @@
         "Description": "XTAL, SMT, 12 MHz, Fundamental, Ftol=30ppm, Fstab=30ppm, 10pF, 3.2x2.5mm",
         "manufacturer": "Abracon",
         "manufacturer_pn": "ABM8-272-T3",
-        "tolerance": "30ppm"
+        "tolerance": "30ppm",
+        "LCSC": "C20625731",
+        "Datasheet": "https://abracon.com/datasheets/ABM8-272-T3.pdf"
       },
       "sheet": "controller",
       "uuid": "3942240d-edbd-5660-bdde-18de5ca7e225"
@@ -163,9 +168,11 @@
       "metadata": {
         "Description": "Resistor, Chip, 1kR, M1005, 63mW, 1%",
         "tolerance": "1%",
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-071KL",
-        "voltage": "50V"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1001TCE",
+        "voltage": "50V",
+        "LCSC": "C11702",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "2d693517-3ca1-5ae3-a677-c9445867bf09"
@@ -191,9 +198,11 @@
       "metadata": {
         "Description": "Resistor, Chip, 33R, M1005, 63mW, 1%",
         "tolerance": "1%",
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-0733RL",
-        "voltage": "50V"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF330JTCE",
+        "voltage": "50V",
+        "LCSC": "C25105",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "c4ee98d8-1a4a-5d59-b5ee-eeb6d7b5f3db"
@@ -219,9 +228,11 @@
       "metadata": {
         "Description": "Resistor, Chip, 1kR, M1005, 63mW, 1%",
         "tolerance": "1%",
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-071KL",
-        "voltage": "50V"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1001TCE",
+        "voltage": "50V",
+        "LCSC": "C11702",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "681eb5ba-c442-53f9-b724-5edcc4b63036"
@@ -247,9 +258,11 @@
       "metadata": {
         "Description": "Resistor, Chip, 1kR, M1005, 63mW, 1%",
         "tolerance": "1%",
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-071KL",
-        "voltage": "50V"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1001TCE",
+        "voltage": "50V",
+        "LCSC": "C11702",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "9fdf3cac-2303-5b31-8e70-b4369ea68654"
@@ -275,9 +288,11 @@
       "metadata": {
         "Description": "Resistor, Chip, 27R, M1005, 63mW, 1%",
         "tolerance": "1%",
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-0727RL",
-        "voltage": "50V"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF270JTCE",
+        "voltage": "50V",
+        "LCSC": "C25100",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "277fbb31-ad7f-5c94-8853-440841e2131e"
@@ -303,9 +318,11 @@
       "metadata": {
         "Description": "Resistor, Chip, 27R, M1005, 63mW, 1%",
         "tolerance": "1%",
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-0727RL",
-        "voltage": "50V"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF270JTCE",
+        "voltage": "50V",
+        "LCSC": "C25100",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "338af21b-3d6b-586e-bc34-cb557d11ce0e"
@@ -333,8 +350,10 @@
         "voltage": "50V",
         "dielectric": "C0G",
         "tolerance": "5%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM1555C1H150JA01D"
+        "manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+        "manufacturer_pn": "0402CG150J500NT",
+        "LCSC": "C1548",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548"
       },
       "sheet": "controller",
       "uuid": "caeeef5e-cce7-5dbb-aa54-e20d6ce2a714"
@@ -362,8 +381,10 @@
         "voltage": "50V",
         "dielectric": "C0G",
         "tolerance": "5%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM1555C1H150JA01D"
+        "manufacturer": "FH (Guangdong Fenghua Advanced Tech)",
+        "manufacturer_pn": "0402CG150J500NT",
+        "LCSC": "C1548",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/09fe2daf22580a99fa7fea93ccb20fb7.pdf?productCode=C1548"
       },
       "sheet": "controller",
       "uuid": "b13df5a9-d596-5cdc-8cb0-dc77ab9e44de"
@@ -391,8 +412,10 @@
         "voltage": "6.3V",
         "dielectric": "X5R",
         "tolerance": "20%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R60J475ME47D"
+        "manufacturer": "Murata Electronics",
+        "manufacturer_pn": "GRM155R60J475ME47D",
+        "LCSC": "C82453",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
       },
       "sheet": "controller",
       "uuid": "8caed084-52b3-5e8c-b7e8-deabcda9d18b"
@@ -420,8 +443,10 @@
         "voltage": "6.3V",
         "dielectric": "X5R",
         "tolerance": "20%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R60J475ME47D"
+        "manufacturer": "Murata Electronics",
+        "manufacturer_pn": "GRM155R60J475ME47D",
+        "LCSC": "C82453",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
       },
       "sheet": "controller",
       "uuid": "79ea90ad-932c-50bc-b6f4-728d9a702a51"
@@ -445,12 +470,14 @@
         0.0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "63f7ac86-e571-5709-9017-b3666b54f49a"
@@ -478,8 +505,10 @@
         "voltage": "6.3V",
         "dielectric": "X5R",
         "tolerance": "20%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R60J475ME47D"
+        "manufacturer": "Murata Electronics",
+        "manufacturer_pn": "GRM155R60J475ME47D",
+        "LCSC": "C82453",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
       },
       "sheet": "controller",
       "uuid": "4236fe18-442c-5119-b2b5-7467a2d33dca"
@@ -507,8 +536,10 @@
         "voltage": "6.3V",
         "dielectric": "X5R",
         "tolerance": "20%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R60J475ME47D"
+        "manufacturer": "Murata Electronics",
+        "manufacturer_pn": "GRM155R60J475ME47D",
+        "LCSC": "C82453",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R60J475ME47-17A.pdf"
       },
       "sheet": "controller",
       "uuid": "b3cd0705-8da1-555f-9a84-cddcab163070"
@@ -532,12 +563,14 @@
         180
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "9876944d-dde1-5a9f-8436-cc238caaae47"
@@ -561,12 +594,14 @@
         270.0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "6a0fefec-d419-5f7b-8ec3-889e87bc3238"
@@ -590,12 +625,14 @@
         0.0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "a3b1d7a1-c0a6-5877-9ed3-fc265e64177f"
@@ -619,12 +656,14 @@
         180
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "89460b47-d787-5117-9cc3-8fbb39d6aaa8"
@@ -648,12 +687,14 @@
         0.0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "48458894-9ad7-5654-a8d0-acf9a062080b"
@@ -677,12 +718,14 @@
         180
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "9d7b4954-dd75-5305-b3d4-5fb517b6ef0c"
@@ -706,12 +749,14 @@
         180
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "407c48de-2aba-5a77-a3b1-63ea1166e1c4"
@@ -735,12 +780,14 @@
         90.0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "e9d32fae-2372-5839-8d5d-9e7cea8d570c"
@@ -764,12 +811,14 @@
         270
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "0e84561c-9d3d-5076-b6c7-77ef1e55be85"
@@ -892,9 +941,11 @@
         180
       ],
       "metadata": {
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-075K1L",
-        "Description": "USB-C independent Rd 5.1k 1%"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF5101TCE",
+        "Description": "USB-C independent Rd 5.1k 1%",
+        "LCSC": "C25905",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "8ac73005-4d0e-527f-9173-2c034e583adb"
@@ -918,9 +969,11 @@
         180
       ],
       "metadata": {
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-075K1L",
-        "Description": "USB-C independent Rd 5.1k 1%"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF5101TCE",
+        "Description": "USB-C independent Rd 5.1k 1%",
+        "LCSC": "C25905",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "e5b42ef8-500c-558f-9178-cba26439010e"
@@ -1008,7 +1061,7 @@
         "manufacturer_pn": "CL10A105KB8NNNC",
         "LCSC": "C15849",
         "Description": "1uF 50V X5R 0603, LDO input ceramic",
-        "Datasheet": "https://jlcpcb.com/partdetail/C15849"
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL10A105KB8NNN.do"
       },
       "sheet": "controller",
       "uuid": "7fd5659e-017c-55d3-ae46-86881a835765"
@@ -1036,7 +1089,7 @@
         "manufacturer_pn": "CL10A475KO8NNNC",
         "LCSC": "C19666",
         "Description": "4.7uF 16V X5R0603 output bypass; verify effective capacitance including bias/tolerance",
-        "Datasheet": "https://jlcpcb.com/partdetail/C19666"
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL10A475KO8NNN.do"
       },
       "sheet": "controller",
       "uuid": "608799dd-9879-5b68-851d-1769dc7ab8b6"
@@ -1060,12 +1113,14 @@
         270
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "controller",
       "uuid": "a207e551-7936-5735-b9e3-0faf7047fea4"
@@ -1093,7 +1148,7 @@
       "metadata": {
         "manufacturer": "JST",
         "manufacturer_pn": "BM03B-SRSS-TB(LF)(SN)",
-        "LCSC": "C5306067",
+        "LCSC": "C160389",
         "Datasheet": "https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf",
         "Description": "Pico H-compatible JST SH top-entry SWD: 1=SWCLK, 2=GND, 3=SWDIO; no power pin; straight-through cable"
       },
@@ -2992,7 +3047,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3021,7 +3076,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3050,7 +3105,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3079,7 +3134,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3108,7 +3163,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3137,7 +3192,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3166,7 +3221,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3195,7 +3250,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3224,7 +3279,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3253,7 +3308,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3282,7 +3337,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3311,7 +3366,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3340,7 +3395,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3369,7 +3424,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3398,7 +3453,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3427,7 +3482,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3456,7 +3511,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3485,7 +3540,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3514,7 +3569,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3543,7 +3598,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3572,7 +3627,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3601,7 +3656,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3630,7 +3685,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3659,7 +3714,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3688,7 +3743,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3717,7 +3772,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3746,7 +3801,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3775,7 +3830,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3804,7 +3859,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3833,7 +3888,7 @@
         "manufacturer": "Jiangsu Changjing Electronics",
         "manufacturer_pn": "BAV70",
         "LCSC": "C68978",
-        "Description": "Dual common cathode; both anodes belong to same ROW",
+        "Description": "JSCJ BAV70, 70V 200mA; dual common cathode; both anodes belong to same ROW",
         "Datasheet": "https://jlcpcb.com/partdetail/BAV70/C68978"
       },
       "sheet": "matrix",
@@ -3858,9 +3913,11 @@
         90
       ],
       "metadata": {
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-07100RL",
-        "Description": "100ohm 1% SWD series termination near MCU; Raspberry Pi debug connector specification recommendation"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1000TCE",
+        "Description": "100ohm 1% SWD series termination near MCU; Raspberry Pi debug connector specification recommendation",
+        "LCSC": "C25076",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "3a5d19ba-d653-5ac2-bc15-370bb313cae9"
@@ -3884,9 +3941,11 @@
         90
       ],
       "metadata": {
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-07100RL",
-        "Description": "100ohm 1% SWD series termination near MCU; Raspberry Pi debug connector specification recommendation"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1000TCE",
+        "Description": "100ohm 1% SWD series termination near MCU; Raspberry Pi debug connector specification recommendation",
+        "LCSC": "C25076",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "controller",
       "uuid": "92b90011-1488-512d-a313-c58bccd97682"
@@ -4025,7 +4084,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "left_inner",
@@ -4055,12 +4114,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D31",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D31",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "56eade7f-7edc-5009-bfd0-9a7ba266fb95"
@@ -4118,7 +4179,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "left_inner",
@@ -4148,12 +4209,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D32",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D32",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "69c89422-1a5e-5edd-b5b3-25036834346e"
@@ -4211,7 +4274,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "left_inner",
@@ -4241,12 +4304,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D33",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D33",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "66f977df-5195-5df9-850e-e5b2114eb6a3"
@@ -4304,7 +4369,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "left_inner",
@@ -4334,12 +4399,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D34",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D34",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "452ab466-17b2-5013-a8c9-78a820db1a0b"
@@ -4397,7 +4464,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "left_outer",
@@ -4427,12 +4494,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D35",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D35",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "0c603553-3934-5cf0-a184-71e526e127f3"
@@ -4490,7 +4559,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "left_outer",
@@ -4520,12 +4589,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D36",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D36",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "8968f904-63c3-55ef-8a7f-5085272d4694"
@@ -4583,7 +4654,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "left_outer",
@@ -4613,12 +4684,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D37",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D37",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "9f114576-8566-5d60-9a8f-c76f3a2ea9bf"
@@ -4676,7 +4749,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "left_outer",
@@ -4706,12 +4779,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D38",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D38",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "cbf48a61-a687-57ff-a0ce-53e2fcabc44d"
@@ -4769,7 +4844,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "right_inner",
@@ -4799,12 +4874,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D39",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D39",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "8197c30b-f06e-5cf7-a618-a739935283d9"
@@ -4862,7 +4939,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "right_inner",
@@ -4892,12 +4969,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D40",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D40",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "0b82dc77-45aa-5db9-9860-97f27e8098f0"
@@ -4955,7 +5034,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "right_inner",
@@ -4985,12 +5064,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D41",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D41",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "9c04b55a-8028-5cc5-b3af-6eecf08531f7"
@@ -5048,7 +5129,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "right_inner",
@@ -5078,12 +5159,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D42",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D42",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "499ef2d5-e5e4-5d4d-90e6-56674e8ef796"
@@ -5141,7 +5224,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "right_outer",
@@ -5171,12 +5254,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D43",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D43",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "7491f4e5-2088-50bf-9806-d80eb7f9d010"
@@ -5234,7 +5319,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "right_outer",
@@ -5264,12 +5349,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D44",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D44",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "cb38582f-bc94-5ece-9373-24191a25002a"
@@ -5327,7 +5414,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "right_outer",
@@ -5357,12 +5444,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D45",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D45",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "44ab907a-a623-5145-ac20-ad353cd4e5d6"
@@ -5420,7 +5509,7 @@
         "manufacturer": "Worldsemi",
         "manufacturer_pn": "WS2812B-4020-V6",
         "LCSC": "C52941387",
-        "Datasheet": "https://www.lcsc.com/product-detail/C52941387.html",
+        "Datasheet": "https://www.world-semi.com/downloads/datasheets/en/ws2812b-4020-v6-1.0.pdf",
         "Datasheet_revision": "V1.4 / 2026-07-28",
         "Description": "Side-emitting addressable RGB LED; DIN1 / VDD2 / DOUT3 / VSS4",
         "LED_Group": "right_outer",
@@ -5450,12 +5539,14 @@
         0
       ],
       "metadata": {
-        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 25V, X7R; local bypass for D46",
-        "voltage": "25V",
+        "Description": "Capacitor, MLCC, 100nF, 10%, M1005, 50V, X7R; local bypass for D46",
+        "voltage": "50V",
         "dielectric": "X7R",
         "tolerance": "10%",
-        "manufacturer": "Murata",
-        "manufacturer_pn": "GRM155R71E104KE14D"
+        "manufacturer": "Samsung Electro-Mechanics",
+        "manufacturer_pn": "CL05B104KB54PNC",
+        "LCSC": "C307331",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL05B104KB54PN.do"
       },
       "sheet": "leds",
       "uuid": "19e39822-be3e-56ae-9af1-26cd977cfbbe"
@@ -5508,9 +5599,11 @@
         0
       ],
       "metadata": {
-        "manufacturer": "Yageo",
-        "manufacturer_pn": "RC0402FR-07100RL",
-        "Description": "100ohm 1% series damping for GPIO17 to first side-LED DIN; place near MCU"
+        "manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "manufacturer_pn": "0402WGF1000TCE",
+        "Description": "100ohm 1% series damping for GPIO17 to first side-LED DIN; place near MCU",
+        "LCSC": "C25076",
+        "Datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf?productCode=C11702"
       },
       "sheet": "leds",
       "uuid": "60000c7f-5963-5e8a-bda5-d97289f953a4"

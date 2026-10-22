@@ -141,7 +141,7 @@ add('U3','USBLC6-2SC6','USBLC6-2SC6',mods['U3'],{'1':'USB_DP','6':'USB_DP','3':'
 add('U2','XC6206PxxxMR','XC6206P332MR-G',mods['U2'],{'1':'GND','2':'+3V3','3':'VBUS'},(340,50),(141,33,0),{'manufacturer':'Torex Semiconductor','manufacturer_pn':'XC6206P332MR-G','LCSC':'C5446','Description':'JLC Basic; fixed 3.3V LDO, SOT23-3. Design target <=100mA continuous, not measured. LED power must bypass this rail.','Datasheet':'https://product.torexsemi.com/system/files/series/xc6206.pdf'})
 for r,v,n,pos,pcb in [('C1','1u','VBUS',(315,75),(138,33,90)),('C5','4.7u','+3V3',(365,75),(144,33,90)),('C21','100n','VBUS',(160,215),(127,32,90))]:
  add(r,'C',v,mods['C0603'] if r in ['C1','C5'] else mods['C'],{'1':n,'2':'GND'},pos,pcb,({'manufacturer':'Samsung Electro-Mechanics','manufacturer_pn':'CL10A475KO8NNNC','LCSC':'C19666','Description':'4.7uF 16V X5R0603 output bypass; verify effective capacitance including bias/tolerance','Datasheet':'https://jlcpcb.com/partdetail/C19666'} if r=='C5' else {'manufacturer':'Samsung Electro-Mechanics','manufacturer_pn':'CL10A105KB8NNNC','LCSC':'C15849','Description':'1uF 50V X5R 0603, LDO input ceramic','Datasheet':'https://jlcpcb.com/partdetail/C15849'} if r in ['C1','C5'] else offmeta('C12')))
-add('J2','Conn_01x03','BM03B-SRSS-TB',mods['J2'],{'1':'SWCLK','2':'GND','3':'SWDIO','MP':'GND'},(380,140),(139,65,90),{'manufacturer':'JST','manufacturer_pn':'BM03B-SRSS-TB(LF)(SN)','LCSC':'C5306067','Datasheet':'https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf','Description':'Pico H-compatible JST SH top-entry SWD: 1=SWCLK, 2=GND, 3=SWDIO; no power pin; straight-through cable'})
+add('J2','Conn_01x03','BM03B-SRSS-TB',mods['J2'],{'1':'SWCLK','2':'GND','3':'SWDIO','MP':'GND'},(380,140),(139,65,90),{'manufacturer':'JST','manufacturer_pn':'BM03B-SRSS-TB(LF)(SN)','LCSC':'C160389','Datasheet':'https://datasheets.raspberrypi.com/debug/debug-connector-specification.pdf','Description':'Pico H-compatible JST SH top-entry SWD: 1=SWCLK, 2=GND, 3=SWDIO; no power pin; straight-through cable'})
 for r,n,pos,pcb in [('TP1','VBUS',(310,242),(109,67,0)),('TP2','EXP_GPIO17_3V3',(340,242),(113,67,0)),('TP3','GND',(370,242),(117,67,0))]:add(r,'TestPoint',n,mods['TP'],{'1':n},pos,pcb,{'Description':'Power/GPIO test pads; see LED sheet for GPIO17 use.'})
 # Matrix: each half has its own five logical row nets. Physical stagger need not equal logical rows.
 rows=list(csv.DictReader((ROOT/'reference/P2/Wing27_P2_60_key_center_coordinates_mm.csv').open(encoding='utf-8-sig')))
@@ -242,3 +242,7 @@ print('Generated',len(COMPS),'components and',len(mapping),'key mappings')
 import subprocess
 for helper in ['redraw_matrix.py','redraw_controller.py','add_leds.py']:
  subprocess.run([sys.executable,str(ROOT/'scripts'/helper)],check=True)
+
+# Keep reviewed procurement fields when regenerating the electrical project.
+if (ROOT/"scripts/procurement_parts.json").exists():
+ subprocess.run([sys.executable,str(ROOT/"scripts/apply_procurement.py")],check=True)

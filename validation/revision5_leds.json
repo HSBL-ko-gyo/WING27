@@ -1,7 +1,7 @@
 {
   "status": "PASS electrical pin/rotation/placement audit; emission direction remains provisional",
   "led_count": 16,
-  "per_led_decoupling": "100nF 25V X7R",
+  "per_led_decoupling": "100nF 50V X7R (C307331)",
   "signal": "GPIO17 / 3.3V -> R24 100ohm -> D31 DIN, serial DOUT->DIN to D46",
   "driver": "No buffer. V1.4 DIN max 1uA/15pF; verify waveform and supply extremes",
   "full_white_typical_current_mA": 576,
